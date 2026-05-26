@@ -1,0 +1,16 @@
+question,expected_source,expected_page,expected_keywords
+"What information is provided about knowledge, cost, time on page 19 of RAG.pdf?",RAG.pdf,19,knowledge|cost|time|data|fine|tuning
+"What information is provided about retrieval, augmented, generation on page 7 of RAG.pdf?",RAG.pdf,7,retrieval|augmented|generation|important
+"What information is provided about knowledge, responses, real on page 20 of RAG.pdf?",RAG.pdf,20,knowledge|responses|real|without|retraining|trust
+"What information is provided about chatbots, real, data on page 21 of RAG.pdf?",RAG.pdf,21,chatbots|real|data|research|evidence|content
+"What information is provided about data, learning, federated on page 5 of Federated Learning AI.pdf?",Federated Learning AI.pdf,5,data|learning|federated|central|server|leaves
+"What information is provided about data, privacy, sensitive on page 2 of Federated Learning AI.pdf?",Federated Learning AI.pdf,2,data|privacy|sensitive|motivation|federated|learning
+"What information is provided about device, model, clients on page 14 of Federated Learning AI.pdf?",Federated Learning AI.pdf,14,device|model|clients|each|data|disadvantages
+"What information is provided about hospitals, train, federated on page 9 of Federated Learning AI.pdf?",Federated Learning AI.pdf,9,hospitals|train|federated|learning|architecture|model
+"What information is provided about decide, model, more on page 22 of Multimodal ML.pdf?",Multimodal ML.pdf,22,decide|model|more|audio|gated|multimodal
+"What information is provided about model, attention, more on page 24 of Multimodal ML.pdf?",Multimodal ML.pdf,24,model|attention|more|audio|cross|instead
+"What information is provided about early, level, dimensionality on page 19 of Multimodal ML.pdf?",Multimodal ML.pdf,19,early|level|dimensionality|fusion|feature|mechanism
+"What information is provided about intermediate, fusion, feature on page 21 of Multimodal ML.pdf?",Multimodal ML.pdf,21,intermediate|fusion|feature|cross|attention|level
+"What information is provided about flask, model, your on page 1 of Module 1 Guidance Notebook.pdf?",Module 1 Guidance Notebook.pdf,1,flask|model|your|joblib|step|environment
+"What information is provided about lifespan, model, field on page 3 of Module 1 Guidance Notebook.pdf?",Module 1 Guidance Notebook.pdf,3,lifespan|model|field|load|state|import
+"What information is provided about model, smiles, result on page 3 of Module 1 Guidance Notebook.pdf?",Module 1 Guidance Notebook.pdf,3,model|smiles|result|predict|request|body

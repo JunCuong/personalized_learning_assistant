@@ -1,0 +1,65 @@
+source,page,extraction_method,ocr_char_count,text_preview
+Kolmogorov–Arnold Networks (KAN).pdf.pdf,1,ocr,495,"Kolmogorov-Arnold Networks
+(KAN)
+
+A New Paradigm for Neural Function Learning
+
+The Shift: Moving from learnable linear weights to learnable nonlinear activation functions
+
+The Goal: Achieving superior accuracy and interpretability in scientific machine learning (AI + Science)
+
+Presenters: Department"
+Kolmogorov–Arnold Networks (KAN).pdf.pdf,2,ocr,342,"Presentation Outline
+
+@ @ EF
+
+1. Problem & 2. Key Insights & 3. Theory & Math
+Motivation Core Idea The Kolmogorov-Arnold
+The ""Black Box"" of MLPs Learnable edges and moving Representation Theorem &
+and the limitations of existing activations from nodes to architecture formulation.
+architectures. conn"
+Scalable_MLOps_Architecture.pptx.pdf,1,ocr,335,"DATA
+INGESTION
+
+MODEL
+DEPLOYMENT
+(KUBERNETES)
+
+CONTINUOUS
+MONITORING
+| & FEEDBACK |
+
+FEATURE
+ENGINEERING
+
+MODEL
+EVALUATION
+& VALIDATION
+
+MODEL
+TRAINING
+(GCP VERTEX Al)
+
+Production-Grade
+MLOps & System
+Architecture
+
+Engineering Al for Scale,
+Stability, and Continuous
+Adaptation
+
+From Theoretical Conc"
+Scalable_MLOps_Architecture.pptx.pdf,2,ocr,777,"The Lab to Factory Gap: Failure Modes in Production
+
+Traditional ML fails due to system instability, not algorithmic inaccuracy.
+Deploying an Al system exposes three core failure modes:
+
+Deterministic
+
+Code
+
+Data & Concept Drift
+
+e The world changes. Covariate
+Shift alters input distributions
+P(X), "

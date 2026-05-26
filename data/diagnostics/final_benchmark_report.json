@@ -1,0 +1,119 @@
+{
+  "system_status": {
+    "timestamp": "2026-05-26T04:12:17.598494+00:00",
+    "python_version": "3.13.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "gemini_model_name": "gemini-2.5-flash",
+    "gemini_keys_configured": 4,
+    "local_fallback_allowed": false,
+    "gemini_quota_exhausted": true,
+    "local_fallback_used": false,
+    "reranking_enabled": true,
+    "retrieval_only": false,
+    "generation_note": "Generation latency could not be measured reliably because all Gemini keys were quota-exhausted."
+  },
+  "resource_loading": {
+    "embedder_load_cold_sec": 6.369,
+    "retriever_faiss_load_cold_sec": 0.003,
+    "llm_client_load_sec": 4.142,
+    "embedder_load_warm_sec": 0.129,
+    "retriever_faiss_load_warm_sec": 0.004
+  },
+  "retrieval_latency": {
+    "per_query": [
+      {
+        "query": "What is retrieval augmented generation?",
+        "time_no_rerank_sec": 0.049,
+        "top1_no_rerank": {
+          "source": "RAG.pdf",
+          "page": 13,
+          "score": 0.4996
+        },
+        "time_with_rerank_sec": 0.043,
+        "top1_with_rerank": {
+          "source": "RAG.pdf",
+          "page": 13,
+          "score": 0.4996
+        }
+      },
+      {
+        "query": "What is MLOps?",
+        "time_no_rerank_sec": 0.041,
+        "top1_no_rerank": {
+          "source": "Scalable_MLOps_Architecture.pptx.pdf",
+          "page": 3,
+          "score": 0.5035
+        },
+        "time_with_rerank_sec": 0.036,
+        "top1_with_rerank": {
+          "source": "Scalable_MLOps_Architecture.pptx.pdf",
+          "page": 3,
+          "score": 0.5035
+        }
+      },
+      {
+        "query": "What is Kolmogorov-Arnold Network?",
+        "time_no_rerank_sec": 0.038,
+        "top1_no_rerank": {
+          "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+          "page": 1,
+          "score": 0.5347
+        },
+        "time_with_rerank_sec": 0.038,
+        "top1_with_rerank": {
+          "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+          "page": 1,
+          "score": 0.5347
+        }
+      }
+    ],
+    "avg_without_rerank_sec": 0.043,
+    "avg_with_rerank_sec": 0.039
+  },
+  "generation_latency": {
+    "skipped": false,
+    "rows": [
+      {
+        "mode": "ask",
+        "retrieve_sec": 0.045,
+        "generate_sec": 6.902,
+        "total_sec": 6.946,
+        "status": "quota_error",
+        "output_length": 154,
+        "top1_source": "RAG.pdf",
+        "top1_page": 13,
+        "error": null
+      },
+      {
+        "mode": "summarize",
+        "retrieve_sec": 0.06,
+        "generate_sec": 0.075,
+        "total_sec": 0.135,
+        "status": "quota_error",
+        "output_length": 95,
+        "top1_source": "Federated Learning AI.pdf",
+        "top1_page": 12,
+        "error": null
+      },
+      {
+        "mode": "mcq",
+        "retrieve_sec": 0.067,
+        "generate_sec": 0.008,
+        "total_sec": 0.075,
+        "status": "quota_error",
+        "output_length": 95,
+        "top1_source": "RAG.pdf",
+        "top1_page": 6,
+        "error": null
+      }
+    ]
+  },
+  "demo_readiness": {
+    "expected_mode_switching": "fast (Streamlit @st.cache_resource; not measured here)",
+    "ask_target_10s": "unknown_due_quota",
+    "summary_target_15s": "unknown_due_quota",
+    "mcq_target_20s": "unknown_due_quota",
+    "main_bottleneck": "gemini_quota",
+    "recommendation_for_demo": "Generation latency could not be measured reliably because all Gemini keys were quota-exhausted. Retrieval benchmarks are still valid. Add quota or use --allow-local-fallback only for offline tests (slow)."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "allow_local_fallback": false,
+  "gemini_quota_exhausted": true,
+  "local_fallback_used": false,
+  "last_warm_ask": {
+    "retrieve_sec": 0.093,
+    "generate_sec": 7.442,
+    "total_sec": 7.536
+  },
+  "cold": {
+    "init_sec": {
+      "embedder_load": 9.127,
+      "faiss_load": 0.027,
+      "llm_init": 9.285
+    },
+    "avg_ask_sec": 4.739,
+    "summary_sec": 8.551,
+    "mcq_sec": 12.825
+  },
+  "warm": {
+    "avg_ask_sec": 7.848,
+    "summary_sec": 14.81,
+    "mcq_sec": 7.225
+  },
+  "bottleneck": "gemini_generate (LLM API latency dominates retrieve+format)",
+  "target_10s_met_warm_ask": true,
+  "recommendation": "Warm Ask meets 10s demo target; keep Streamlit caches warm."
+}

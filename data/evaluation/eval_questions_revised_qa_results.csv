@@ -1,0 +1,8 @@
+question,expected_keywords,matched_keywords,keyword_score,status,answer_preview
+What problem does RAG address when updating model knowledge is costly or time-consuming?,knowledge|cost|time|fine|tuning|data,,0.0,ok,I cannot find this information in the uploaded documents.
+What is retrieval augmented generation and why is it important?,retrieval|augmented|generation|knowledge|context,retrieval|augmented|generation,0.6,ok,"Retrieval Augmented Generation (RAG) is an AI framework that enables generative models to access external information beyond their training data. It combines the strengths of both retrieval-based and generative methods [RAG.pdf, Page: 13].
+
+RAG is important because it augments the generative model's"
+How does RAG help generate real-time knowledge-grounded responses without retraining?,knowledge|responses|real|retraining|trust,knowledge|responses|real|retraining,0.8,ok,RAG helps generate real-time knowledge-grounded responses without retraining by using a pre-trained Large
+How can RAG help chatbots use real data or evidence in their responses?,chatbots|real|data|research|evidence,chatbots|real,0.4,ok,"RAG enables chatbots to pull real-time information from product documentation, FAQs, and knowledge bases"
+How does federated learning keep data on local devices instead of sending it to a central server?,data|learning|federated|central|server|local,data|learning|federated|local,0.6666666666666666,ok,"Federated Learning (FL) keeps data on local devices by leaving the data securely locked at its origin and sending the algorithm to the data. Raw data never leaves the edge device; only mathematical parameters are exchanged. (Federated Learning AI.pdf, Page: 5)"

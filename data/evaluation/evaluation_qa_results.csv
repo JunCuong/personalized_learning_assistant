@@ -1,0 +1,4 @@
+question,expected_keywords,matched_keywords,keyword_score,answer_preview
+What is retrieval-augmented generation?,retrieval|augmented|generation,,0.0,I cannot find this information in the uploaded documents.
+What is federated learning?,federated|learning,learning,0.5,"a decentralised machine learning technique where AI models are trained across multiple devices or servers (nodes) holding local data, without exchanging that data"
+How does multimodal machine learning combine data types?,multimodal,multimodal,1.0,"[Source: Multimodal ML.pdf, Page: 1, Rank: 1] Multimodal Machine Learning --- [Source: Multimodal ML.pdf, Page: 5, Rank: 2] Multimodal Data --- [Source: Federated Learning AI.pdf, Page: 8, Rank: 3] TYPES OF FEDERATED LEARNING BY DEPLOYMENT ARCHITECTURE Involves thousands to millions of highly constr"

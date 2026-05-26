@@ -1,0 +1,7 @@
+source,number_of_chunks,min_chunk_length,max_chunk_length,avg_chunk_length,chunks_under_100_chars,chunks_under_200_chars,pages_covered
+Federated Learning AI.pdf,16,52,794,307.2,4,7,1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16
+Kolmogorov–Arnold Networks (KAN).pdf.pdf,38,331,879,438.7,0,0,1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38
+Module 1 Guidance Notebook.pdf,13,231,1000,812.4,0,0,1|2|3|4|5
+Multimodal ML.pdf,26,59,716,312.8,3,4,1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26
+RAG.pdf,24,30,999,429.0,5,11,1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23
+Scalable_MLOps_Architecture.pptx.pdf,20,335,826,691.0,0,0,1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20

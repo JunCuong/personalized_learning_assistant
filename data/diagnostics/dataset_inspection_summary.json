@@ -1,0 +1,36 @@
+{
+  "total_pdfs": 6,
+  "ok_pdfs": 6,
+  "warning_pdfs": 0,
+  "error_pdfs": 0,
+  "total_pages": 128,
+  "pages_with_pypdf_text": 55,
+  "pages_with_ocr_text": 73,
+  "pages_without_text": 0,
+  "total_pypdf_chars": 28988,
+  "total_ocr_chars": 33880,
+  "total_extracted_chars": 62613,
+  "ocr_enabled": true,
+  "tesseract_path": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+  "ocr_dependency_status": {
+    "tesseract": {
+      "status": "ok",
+      "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+      "message": "Tesseract configured"
+    },
+    "pytesseract": {
+      "import_ok": true
+    },
+    "pdf2image": {
+      "import_ok": true
+    },
+    "poppler": {
+      "available": true,
+      "path": "C:\\Users\\ADMIN\\Downloads\\poppler-26.02.0\\Library\\bin",
+      "path_used": "C:\\Users\\ADMIN\\Downloads\\poppler-26.02.0\\Library\\bin"
+    },
+    "ready": true,
+    "message": "OCR dependencies ready"
+  },
+  "conclusion": "All PDFs passed extraction checks (pypdf and/or OCR)."
+}

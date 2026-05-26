@@ -1,0 +1,15 @@
+{
+  "retrieval": {
+    "num_questions": 3,
+    "hit_rate_at_3": 0.3333333333333333,
+    "hit_rate_at_5": 0.3333333333333333,
+    "mean_reciprocal_rank": 0.3333333333333333
+  },
+  "qa_keyword": {
+    "num_questions": 3,
+    "mean_keyword_score": 0.5,
+    "questions_with_keywords": 3
+  },
+  "qa_results_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\evaluation\\evaluation_qa_results.csv",
+  "retrieval_results_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\evaluation\\evaluation_results.csv"
+}

@@ -1,0 +1,26 @@
+{
+  "warnings": [],
+  "env_file_exists": true,
+  "env_file_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\.env",
+  "GEMINI_API_KEY_set": true,
+  "GEMINI_API_KEY_masked": "AIza...pC70",
+  "GOOGLE_API_KEY_set": false,
+  "GOOGLE_API_KEY_masked": "(not set)",
+  "effective_key_source": "GEMINI_API_KEY",
+  "gemini_model_configured": "gemini-2.5-flash",
+  "local_fallback_model": "google/flan-t5-base",
+  "status": "GEMINI_OK",
+  "recommendation": "Gemini API responded successfully",
+  "gemini_test": {
+    "ran": true,
+    "status": "SUCCESS",
+    "response_preview": "OK"
+  },
+  "provider_selected_by_llm_client": "gemini",
+  "local_fallback": {
+    "model": "google/flan-t5-base",
+    "tokenizer_load": "OK",
+    "model_load_skipped": "Heavy weights not loaded in diagnostics; tokenizer OK"
+  },
+  "local_fallback_enabled": false
+}

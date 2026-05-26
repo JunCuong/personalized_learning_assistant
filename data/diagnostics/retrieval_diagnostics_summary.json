@@ -1,0 +1,76 @@
+{
+  "overall": {
+    "num_queries": 6,
+    "top_k": 5,
+    "queries_with_results": 6,
+    "queries_without_results": 0
+  },
+  "per_query": {
+    "What is retrieval augmented generation?": {
+      "top_1_source": "RAG.pdf",
+      "top_1_page": 13,
+      "top_3_sources": [
+        "RAG.pdf p13",
+        "RAG.pdf p6",
+        "Multimodal ML.pdf p25"
+      ],
+      "whether_results_exist": true,
+      "comment": "Retrieved 5 chunk(s); top source: RAG.pdf page 13"
+    },
+    "What are the main components of RAG?": {
+      "top_1_source": "RAG.pdf",
+      "top_1_page": 2,
+      "top_3_sources": [
+        "RAG.pdf p2",
+        "RAG.pdf p16",
+        "RAG.pdf p6"
+      ],
+      "whether_results_exist": true,
+      "comment": "Retrieved 5 chunk(s); top source: RAG.pdf page 2"
+    },
+    "What is multimodal machine learning?": {
+      "top_1_source": "Multimodal ML.pdf",
+      "top_1_page": 1,
+      "top_3_sources": [
+        "Multimodal ML.pdf p1",
+        "Federated Learning AI.pdf p8",
+        "Federated Learning AI.pdf p5"
+      ],
+      "whether_results_exist": true,
+      "comment": "Retrieved 5 chunk(s); top source: Multimodal ML.pdf page 1"
+    },
+    "What is federated learning?": {
+      "top_1_source": "Federated Learning AI.pdf",
+      "top_1_page": 6,
+      "top_3_sources": [
+        "Federated Learning AI.pdf p6",
+        "Federated Learning AI.pdf p4",
+        "Federated Learning AI.pdf p5"
+      ],
+      "whether_results_exist": true,
+      "comment": "Retrieved 5 chunk(s); top source: Federated Learning AI.pdf page 6"
+    },
+    "What is MLOps?": {
+      "top_1_source": "Scalable_MLOps_Architecture.pptx.pdf",
+      "top_1_page": 3,
+      "top_3_sources": [
+        "Scalable_MLOps_Architecture.pptx.pdf p3",
+        "RAG.pdf p6",
+        "RAG.pdf p4"
+      ],
+      "whether_results_exist": true,
+      "comment": "Retrieved 5 chunk(s); top source: Scalable_MLOps_Architecture.pptx.pdf page 3"
+    },
+    "What is Kolmogorov-Arnold Network?": {
+      "top_1_source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+      "top_1_page": 1,
+      "top_3_sources": [
+        "Kolmogorov–Arnold Networks (KAN).pdf.pdf p1",
+        "Kolmogorov–Arnold Networks (KAN).pdf.pdf p37",
+        "Kolmogorov–Arnold Networks (KAN).pdf.pdf p31"
+      ],
+      "whether_results_exist": true,
+      "comment": "Retrieved 5 chunk(s); top source: Kolmogorov–Arnold Networks (KAN).pdf.pdf page 1"
+    }
+  }
+}

@@ -1,0 +1,976 @@
+source,page,chunk_id,chunk_length,extraction_method,suggested_question_type,chunk_text_preview,suggested_expected_keywords
+Federated Learning AI.pdf,2,federated_learning_ai_p2_c0,570,pypdf,factual,"MOTIVATION FOR FEDERATED LEARNING
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+Data Transfer Bottleneck: Centralizing massive amounts of edge data
+(e.g., continuous video feeds, billions of interactions) is computationally
+expensive and strain network bandwidth.
+Privacy & Security Imperatives: Users and organizations are increasingly
+hesitant to share raw, sensitive data due to the risk o",data|privacy|sensitive|motivation|federated|learning
+Federated Learning AI.pdf,5,federated_learning_ai_p5_c0,794,pypdf,definition,"WHAT IS FEDERATED LEARNING?
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+Traditional deep learning requires copying all data to a central server (like an AWS cluster). Federated
+Learning (FL) reverses this: it leaves the data securely locked at its origin and sends the algorithm to the data.
+FL operates on the priciple of data minimization. Raw data never leaves the
+edge device; only math",data|learning|federated|central|server|leaves
+Federated Learning AI.pdf,7,federated_learning_ai_p7_c0,405,pypdf,factual,"WHY USE FEDERATED LEARNING
+User privacy
+Train models without sharing data
+Data sharing agreements are comple
+Richer set of potential system configurations
+Data, compute and algorithms can be distributed and decentralized
+Cooperation between insitutions and entities (even those that compete)
+Lower trust requirements (not just between users)
+Utilize data from the edge
+Lower requirement for infrastru",data|sharing|lower|federated|learning|user
+Federated Learning AI.pdf,8,federated_learning_ai_p8_c0,340,pypdf,architecture,"TYPES OF FEDERATED LEARNING 
+ BY DEPLOYMENT ARCHITECTURE
+Involves thousands to millions of highly constrained
+edge devices interacting over unreliable networks.
+Mobile keyboards train next-word prediction models
+locally based on user typing habits, without
+uploading private text messages.
+Personalization of Speech Recognition
+CROSS-DEVICE",types|federated|learning|deployment|architecture|involves
+Federated Learning AI.pdf,9,federated_learning_ai_p9_c0,512,pypdf,architecture,"TYPES OF FEDERATED LEARNING 
+ BY DEPLOYMENT ARCHITECTURE
+Involves a smaller number of highly resourced, reliable
+nodes separated by institutional firewalls.
+Several hospitals collaborate to train a model that decodes fMRI brain
+signals to generate images. The hospitals jointly train the architecture
+while keeping the raw patient scans entirely on their own local servers.
+Hospitals can use this fed",hospitals|train|federated|learning|architecture|model
+Federated Learning AI.pdf,10,federated_learning_ai_p10_c0,358,pypdf,example,"Horizontal  Federated Learning Vertical  Federated Learning
+Same features, different users
+Examples: 
+Smartphone keyboards
+prediction
+Cancer prediction across
+hospitals
+Same users, different features
+Examples: 
+Predict cancer risk based on hospital data +
+genetic lab data
+Credit scoring: banks + e-commerce
+TYPES OF FEDERATED LEARNING 
+ BY DATA DISTRIBUTION",federated|learning|data|same|features|different
+Federated Learning AI.pdf,13,federated_learning_ai_p13_c0,239,pypdf,factual,"TRAINING ON LOW COMPUTATIONAL-RESOURCE DEVICE
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+LORA
+LoRA(Low-Rank Adaption) from https://viblo.asia/p/llm-101-thao-luan-ve-finetune-model-llm-su-dung-lora-low-rank-adaptation-Yym40YQWJ91",lora|rank|training|computational|resource|device
+Federated Learning AI.pdf,14,federated_learning_ai_p14_c0,543,pypdf,factual,"DISADVANTAGES
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+Device heterogeneity: each device has different computing power which makes it
+hard to train model on each device
+Network: Dropped clients, slow wide-area networks
+Data is Non-IID:(Not Independently and Identically Distributed): Some clients
+might heavily skew the model toward their specific, highly localized data
+distributions.
+P",device|model|clients|each|data|disadvantages
+Federated Learning AI.pdf,15,federated_learning_ai_p15_c0,429,pypdf,factual,"MITIGATION APPROACHES
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+Synthetic data generation: rebalance class distributions via oversampling or under-
+sampling, SMOTE (non-IID data distributions)
+Weight adjustment during model aggregation: instead of weighting only on dataset
+size, we also give under-represented clients more influence
+Aggregation algorithm: Median aggregation, trimmed mea",aggregation|data|distributions|mitigation|approaches|vnuk
+Module 1 Guidance Notebook.pdf,1,module_1_guidance_notebook_p1_c0,1000,pypdf,factual,"From  Model  Artifacts  to  Production  APIs  
+Domain:  Bioactivity  Prediction  of  Chemical  Compounds  This  document  serves  as  your  technical  roadmap  for  Assignment  1 .  We  assume  you  already  
+have
+ 
+a
+ 
+trained
+ 
+model
+ 
+artifact
+ 
+(e.g.,
+ 
+bioactivity_model.joblib)
+ 
+that
+ 
+takes
+ 
+molecular
+ 
+descriptors
+ 
+or
+ 
+SMILES
+ 
+strings
+ 
+as
+ 
+input.
+ 
+🛠  Step  0:  Engineering  Environme",flask|model|your|joblib|step|environment
+Module 1 Guidance Notebook.pdf,1,module_1_guidance_notebook_p1_c1,944,pypdf,factual,",
+ 
+you
+ 
+are
+ 
+the
+ 
+""Human
+ 
+Firewall""—you
+ 
+must
+ 
+manually
+ 
+validate
+ 
+everything
+ 
+before
+ 
+it
+ 
+touches
+ 
+your
+ 
+model.
+ 
+📝  Flask  Implementation  Guidance  
+●  Manual  Validation:  You  cannot  trust  the  user  input.  You  must  write  if/else  logic  to  check  
+request.get_json().
+ ●  The  Global  Load:  In  Flask,  we  load  the  model  once  at  the  top  of  the  script  so  it  pe",flask|model|load|import|joblib|must
+Module 1 Guidance Notebook.pdf,2,module_1_guidance_notebook_p2_c0,992,pypdf,factual,"#  2.  Manual  Defensive  Layer  (The  Firewall)  
+    
+data
+ 
+=
+ 
+request.get_json()
+ 
+    
+if
+ 
+not
+ 
+data
+ 
+or
+ 
+'smiles'
+ 
+not
+ 
+in
+ 
+data:
+ 
+        
+return
+ 
+jsonify({""error"":
+ 
+""Bad
+ 
+Request:
+ 
+'smiles'
+ 
+field
+ 
+is
+ 
+required""}),
+ 
+400
+ 
+    
+ 
+    
+smiles_string
+ 
+=
+ 
+data['smiles']
+ 
+    
+ 
+    
+#
+ 
+3.
+ 
+Manual
+ 
+Type
+ 
+&
+ 
+Content
+ 
+Validation
+ 
+    
+if
+ 
+not
+ 
+isinstance(smiles_string",smiles|data|return|jsonify|error|manual
+Module 1 Guidance Notebook.pdf,2,module_1_guidance_notebook_p2_c1,999,pypdf,factual,"tive""
+ 
+if
+ 
+prediction
+ 
+==
+ 
+1
+ 
+else
+ 
+""Inactive""
+ 
+    
+ 
+    
+return
+ 
+jsonify({
+ 
+        
+""smiles"":
+ 
+smiles_string,
+ 
+        
+""activity"":
+ 
+result,
+ 
+        
+""engine"":
+ 
+""Flask/WSGI""
+ 
+    
+})
+ 
+ 
+if
+ 
+__name__
+ 
+==
+ 
+'__main__':
+ 
+    
+app.run(host='0.0.0.0',
+ 
+port=5000)
+ 
+ 
+ 
+⚡  Step  3:  The  Modern  Approach  (FastAPI)  
+FastAPI  uses  ASGI  (Asynchronous  Server  Gateway  Interface",fastapi|smiles|model|lifespan|pattern|tive
+Module 1 Guidance Notebook.pdf,2,module_1_guidance_notebook_p2_c2,416,pypdf,definition,"e  professional  way  to  load  heavy  assets.  The  model  is  
+loaded
+ 
+once
+ 
+on
+ 
+startup
+ 
+and
+ 
+stored
+ 
+in
+ 
+app.state.
+ ●  Background  Tasks:  You  can  trigger  side-effects  (like  logging)  without  making  the  user  
+wait
+ 
+for
+ 
+them
+ 
+to
+ 
+finish.
+ Code  Structure  for  fastapi_app.py:  import  joblib  
+import
+ 
+time
+ 
+from
+ 
+fastapi
+ 
+import
+ 
+FastAPI,
+ 
+Request,
+ 
+HTTPException,
+ ",import|fastapi|professional|load|heavy|assets
+Module 1 Guidance Notebook.pdf,3,module_1_guidance_notebook_p3_c0,1000,pypdf,example,"from  pydantic  import  BaseModel,  Field  
+from
+ 
+contextlib
+ 
+import
+ 
+asynccontextmanager
+ 
+ 
+#
+ 
+1.
+ 
+Define
+ 
+the
+ 
+Data
+ 
+Contract
+ 
+(SMILES
+ 
+Input)
+ 
+class
+ 
+BioactivityRequest(BaseModel):
+ 
+    
+#
+ 
+Field
+ 
+constraints
+ 
+handle
+ 
+validation
+ 
+automatically
+ 
+    
+smiles:
+ 
+str
+ 
+=
+ 
+Field(...,
+ 
+min_length=3,
+ 
+max_length=1000,
+ 
+example=""CN1C=NC2=C1C(=O)N(C(=O)N2C)C"")
+ 
+ 
+#
+ 
+2.
+ 
+Manage",lifespan|model|field|load|state|import
+Module 1 Guidance Notebook.pdf,3,module_1_guidance_notebook_p3_c1,1000,pypdf,factual,""")
+ 
+        
+raise
+ 
+    
+yield
+ 
+    
+#
+ 
+Shutdown:
+ 
+Cleanup
+ 
+    
+app.state.model
+ 
+=
+ 
+None
+ 
+ 
+app
+ 
+=
+ 
+FastAPI(title=""Compound
+ 
+Bioactivity
+ 
+API"",
+ 
+lifespan=lifespan)
+ 
+ 
+def
+ 
+log_prediction(smiles:
+ 
+str,
+ 
+result:
+ 
+str):
+ 
+    
+""""""Simulates
+ 
+a
+ 
+background
+ 
+task
+ 
+like
+ 
+logging
+ 
+to
+ 
+a
+ 
+database.""""""
+ 
+    
+with
+ 
+open(""prediction_log.txt"",
+ 
+""a"")
+ 
+as
+ 
+f:
+ 
+        
+f.write(f",model|smiles|result|predict|request|body
+Module 1 Guidance Notebook.pdf,3,module_1_guidance_notebook_p3_c2,231,pypdf,factual,"""
+ 
+if
+ 
+prediction
+ 
+==
+ 
+1
+ 
+else
+ 
+""Inactive""
+ 
+    
+ 
+    
+#
+ 
+4.
+ 
+Trigger
+ 
+Background
+ 
+Task
+ 
+(User
+ 
+doesn't
+ 
+wait
+ 
+for
+ 
+this)
+ 
+    
+bg_tasks.add_task(log_prediction,
+ 
+body.smiles,
+ 
+activity)
+ 
+    
+ 
+    
+return
+ 
+{",prediction|else|inactive|trigger|background|task
+Module 1 Guidance Notebook.pdf,4,module_1_guidance_notebook_p4_c0,1000,pypdf,factual,"""smiles"":  body.smiles,  
+        
+""activity"":
+ 
+activity,
+ 
+        
+""engine"":
+ 
+""FastAPI/ASGI""
+ 
+    
+}
+ 
+ 
+ 
+🎨  Step  4:  Re-integrating  with  Streamlit  (The  
+Frontend)
+ 
+Now  that  your  model  is  a  standalone  service,  your  Streamlit  app  no  longer  needs  to  load  the  
+heavy
+ 
+.joblib
+ 
+file
+ 
+itself.
+ 
+Instead,
+ 
+it
+ 
+acts
+ 
+as
+ 
+a
+ 
+""Client""
+ 
+that
+ 
+talks
+ 
+to
+ 
+your
+ 
+API.
+ 
+📝",your|streamlit|smiles|localhost|activity|model
+Module 1 Guidance Notebook.pdf,4,module_1_guidance_notebook_p4_c1,998,pypdf,factual,"localhost  refers  to  your  
+own
+ 
+computer.
+ 
+You
+ 
+must
+ 
+have
+ 
+two
+ 
+terminal
+ 
+windows
+ 
+open:
+ 1.  One  running  your  API  (uvicorn  fastapi_app:app  ...).  2.  One  running  your  Streamlit  app  (streamlit  run  streamlit_app.py).  In  a  real  production  environment,  you  would  replace  localhost  with  the  public  IP  or  domain  of  
+your
+ 
+API
+ 
+server
+ 
+(e.g.,
+ 
+https://api.biot",your|streamlit|smiles|localhost|predict|response
+Module 1 Guidance Notebook.pdf,4,module_1_guidance_notebook_p4_c2,379,pypdf,factual,"response
+ 
+=
+ 
+requests.post(""http://localhost:8000/predict"",
+ 
+json=payload)
+ 
+        
+ 
+        
+if
+ 
+response.status_code
+ 
+==
+ 
+200:
+ 
+            
+res
+ 
+=
+ 
+response.json()
+ 
+            
+st.success(f""Prediction:
+ 
+{res['activity']}"")
+ 
+            
+st.info(f""Backend
+ 
+Engine:
+ 
+{res['engine']}"")
+ 
+        
+else:
+ 
+            
+st.error(f""API
+ 
+Error:
+ 
+{response.text}"")",response|json|engine|error|requests|post
+Module 1 Guidance Notebook.pdf,5,module_1_guidance_notebook_p5_c0,998,pypdf,factual,"except  Exception  as  e:  
+        
+st.error(f""Could
+ 
+not
+ 
+connect
+ 
+to
+ 
+API:
+ 
+{e}"")
+ 
+ 
+ 
+📈  Step  5:  Comparative  Stress  Testing  
+To  truly  understand  why  the  industry  is  moving  toward  FastAPI,  observe  the  ""Waiter  Problem""  
+discussed
+ 
+in
+ 
+the
+ 
+slides.
+ 
+We
+ 
+will
+ 
+simulate
+ 
+50
+ 
+concurrent
+ 
+chemical
+ 
+submissions.
+ Benchmark  script  (stress_test.py):  import  asyncio ",import|time|exception|simulate|concurrent|benchmark
+Module 1 Guidance Notebook.pdf,5,module_1_guidance_notebook_p5_c1,604,pypdf,factual,"ency)]
+ 
+        
+results
+ 
+=
+ 
+await
+ 
+asyncio.gather(*tasks,
+ 
+return_exceptions=True)
+ 
+        
+ 
+        
+success
+ 
+=
+ 
+[r
+ 
+for
+ 
+r
+ 
+in
+ 
+results
+ 
+if
+ 
+not
+ 
+isinstance(r,
+ 
+Exception)
+ 
+and
+ 
+r.status_code
+ 
+==
+ 
+200]
+ 
+        
+print(f""---
+ 
+{name}
+ 
+Benchmark
+ 
+---"")
+ 
+        
+print(f""Total
+ 
+time
+ 
+for
+ 
+{concurrency}
+ 
+requests:
+ 
+{time.time()
+ 
+-
+ 
+start:.2f}s"")
+ 
+        
+print(f""S",asyncio|print|benchmark|time|results|success
+Multimodal ML.pdf,4,multimodal_ml_p4_c0,301,pypdf,definition,"What is a Modality?
+Modality: the way information is expressed or perceived, e.g., language, vision, sound, touch.
+From a sensor: raw modality is closest to the physical signal, abstract modality is derived.
+The same phenomenon can appear across multiple modalities (e.g., emotion in voice and 
+face).",modality|information|expressed|perceived|language|vision
+Multimodal ML.pdf,8,multimodal_ml_p8_c0,217,pypdf,factual,"Structure
+Static: single images, fixed embeddings.
+Temporal: speech, videos, sequential sensor data.
+Spatial: 2D images, 3D point clouds, spatial grids.
+Hierarchical: document → sentence → word, scene → object → part.",images|spatial|structure|static|single|fixed
+Multimodal ML.pdf,9,multimodal_ml_p9_c0,204,pypdf,factual,"Representation Space
+Discrete: tokens, symbolic labels, graph nodes.
+Continuous: embedding vectors, feature maps, latent states.
+Interpretable vs. latent features (explicit scores vs. black-box features).",latent|features|representation|space|discrete|tokens
+Multimodal ML.pdf,10,multimodal_ml_p10_c0,216,pypdf,factual,"Information
+Entropy: how uncertain or variable a modality is.
+Density: information per unit (per frame, per second, per token).
+Overlap and range: shared vs. unique information, and what each modality can 
+represent.",information|modality|entropy|uncertain|variable|density
+Multimodal ML.pdf,11,multimodal_ml_p11_c0,218,pypdf,factual,"Granularity
+Different sampling rates: audio (kHz), video (fps), text (tokens/s).
+Resolution: high-res images vs. coarse sensors; precision levels.
+Granularity mismatch complicates temporal/spatial alignment and fusion.",granularity|different|sampling|rates|audio|video
+Multimodal ML.pdf,13,multimodal_ml_p13_c0,370,pypdf,factual,"Relevance
+Not all modalities are equally useful for every task → The importance of a 
+modality is context-dependent.
+Emotion Detection: Prosody and facial expressions dominate.
+Night Driving: Lidar/Radar are more relevant than RGB cameras.
+→ Dynamic Weighting: Modern models use gating or attention mechanisms to 
+focus on the most relevant modality at any given moment.",modality|relevant|relevance|modalities|equally|useful
+Multimodal ML.pdf,14,multimodal_ml_p14_c0,250,pypdf,factual,"Cross-Modal Interactions
+Redundancy: multiple modalities carry the same signal (speech + gesture).
+Dominance: one modality overrides another when they conflict.
+Modulation and emergence: interpretation or new meaning depends on 
+combining modalities.",modalities|cross|modal|interactions|redundancy|multiple
+Multimodal ML.pdf,16,multimodal_ml_p16_c0,253,pypdf,architecture,"Multimodal Pipeline
+Preprocess each modality separately (normalization, tokenization, feature 
+extraction).
+Encode each modality into latent representations.
+Fuse or interact representations, then apply task-specific heads for prediction or 
+generation.",each|modality|representations|multimodal|pipeline|preprocess
+Multimodal ML.pdf,17,multimodal_ml_p17_c0,228,pypdf,factual,"Input Module
+Modality-Specific Encoders
+Text: tokenization → embeddings → transformer encoder.
+Image: CNN or Vision Transformer extracting spatial features.
+Audio/sensors: temporal models over spectrograms or numerical features.",transformer|features|input|module|modality|specific
+Multimodal ML.pdf,19,multimodal_ml_p19_c0,445,pypdf,example,"Early Fusion (Feature-level)
+Mechanism: Raw features are combined at the 
+beginning of the network.
+Pros: Captures high-level interactions between 
+modalities early on, simple and parameter-efficient
+Cons: Can struggle with strong heterogeneity and 
+misalignment (e.g. 60fps videos and 44kHz audio), 
+dimensionality explosion, problem with dimensionality 
+imbalance.
+Example: Concatenating text embed",early|level|dimensionality|fusion|feature|mechanism
+Multimodal ML.pdf,20,multimodal_ml_p20_c0,394,pypdf,definition,"Late Fusion (Decision-level)
+Mechanism: Each modality is processed by an 
+independent model. Only the final 
+scores/predictions are combined (e.g., via 
+averaging or voting or using a meta-learner).
+Pros: Robust; if one modality is noisy (e.g., a blurry 
+image), the other (e.g., clear audio) can still carry 
+the prediction.
+Cons: Loss of correlation, cannot capture cross-
+modal interactions.",modality|late|fusion|decision|level|mechanism
+Multimodal ML.pdf,21,multimodal_ml_p21_c0,440,pypdf,factual,"Intermediate Fusion (Feature-Level)
+Intermediate fusion encodes modalities separately but merges their internal ""hidden"" 
+representations (feature vectors) before the final decision-making layer. 
+Separate encoders; interaction via cross-attention or shared transformer blocks.
+Supports fine-grained alignment (tokens ↔ image patches, frames ↔ sentences).
+Common in modern vision–language models.
+- G",intermediate|fusion|feature|cross|attention|level
+Multimodal ML.pdf,22,multimodal_ml_p22_c0,716,pypdf,factual,"Gated Multimodal Fusion
+Uses a ""gate"" (similar to an LSTM or GRU) to decide how much influence each modality should 
+have on the final feature representation based on the input context.
+Pros:
+- Dynamic Weighting: The model can decide to ""listen"" more to the audio if the image is blurry, 
+or ""look"" more at the video if the audio is noisy.
+- Semantic Alignment: Fusing at higher layers allows the mod",decide|model|more|audio|gated|multimodal
+Multimodal ML.pdf,24,multimodal_ml_p24_c0,649,pypdf,factual,"Cross-Attention
+Instead of a model only looking at its own tokens (Self-Attention), one modality ""queries"" the 
+other.
+Pros:
+- Dynamic Weighting: The model can decide to ""listen"" more to the audio if the image is blurry, 
+or ""look"" more at the video if the audio is noisy.
+- Semantic Alignment: Fusing at higher layers allows the model to connect abstract concepts 
+rather than just raw pixels.
+Cons:",model|attention|more|audio|cross|instead
+RAG.pdf,4,rag_p4_c0,644,pypdf,definition,"0 1
+0 2
+0 3
+0 4
+W h a t  i s  L L M ?
+A large language model (LLM) is a type of artificial intelligence
+program that can recognize and generate text, among other
+tasks.
+LLM are very large models that are pre-trained on vast amounts
+of data.
+Built on transformer architecture is a set of neural network that
+consist of an encoder and a decoder with self-attention
+capabilities.
+It can perform complete",large|tasks|models|language|model|type
+RAG.pdf,5,rag_p5_c0,686,pypdf,factual,"LLM’s And Its Limitations
+--> No
+affect by
+moderator 
+Knowledge Cut-off: Confined to historical training data; struggles with real-time updates.
+Hallucinations: Generates factually incorrect but highly convincing and coherent outputs.
+Lack of Domain Specificity: Outputs generalized answers; blind to private or internal
+organizational data.
+Zero Traceability: Incapable of providing accurate source ",knowledge|data|time|outputs|costs|high
+RAG.pdf,6,rag_p6_c0,703,pypdf,comparison,"RAG stands for Retrieval-Augmented Generation
+W H A T  I S  R A G ?
+It's an advanced technique used in Large Language Models (LLMS)
+RAG combines retrieval and generation processes to enhance the
+capabilities of LLMs
+In RAG, the model retrieves relevant information from a knowledge
+base or external sources
+This retrieved information is then used in conjunction with the model's internal
+knowledge to",llms|generation|knowledge|retrieval|language|model
+RAG.pdf,7,rag_p7_c0,927,pypdf,factual,"T h i s  "" c o n f i d e n t  b u t  w r o n g ""  b e h a v i o r  d a m a g e s  u s e r  t r u s t  i n
+A I  c h a t b o t s .
+T h e  T r u s t  R i s k :  
+O r g a n i z a t i o n s  g a i n  b e t t e r  c o n t r o l  o v e r  t h e  A I ' s  o u t p u t ,  a n d
+u s e r s  g e t  t r a n s p a r e n t ,  t r u s t w o r t h y  r e s p o n s e s .
+T h e  K e y  B e n e f i t s :
+R A G  f i x ",retrieval|augmented|generation|important
+RAG.pdf,13,rag_p13_c0,601,pypdf,architecture,"RAG Components
+An AI framework that allows generative models to access external information beyond their training data.
+Combines the strengths of both retrieval-based and generative methods.
+Uses a retriever to fetch relevant documents from a large knowledge corpus.
+Augments the generative model's understanding to improve the quality of its responses.
+Core RAG components:
+Retriever
+Ranker
+Generato",generative|components|external|data|retriever|relevant
+RAG.pdf,14,rag_p14_c0,558,pypdf,architecture,"Core Concept: Stores data as high-dimensional vectors (Embeddings) to capture semantic
+meaning.
+Search Mechanism: Approximate Nearest Neighbor (ANN) for fast similarity search, unlike
+traditional exact-match SQL databases.
+Crucial Pre-step - Data Chunking: Raw documents must be strategically split into smaller ""chunks""
+before embedding to preserve context quality.
+Architecture Trend: Hybrid Search",search|data|databases|vector|core|concept
+RAG.pdf,15,rag_p15_c0,567,pypdf,architecture,"Core Function: The retriever efficiently identifies and extracts relevant information from vast amounts
+of data.
+How It Works (Relevancy Search): It converts the user's query into a vector representation and
+matches it against vector databases using mathematical calculations to find the most relevant context.
+Real-World Example: If an employee asks an HR chatbot, ""How much annual leave do I have?""",retriever|vector|relevant|relevancy|employee|leave
+RAG.pdf,16,rag_p16_c0,788,pypdf,architecture,"RAG Components
+RAG Generator:
+Functions as the core Large Language Model, such as GPT-4, Gemini, or open-weight models like Llama-3.
+Generates the final output by synthesizing the user's original query with the retrieved and ranked information.
+Ensures the response directly answers the query while accurately incorporating factual, external knowledge.
+Update external data:
+Continually updates docum",updates|information|data|large|query|external
+RAG.pdf,18,rag_p18_c0,775,pypdf,architecture,"1
+User Sends Query
+The user types a message or question into the Chat App.
+This is the trigger that initiates the entire RAG pipeline.
+2
+Chat App Forwards Query
+The Chat App receives the user's query and forwards it to
+the RAG system for processing.
+3
+RAG Retrieves + Generates Response
+The RAG model first retrieves semantically relevant
+documents from the knowledge base, then passes the
+query + re",chat|response|user|query|forwards|retrieves
+RAG.pdf,19,rag_p19_c0,999,pypdf,architecture,"Dimension 🎓 Fine-Tuning 🔍 RAG
+🎯 Objective Adapt a pre-trained LLM to a specific task or domain
+by updating its weights with labeled examples.
+Improve response quality and factual accuracy by
+injecting retrieved external knowledge at generation
+time.
+📦 Training Data Requires curated, task-specific labeled datasets —
+high data preparation, time, and compute cost.
+Uses a pre-trained LLM as-is, paired",knowledge|cost|time|data|fine|tuning
+RAG.pdf,19,rag_p19_c1,256,pypdf,comparison,"💰 Cost High upfront cost (GPU compute, data labeling). Low
+inference overhead.
+Low upfront cost. Retrieval adds modest latency at
+inference time.
+RAG VS FINE-TUNING
+TWO DISTINCT STRATEGIES TO ENHANCE LLM PERFORMANCE — 
+UNDERSTANDING WHEN TO USE EACH IS KEY",cost|upfront|inference|high|compute|data
+RAG.pdf,20,rag_p20_c0,894,pypdf,factual,"🎯
+Enhanced Relevance
+Retrieved external
+knowledge ensures
+contextually accurate and
+on-topic responses.
+✅
+Improved Quality
+Grounding generation in real
+documents reduces
+hallucination and factual
+errors.
+🔄
+Versatility
+Adapts to diverse tasks and
+domains without task-
+specific fine-tuning.
+⚡
+Efficient Retrieval
+Leverages existing
+knowledge bases; eliminates
+the need for large labeled
+datasets.
+🔁
+Dy",knowledge|responses|real|without|retraining|trust
+RAG.pdf,21,rag_p21_c0,833,pypdf,example,"💬
+Conversational AI / Chatbots
+RAG enables chatbots to pull real-time
+information from product docs, FAQs, and
+knowledge bases — delivering accurate,
+contextual replies beyond static training data.
+❓
+Advanced Question Answering
+Retrieves the most relevant passages from large
+document corpora (legal texts, research papers,
+manuals) to construct precise, evidence-backed
+answers.
+✍
+Content Generation",chatbots|real|data|research|evidence|content

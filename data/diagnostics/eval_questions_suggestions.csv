@@ -1,0 +1,4 @@
+question,expected_source,expected_page,suggestion
+What is retrieval-augmented generation?,RAG.pdf,1,expected page may be wrong
+What is federated learning?,Federated Learning AI.pdf,1,expected page may be wrong
+How does multimodal machine learning combine data types?,Multimodal ML.pdf,1,OK

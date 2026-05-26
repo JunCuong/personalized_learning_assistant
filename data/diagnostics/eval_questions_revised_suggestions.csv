@@ -1,0 +1,16 @@
+question,expected_source,expected_page,suggestion
+What problem does RAG address when updating model knowledge is costly or time-consuming?,RAG.pdf,16,OK
+What is retrieval augmented generation and why is it important?,RAG.pdf,13,OK
+How does RAG help generate real-time knowledge-grounded responses without retraining?,RAG.pdf,20,expected page may be wrong
+How can RAG help chatbots use real data or evidence in their responses?,RAG.pdf,21,OK
+How does federated learning keep data on local devices instead of sending it to a central server?,Federated Learning AI.pdf,12,OK
+Why is data privacy an important motivation for federated learning?,Federated Learning AI.pdf,1,expected page may be wrong
+How do clients participate in training a federated learning model?,Federated Learning AI.pdf,9,expected page may be wrong
+How can hospitals use federated learning to train a shared model?,Federated Learning AI.pdf,9,OK
+What is multimodal machine learning?,Multimodal ML.pdf,1,OK
+What is early fusion in multimodal machine learning?,Multimodal ML.pdf,7,expected page may be wrong
+What is intermediate feature fusion in multimodal machine learning?,Multimodal ML.pdf,21,OK
+How does attention help combine information from different modalities?,Multimodal ML.pdf,26,OK
+How can a Flask API load a trained model for prediction?,Module 1 Guidance Notebook.pdf,1,expected source may be wrong
+What is the role of lifespan when loading a model in a FastAPI application?,Module 1 Guidance Notebook.pdf,3,OK
+How does the prediction endpoint process input and return a model result?,Module 1 Guidance Notebook.pdf,3,OK

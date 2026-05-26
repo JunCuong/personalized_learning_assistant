@@ -1,0 +1,44 @@
+{
+  "ocr_dependencies": {
+    "tesseract": {
+      "status": "ok",
+      "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+      "message": "Tesseract configured"
+    },
+    "pytesseract": {
+      "import_ok": true
+    },
+    "pdf2image": {
+      "import_ok": true
+    },
+    "poppler": {
+      "available": true,
+      "path": "C:\\Users\\ADMIN\\Downloads\\poppler-26.02.0\\Library\\bin",
+      "path_used": "C:\\Users\\ADMIN\\Downloads\\poppler-26.02.0\\Library\\bin"
+    },
+    "ready": true,
+    "message": "OCR dependencies ready"
+  },
+  "mode": "quick",
+  "poor_pypdf_pdfs": [
+    "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "Scalable_MLOps_Architecture.pptx.pdf"
+  ],
+  "ocr_test_results": [
+    {
+      "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+      "pages_tested": 2,
+      "full_scan": false,
+      "total_ocr_chars_sample": 837,
+      "ocr_usable": true
+    },
+    {
+      "source": "Scalable_MLOps_Architecture.pptx.pdf",
+      "pages_tested": 2,
+      "full_scan": false,
+      "total_ocr_chars_sample": 1112,
+      "ocr_usable": true
+    }
+  ],
+  "preview_rows": 4
+}

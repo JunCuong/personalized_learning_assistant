@@ -1,0 +1,7 @@
+filename,path,page_count,extracted_char_count_pypdf,extracted_char_count_ocr,total_extracted_char_count,pages_with_pypdf_text,pages_with_ocr_text,pages_without_text,ocr_used,status,warning_reason,pages,char_count,pages_with_text,message
+Federated Learning AI.pdf,D:\Cuong\01_Programming\1_1_Learning\VNUK\4_2\advanced_data_challenge\Final_project\dataset\Federated Learning AI.pdf,16,4880,52,4915,15,1,0,True,OK,,16,4915,16,
+Kolmogorov–Arnold Networks (KAN).pdf.pdf,D:\Cuong\01_Programming\1_1_Learning\VNUK\4_2\advanced_data_challenge\Final_project\dataset\Kolmogorov–Arnold Networks (KAN).pdf.pdf,38,0,16672,16672,0,38,0,True,OK,,38,16672,38,
+Module 1 Guidance Notebook.pdf,D:\Cuong\01_Programming\1_1_Learning\VNUK\4_2\advanced_data_challenge\Final_project\dataset\Module 1 Guidance Notebook.pdf,5,8974,0,8974,5,0,0,False,OK,,5,8974,5,
+Multimodal ML.pdf,D:\Cuong\01_Programming\1_1_Learning\VNUK\4_2\advanced_data_challenge\Final_project\dataset\Multimodal ML.pdf,26,5362,2956,8133,17,9,0,True,OK,,26,8133,26,
+RAG.pdf,D:\Cuong\01_Programming\1_1_Learning\VNUK\4_2\advanced_data_challenge\Final_project\dataset\RAG.pdf,23,9772,379,10098,18,5,0,True,OK,,23,10098,23,
+Scalable_MLOps_Architecture.pptx.pdf,D:\Cuong\01_Programming\1_1_Learning\VNUK\4_2\advanced_data_challenge\Final_project\dataset\Scalable_MLOps_Architecture.pptx.pdf,20,0,13821,13821,0,20,0,True,OK,,20,13821,20,

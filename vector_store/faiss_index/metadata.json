@@ -1,0 +1,1235 @@
+[
+  {
+    "faiss_id": 0,
+    "chunk_id": "federated_learning_ai_p1_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 1,
+    "chunk_index": 0,
+    "chunk_text": "F E D E R A T E D\nL E A R N I N G\nAdvanced Data Challenge\nDANG CONG KHAI\nFEDERATED LEARNING FOR LARGE-SCALE AND PRIVACY-PRESERVING AI\nHOANG MAI DUC KIEN"
+  },
+  {
+    "faiss_id": 1,
+    "chunk_id": "federated_learning_ai_p2_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 2,
+    "chunk_index": 0,
+    "chunk_text": "MOTIVATION FOR FEDERATED LEARNING\nVNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION\nData Transfer Bottleneck: Centralizing massive amounts of edge data\n(e.g., continuous video feeds, billions of interactions) is computationally\nexpensive and strain network bandwidth.\nPrivacy & Security Imperatives: Users and organizations are increasingly\nhesitant to share raw, sensitive data due to the risk of breaches.\nRegulatory Firewalls: Strict data privacy laws and compliance standards\nrestrict the movement of sensitive data across organizational or\ngeographical borders."
+  },
+  {
+    "faiss_id": 2,
+    "chunk_id": "federated_learning_ai_p3_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 3,
+    "chunk_index": 0,
+    "chunk_text": "MOTIVATION FOR FEDERATED LEARNING\nVNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION\nCentralized leads to a reliance on static tiny biased dataset"
+  },
+  {
+    "faiss_id": 3,
+    "chunk_id": "federated_learning_ai_p4_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 4,
+    "chunk_index": 0,
+    "chunk_text": "WHAT IS FEDERATED LEARNING?\nVNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION"
+  },
+  {
+    "faiss_id": 4,
+    "chunk_id": "federated_learning_ai_p5_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 5,
+    "chunk_index": 0,
+    "chunk_text": "WHAT IS FEDERATED LEARNING?\nVNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION\nTraditional deep learning requires copying all data to a central server (like an AWS cluster). Federated\nLearning (FL) reverses this: it leaves the data securely locked at its origin and sends the algorithm to the data.\nFL operates on the priciple of data minimization. Raw data never leaves the\nedge device; only mathematical parameters are exchanged.\nFederated learning is a decentralised machine learning technique where AI models are trained across multiple\ndevices or servers (nodes) holding local data, without exchanging that data. Instead of aggregating raw data\ncentrally, only local model updates (parameters) are sent to a central server to improve a global model.\nFUNCTIONAL ROLES: \nDATA MINIMIZATION"
+  },
+  {
+    "faiss_id": 5,
+    "chunk_id": "federated_learning_ai_p6_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 6,
+    "chunk_index": 0,
+    "chunk_text": "WHAT IS FEDERATED LEARNING?\nVNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION"
+  },
+  {
+    "faiss_id": 6,
+    "chunk_id": "federated_learning_ai_p7_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 7,
+    "chunk_index": 0,
+    "chunk_text": "WHY USE FEDERATED LEARNING\nUser privacy\nTrain models without sharing data\nData sharing agreements are comple\nRicher set of potential system configurations\nData, compute and algorithms can be distributed and decentralized\nCooperation between insitutions and entities (even those that compete)\nLower trust requirements (not just between users)\nUtilize data from the edge\nLower requirement for infrastructure"
+  },
+  {
+    "faiss_id": 7,
+    "chunk_id": "federated_learning_ai_p8_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 8,
+    "chunk_index": 0,
+    "chunk_text": "TYPES OF FEDERATED LEARNING \n BY DEPLOYMENT ARCHITECTURE\nInvolves thousands to millions of highly constrained\nedge devices interacting over unreliable networks.\nMobile keyboards train next-word prediction models\nlocally based on user typing habits, without\nuploading private text messages.\nPersonalization of Speech Recognition\nCROSS-DEVICE"
+  },
+  {
+    "faiss_id": 8,
+    "chunk_id": "federated_learning_ai_p9_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 9,
+    "chunk_index": 0,
+    "chunk_text": "TYPES OF FEDERATED LEARNING \n BY DEPLOYMENT ARCHITECTURE\nInvolves a smaller number of highly resourced, reliable\nnodes separated by institutional firewalls.\nSeveral hospitals collaborate to train a model that decodes fMRI brain\nsignals to generate images. The hospitals jointly train the architecture\nwhile keeping the raw patient scans entirely on their own local servers.\nHospitals can use this federated learning to train a model to\ndetect cancer based on the information from all of the hospitals.\nCROSS-SILO"
+  },
+  {
+    "faiss_id": 9,
+    "chunk_id": "federated_learning_ai_p10_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 10,
+    "chunk_index": 0,
+    "chunk_text": "Horizontal  Federated Learning Vertical  Federated Learning\nSame features, different users\nExamples: \nSmartphone keyboards\nprediction\nCancer prediction across\nhospitals\nSame users, different features\nExamples: \nPredict cancer risk based on hospital data +\ngenetic lab data\nCredit scoring: banks + e-commerce\nTYPES OF FEDERATED LEARNING \n BY DATA DISTRIBUTION"
+  },
+  {
+    "faiss_id": 10,
+    "chunk_id": "federated_learning_ai_p11_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 11,
+    "chunk_index": 0,
+    "chunk_text": "TYPES OF FEDERATED LEARNING \n BY DATA DISTRIBUTION\nHorizontal\nFederated Learning\nTraining process \nLocal training"
+  },
+  {
+    "faiss_id": 11,
+    "chunk_id": "federated_learning_ai_p12_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 12,
+    "chunk_index": 0,
+    "chunk_text": "TYPES OF FEDERATED LEARNING \n BY DATA DISTRIBUTION\nVertical  \nFederated Learning\nTraining process"
+  },
+  {
+    "faiss_id": 12,
+    "chunk_id": "federated_learning_ai_p13_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 13,
+    "chunk_index": 0,
+    "chunk_text": "TRAINING ON LOW COMPUTATIONAL-RESOURCE DEVICE\nVNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION\nLORA\nLoRA(Low-Rank Adaption) from https://viblo.asia/p/llm-101-thao-luan-ve-finetune-model-llm-su-dung-lora-low-rank-adaptation-Yym40YQWJ91"
+  },
+  {
+    "faiss_id": 13,
+    "chunk_id": "federated_learning_ai_p14_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 14,
+    "chunk_index": 0,
+    "chunk_text": "DISADVANTAGES\nVNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION\nDevice heterogeneity: each device has different computing power which makes it\nhard to train model on each device\nNetwork: Dropped clients, slow wide-area networks\nData is Non-IID:(Not Independently and Identically Distributed): Some clients\nmight heavily skew the model toward their specific, highly localized data\ndistributions.\nPoisoning Attacks (Robustness): Malicious clients submitting corrupted weight\nupdates to intentionally degrade the model or introduce backdoors."
+  },
+  {
+    "faiss_id": 14,
+    "chunk_id": "federated_learning_ai_p15_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 15,
+    "chunk_index": 0,
+    "chunk_text": "MITIGATION APPROACHES\nVNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION\nSynthetic data generation: rebalance class distributions via oversampling or under-\nsampling, SMOTE (non-IID data distributions)\nWeight adjustment during model aggregation: instead of weighting only on dataset\nsize, we also give under-represented clients more influence\nAggregation algorithm: Median aggregation, trimmed mean to mitigate poisoned\nattack"
+  },
+  {
+    "faiss_id": 15,
+    "chunk_id": "federated_learning_ai_p16_c0",
+    "doc_id": "federated_learning_ai",
+    "source": "Federated Learning AI.pdf",
+    "page": 16,
+    "chunk_index": 0,
+    "chunk_text": "VN-UK\n@ Institute for Research\n& Executive Education"
+  },
+  {
+    "faiss_id": 16,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p1_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 1,
+    "chunk_index": 0,
+    "chunk_text": "Kolmogorov-Arnold Networks\n(KAN)\n\nA New Paradigm for Neural Function Learning\n\nThe Shift: Moving from learnable linear weights to learnable nonlinear activation functions\n\nThe Goal: Achieving superior accuracy and interpretability in scientific machine learning (AI + Science)\n\nPresenters: Department of Artificial Intelligence\n\nDate: April 2026\n\nSpeaker Note: Welcome everyone. Today we discuss a fundamental rethink of the MLP, inspired by a 1950s mathematical theorem that might just redefine"
+  },
+  {
+    "faiss_id": 17,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p2_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 2,
+    "chunk_index": 0,
+    "chunk_text": "Presentation Outline\n\n@ @ EF\n\n1. Problem & 2. Key Insights & 3. Theory & Math\nMotivation Core Idea The Kolmogorov-Arnold\nThe \"Black Box\" of MLPs Learnable edges and moving Representation Theorem &\nand the limitations of existing activations from nodes to architecture formulation.\narchitectures. connections.\n\na\n\n4. Performance &\nApplications"
+  },
+  {
+    "faiss_id": 18,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p3_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 3,
+    "chunk_index": 0,
+    "chunk_text": "The Problem —- The \"Black Box\" of MLPs\n\n»= Dominance: MLPs are the foundational blocks\n\nof everything from Classifiers to Transformers.\n\n= The Interpretability Gap: In architectures like\nTransformers, MLPs consume most parameters\nbut remain uninterpretable without heavy post-hoc\n\nanalysis.\n\n= Scientific Accuracy: Standard MLPs often\nstruggle with high-precision function fitting\n\nrequired in physics and mathematics.\n\nSpeaker Note: We rely on MLPs everywhere, yet they are inefficient at approximating univariate functions and their internal \"logic\" is notoriously hard to\n\ndecode."
+  },
+  {
+    "faiss_id": 19,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p4_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 4,
+    "chunk_index": 0,
+    "chunk_text": "Motivation — Why KAN?\n\n» Why now?: Scientists need models that \"speak\" the language of functions, not just weight matrices.\n\n= The Accuracy Ceiling: MLPs suffer from slow neural scaling laws (N~* or worse), making high-precision\n\nscience computationally expensive.\n\n= The Goal: A model that is intrinsically interpretable and breaks the curse of dimensionality for compositional\n\nfunctions.\n\nSpeaker Note: We need a model that doesn't just predict, but helps us discover physical laws."
+  },
+  {
+    "faiss_id": 20,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p5_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 5,
+    "chunk_index": 0,
+    "chunk_text": "Limitation of Existing Methods (MLPs)\n\n= Fixed Activations: MLPs use fixed non-linearities (ReLU, GeLU) on nodes; all learning happens in linear\n\nweights.\n\n= Univariate Inefficiency: MLPs are inefficient at approximating simple univariate functions (e.g., exp or sin)\n\ncompared to splines.\n\n= Global Plasticity: MLPs have global weights; updating for a new task often destroys previous knowledge\n(Catastrophic Forgetting).\n\nSpeaker Note: MLPs treat linear transformations and non-linearities as separate entities. This separation limits their local adaptability."
+  },
+  {
+    "faiss_id": 21,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p6_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 6,
+    "chunk_index": 0,
+    "chunk_text": "Key Insight — External vs. Internal DOF\n\nExternal Degrees of Freedom Internal Degrees of Freedom\n\nThe computational graph and node connectivity. The shape of the activation functions\n\nThis is what standard MLPs possess via their themselves. This is what mathematical Splines\nweight matrices. possess.\n\n=» KAN’s Strength: KANs leverage both—Compositional structures (External) and Optimized Univariate\n\nfunctions (Internal).\n\nSpeaker Note: Think of MLPs as having fixed tools but flexible connections. KANs give us flexible tools and flexible connections."
+  },
+  {
+    "faiss_id": 22,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p7_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 7,
+    "chunk_index": 0,
+    "chunk_text": "Core Idea — Learnable Edges\n\n=» The Paradigm Shift: Replace every linear\n\nweight w with a learnable univariate function @.\n= Mechanism: Nodes no longer \"activate\"; they\n\nsimply sum incoming signals.\n\ns Intuition: Instead of a matrix of numbers, the\n\nnetwork is a matrix of trainable curves. vA\n\nSpeaker Note: This is the \"Eureka\" moment of the paper. We move the complexity from the node to the edge.\n\noo"
+  },
+  {
+    "faiss_id": 23,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p8_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 8,
+    "chunk_index": 0,
+    "chunk_text": "Core Idea — Summarized\n\nMLP(x) KAN(x)\nW o o(x) (x)\n(Linear Weight — Fixed Activation) (Learnable Nonlinear Activation Function)\n\n=» So What?: This allows the model to learn the \"shape\" of the data distribution directly on the edges.\n\nSpeaker Note: By making activations learnable, the network can adapt its very \"logic\" to the specific function it is trying to fit."
+  },
+  {
+    "faiss_id": 24,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p9_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 9,
+    "chunk_index": 0,
+    "chunk_text": "Theory -— Kolmogorov-Arnold Representation Theorem\n\n= The Theorem: Any multivariate continuous function can be represented as a finite composition of univariate\nfunctions and addition.\n\n» Mathematical Breakthrough: It proves that the \"only true multivariate function is addition\".\n\n= Original Form (Depth-2):\n\n2n + 1\nI(x) = Y ®, (\nq=1\n\nSpeaker Note: This theorem was once considered \"practically useless\" due to non-smooth functions, but KANs modernize it with deep architectures."
+  },
+  {
+    "faiss_id": 25,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p10_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 10,
+    "chunk_index": 0,
+    "chunk_text": "Theory — Breaking the Curse of Dimensionality\n\n= Compositional Sparsity: If a function has a smooth KA representation, KANs can fit it with an error rate\n\nindependent of the dimension.\n\n= Scaling Laws: KANSs achieve a scaling exponent of « = k+1 (where k is spline order), outperforming the\nstandard 1/d scaling of MLPs.\n\n= Technical bound:\n\n| £- fxan || < CG* **”\nWhere G is grid size.\n\nSpeaker Note: This is the mathematical \"teeth\" of KAN. It scales much faster than MLPs as you increase parameters.\n\n10"
+  },
+  {
+    "faiss_id": 26,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p11_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 11,
+    "chunk_index": 0,
+    "chunk_text": "Theory — Why This Works\n\n© Hidden Assumption\n\nMost functions in science have smooth, sparse compositional structures.\n8 Physics-Inspired\n\nKANSs care about \"typical\" cases in the physical world rather than mathematical worst-case\n\nscenarios.\n\nSpeaker Note: We are betting that the universe is \"smooth\" enough for KA representations to be learnable.\n\n11"
+  },
+  {
+    "faiss_id": 27,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p12_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 12,
+    "chunk_index": 0,
+    "chunk_text": "Intuition — The Housing Price Analogy\n\nft “Lr\n\n1. Multivariate Input 2. KAN Approach\nBedrooms, Square Footage, One learnable curve for\nAge of the house. \"Bedroom Impact,\" one for\n\n“Area Impact,\" etc.\n\nSpeaker Note: Instead of a messy multi-variable equation, KAN breaks the problem into single-variable \"impact curves\" that are easy to see and adjust.\n\n3. Aggregation\n\nSum these impacts, then pass\nthrough a final \"Price\n\nAdjustment\" curve.\n\n12"
+  },
+  {
+    "faiss_id": 28,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p13_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 13,
+    "chunk_index": 0,
+    "chunk_text": "Intuition — Analogy of \"Flexible Tools\"\n\nMLP Factory\n\nA factory where the machines (nodes) are fixed,\nbut you can change how much material (weight)\n\nflows between them.\n\nSpeaker Note: KAN gives the network the ability to \"evolve\" its processing units.\n\nI\n\nKAN Factory\n\nA factory where the machines themselves can be\nreshaped (splines) to perfectly handle the\n\nspecific material flowing through them.\n\n13"
+  },
+  {
+    "faiss_id": 29,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p14_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 14,
+    "chunk_index": 0,
+    "chunk_text": "Key Insight —- Why KAN Its Interpretable\n\n= Visual Transparency: We can literally plot the\ncurves on the edges to see what the network has\nlearned (e.g., it learned a sine wave or a log\n\nfunction).\n\n= Symbolic Snapping: We can \"snap\" these\n\nnumerical curves into symbolic formulas like\n\nexp(X).\n\nSpeaker Note: We are opening the \"brain\" of the AI and looking at its thoughts as functional graphs.\n\n14"
+  },
+  {
+    "faiss_id": 30,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p15_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 15,
+    "chunk_index": 0,
+    "chunk_text": "Mathematical Formulation —- The KAN Layer\n\n= Definition: A KAN layer is a matrix of 1D functions ® = {qq p}.\n» Input/Output: For n,, inputs and n,,, outputs, we have n,, < No, Univariate functions.\n\n= Node Activation:\n\n3\n\nNy\n\nSpeaker Note: Notice there is no weight matrix W and no bias b. The \"weight\" is entirely contained within the function @.\n\n15"
+  },
+  {
+    "faiss_id": 31,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p16_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 16,
+    "chunk_index": 0,
+    "chunk_text": "Mathematical Formulation — Deep KAN\n\n= Composition: A general KAN is L layers deep:\n\nKAN (x) = (®,.; ° ®p_2 © +\" oD )x\n\n= Differentiability: Every component is differentiable, enabling standard backpropagation.\n\n= Comparison: While MLPs stack W and o separately, KANs stack functional matrices ®,.\n\nSpeaker Note: This allows us to build \"Deep Kolmogorov-Arnold\" models, something the original theorem didn't envision.\n\n16"
+  },
+  {
+    "faiss_id": 32,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p17_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 17,
+    "chunk_index": 0,
+    "chunk_text": "Mathematical Formulation — The Activation (x)\n\n= Residual Structure: The core function combines a basis with a spline.\n\noO(x) =w,b( x) +w, spline (x )\n\n=» Basis Function: b(x) = SiLU(x) (used for global structure)\n\n» Spline Function: Linear combination of B-splines: > c; B;(x)\n\nSpeaker Note: We keep a SiLU basis to ensure the network can still behave like a standard MLP if needed, while the spline provides the \"fine-tuning.\"\n\n17"
+  },
+  {
+    "faiss_id": 33,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p18_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 18,
+    "chunk_index": 0,
+    "chunk_text": "Architecture — Flow Model\n\n= Grid Points: Splines are defined on a grid of G intervals.\n\n=» Local Control: B-splines only change locally, meaning adjusting one part of the curve doesn't affect distant\nparts.\n\n» Shape Notation: [no, nj, ..., ny] (represents the number of nodes per layer).\n\nSpeaker Note: The architecture is fully connected, but the \"weights\" are dynamic local curves.\n\n18"
+  },
+  {
+    "faiss_id": 34,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p19_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 19,
+    "chunk_index": 0,
+    "chunk_text": "Architecture — B-Splines as Activations\n\n» Parameterization: B,(x) are basis functions; c;\n\nare the learnable coefficients.\n\n= Continuity: Splines are smooth and\n\ndifferentiable, crucial for gradient descent.\n\n= Grid Extension: We can increase the number of\n\ngrid points G during training to increase resolution\n\nOcontrol point\n\nwithout starting over.\n\nSpeaker Note: Splines are the \"secret sauce\" that allows KANs to be both accurate and stable.\n\n@® knot\n\n19"
+  },
+  {
+    "faiss_id": 35,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p20_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 20,
+    "chunk_index": 0,
+    "chunk_text": "Architecture — Sparsification Mechanism\n\nL1 Regularization\n\nApplied to the average\nmagnitude of the activation\n\nfunctions.\n\nSpeaker Note: This is how KAN identifies which variables actually matter in a 100-dimensional dataset.\n\nHK\n\nEntropy\nRegularization\n\nUsed to prune unnecessary\n\nfunctional paths.\n\neR\n\nVisual Result\n\nUnimportant edges fade\naway, leaving a \"skeleton\" of\nthe true functional\n\nrelationship.\n\n20"
+  },
+  {
+    "faiss_id": 36,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p21_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 21,
+    "chunk_index": 0,
+    "chunk_text": "Architecture — Symbolic Snapping Interface\n\n=» The \"Surgery\": Users can manually set a learned spline to a symbolic function (e.g.,\n\nfix_symbolic(1,i,j, Sin’ )).\n\n= Human-in-the-loop: The model suggests symbolic candidates, and the human decides which ones make\n\nscientific sense.\n\nems\n\nSpeaker Note: This transforms the researcher from a \"data labeler\" into a \"collaborator\" with the AI.\n\n21"
+  },
+  {
+    "faiss_id": 37,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p22_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 22,
+    "chunk_index": 0,
+    "chunk_text": "Training — Loss and Optimization\n= Total Loss:\n\nLiotal = Lprea + A CH, » |D|, TH, ~S(@) )\n\n=» Optimizer: LBFGS is often used for high-precision scientific tasks.\n\n« Initialize: Weights w, * 1, splines * 0 (starting near a standard MLP-like state).\n\nSpeaker Note: We balance prediction accuracy with the \"simplicity\" (sparsity) of the resulting functional graph.\n\n22"
+  },
+  {
+    "faiss_id": 38,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p23_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 23,
+    "chunk_index": 0,
+    "chunk_text": "Training — Grid Extension Strategy\n\n=» Step-wise refinement: Start with a coarse grid\n\nox«KKKKKKK\nPLRRRLK\nSKS\noxSKK\noxKS\n\nx\nx\neres\n\n(e.g., G=3) for speed, then expand to G=10, 20,\n\nO\n\n5\nexXS\n\n&dots; 1000 for precision.\n\nSS\nxs\nSS\n\n» Least Squares: New grid coefficients are\n\nx\nxs\nSS\n\n“\n\n%\n‘\n\nes\n\ninitialized by fitting to the old, coarser spline.\n\no,\n0\n\nx\n\nox\nS\n\nx\n\n» Efficiency: No need to retrain from scratch when\n\nSO\neecate\n266\n\nincreasing model capacity.\n\ncents cee\nRRR RK\n\noS OSS\narecececeteec SOS\n\ny,\n\nSpeaker Note: This \"fine-graining\" is unique to KANs and is much more efficient than scaling up MLPs.\n\n23"
+  },
+  {
+    "faiss_id": 39,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p24_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 24,
+    "chunk_index": 0,
+    "chunk_text": "Training — Learnable Components\n\n= What is trained?:\n\n= B-spline coefficients (c;)\n=» Spline scales (w,)\n= Basis scales (Wy)\n\n= Batching Issue: Currently, different edges having different functions makes GPU batching difficult.\n\nSpeaker Note: While the math is elegant, the implementation requires careful engineering to match MLP speeds.\n\n24"
+  },
+  {
+    "faiss_id": 40,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p25_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 25,
+    "chunk_index": 0,
+    "chunk_text": "Key Property — Expressiveness\n\n= Pareto Frontier: KANs consistently achieve\n\nlower loss with fewer parameters than MLPs\n\nacross special functions and physics datasets. aA 8 co, & | FG H\n1 Month Advertising Items sold\n—— $45 1% Scatter chart\ni . - : : : 3 Feb $55 25 oO\n= High Dimension: A KAN can fit complex high- 33> = = . }\n; ; ; 5 Apr $75 34 e eT\ndimensional functions where MLPs plateau. 6 (May $90 41 a | °\n7 Jun $100 47 - * .\n8 Jul $100 50 = 20 =\"\n9 Aug $95 46 10\n10 Sep $88 37 ‘\n11 |Oct $50 22 $40 $60 $80 $100\n12 |Nov $45 20 Advertising\n13 |Dec $58 30\n\nSpeaker Note: KANs don't just win on small tasks; they scale better as the problem gets harder.\n\n$120\n\n29"
+  },
+  {
+    "faiss_id": 41,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p26_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 26,
+    "chunk_index": 0,
+    "chunk_text": "Key Property — Stability and Continual Learning\n\n= Local Plasticity: Because splines are local, new data only affects nearby control points.\n\n= No Forgetting: In sequential training, KANs preserve old knowledge while learning new tasks, unlike MLPs\n\nwhich \"overwrite\" globally.\n\nSpeaker Note: This solves one of the oldest problems in AI: Catastrophic Forgetting.\n\n26"
+  },
+  {
+    "faiss_id": 42,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p27_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 27,
+    "chunk_index": 0,
+    "chunk_text": "Key Property -— Generalization\n\n= Small Models: Smaller KANs often generalize better than larger ones because they capture the \"minimal\"\n\nsymbolic structure.\n\n= Symbolic Alignment: KANs naturally align with the symbolic functions governing the natural world.\n\nSpeaker Note: KAN finds the \"simplest\" explanation, which is usually the most generalizable one.\n\n2/"
+  },
+  {
+    "faiss_id": 43,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p28_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 28,
+    "chunk_index": 0,
+    "chunk_text": "Comparison — KAN vs. MLP (Architecture)\n\nActivations Fixed, on Nodes Learnable, on Edges\n\nLinear Weights Learnable Matrix None (absorbed in functions)\nComplexity O(N?L) parameters O(N7LG) parameters\nActivation Basis Global (ReLU, SiLU) Local (Splines)\n\nSpeaker Note: KAN has more parameters per edge (G), but usually requires a much smaller network width N.\n\n28"
+  },
+  {
+    "faiss_id": 44,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p29_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 29,
+    "chunk_index": 0,
+    "chunk_text": "Comparison — Performance Trade-offs\n\n@ Q\n\nAccuracy Speed Interpretability\nKAN > MLP (especially for MLP >> KAN (10x faster to KAN >> MLP (intrinsic vs.\nscience and mathematics) train due to GPU post-analysis)\n\noptimization)\n\nSpeaker Note: Choose KAN for accuracy and insight; choose MLP for raw training speed and massive scale.\n\n29"
+  },
+  {
+    "faiss_id": 45,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p30_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 30,
+    "chunk_index": 0,
+    "chunk_text": "Critical Thinking - Trade-off Reality\n\n= The \"Slow\" Penalty: Different functions on different edges prevent vectorized batch computation.\n= The \"Grid\" Penalty: High grid resolution G can lead to bad loss landscapes and optimization stalls.\n\n= Insight: KAN is currently a Specialist, not yet a Generalist for massive LLMs.\n\nSpeaker Note: Don't replace your LLM's MLP layers with KANs just yet—unless you have a month to train it!\n\n30"
+  },
+  {
+    "faiss_id": 46,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p31_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 31,
+    "chunk_index": 0,
+    "chunk_text": "Applications — Al + Science\n\nVx\n\nMathematics\n\nRediscoving knot theory\ninvariants and identifying\n\nimportant variables.\n\nSpeaker Note: KAN is essentially a \"Symbolic Regression\" tool that actually works on complex data.\n\n:°:\n\nPhysics\n\nSolving the Anderson\nLocalization phase transition\n\nand extracting mobility edges.\n\n[<>]\n\nPDE Solving\n\nKAWNSs solve Poisson\nequations 100x more\naccurately than MLPs with\n\n100x fewer parameters.\n\n31"
+  },
+  {
+    "faiss_id": 47,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p32_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 32,
+    "chunk_index": 0,
+    "chunk_text": "Applications —- Scientific Discovery\n\n» Case Study: Relativistic velocity addition:\n\nf(u,v) = Tw\n\n=» Result: KAN auto-discovered the \"Rapidity\" concept (arctanh) without being told.\n\n= So What?: The model can \"teach\" the scientist new mathematical representations.\n\nSpeaker Note: This is the \"AI Scientist Collaboration\" paradigm in action.\n\n32"
+  },
+  {
+    "faiss_id": 48,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p33_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 33,
+    "chunk_index": 0,
+    "chunk_text": "Limitations — The Efficiency Wall\n\n» GPU Batching: Current hardware is optimized for W - x, not for heterogeneous functional evaluations.\n\n= Hyperparameter Sensitivity: Regularization A and grid size G significantly impact the \"interpretability\" of\n\nthe result.\n\nSpeaker Note: Engineering is the biggest hurdle. We need custom kernels to make KANs truly competitive in scale.\n\na3"
+  },
+  {
+    "faiss_id": 49,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p34_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 34,
+    "chunk_index": 0,
+    "chunk_text": "Limitations -— Theoretical Gaps\n\n= Depth-2 vs. Deep: The original theorem only covers depth-2; the math for \"Deep KANs'\" is still being\ndeveloped.\n\n= Complexity: For high-dimensional non-compositional data, splines may still suffer from the curse of\n\ndimensionality.\n\nSpeaker Note: We have empirical success, but the full mathematical theory for deep KANs is an open research field.\n\n34"
+  },
+  {
+    "faiss_id": 50,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p35_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 35,
+    "chunk_index": 0,
+    "chunk_text": "Open Questions & Research Directions\n\nST ad C)-\n\nKansformers Hybrid Models GPU Kernels\n\nCan we replace MLPs in Combining KAN layers with Developing specialized\nTransformers to make MLP layers to balance speed hardware acceleration for\nattention layers more and accuracy. spline-based networks.\ninterpretable?\n\nSpeaker Note: This is a brand new field. There are dozens of PhD theses waiting to be written here."
+  },
+  {
+    "faiss_id": 51,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p36_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 36,
+    "chunk_index": 0,
+    "chunk_text": "Conclusion\n\n» 1. Interpretability: KAN turns the \"Black Box\" into a \"Language of Functions\".\n» 2. AcCCuracy: Superior Pareto frontiers for scientific and mathematical tasks.\n\n» 3. Collaboration: KAN is a \"tool for scientists,\" not just a \"model for data\".\n\nFinal Thought: If you care about why the model works, use KAN.\n\nSpeaker Note: Thank you for your time. KAN is not just an alternative; it's a new way to think about how machines learn.\n\n36"
+  },
+  {
+    "faiss_id": 52,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p37_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 37,
+    "chunk_index": 0,
+    "chunk_text": "References\n\n« Liu, Ziming, et al. \"KAN: Kolmogorov-Amold Networks.\" arXiv preprint (2024).\n\n= Kolmogorov, Andrei N. \"On the representation of continuous functions of many variables by superposition of\n\ncontinuous functions of one variable and addition.\" (1957).\n\n» Arnold, Vladimir I. \"On functions of three variables.\" (1957).\n\nSf"
+  },
+  {
+    "faiss_id": 53,
+    "chunk_id": "kolmogorov_arnold_networks_kan_pdf_p38_c0",
+    "doc_id": "kolmogorov_arnold_networks_kan_pdf",
+    "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+    "page": 38,
+    "chunk_index": 0,
+    "chunk_text": "Image Sources\n\nhttps://images.presentationgo.com/2025/04/abstract-neural-network-background.png\n\nSource: www.presentationgo.com\n\nhttps://catlikecoding.com/unity/tutorials/curves-and-splines/tutorial-image.jpg\n\nSource: catlikecoding.com\n\nnn ¥ < https://wp-assets. highcharts.com/www-highcharts-com/blog/wp-content/uploads/2019/07/19164845/netwrok-graph1.jpg\nie xO Source: www.highcharts.com\n\nhttps://media.istockphoto.com/id/147 1886535/vector/gaussian-or-normal-distribution-graph-bell-shaped-curve-template-for-statistics-or-logistic.jpg?s=612x612&w=0&k=20&c=aUPNUp8!G5\nuHO-OtOTpsdXyaBaTnoC712gTMrseTbEE=\n\nSource: www.istockphoto.com\n\nhttps://cdn.vectorstock.com/i/1000v/90/61/lattice-texture-geometric-grid-mesh-abstract-vector-27359061.jpg\n\nSource: www.vectorstock.com\n\n: Zi https://cdn.ablebits.com/_img-blog/scatter-graph/scatter-plot-excel.png\n\nwy! Source: www.ablebits.com"
+  },
+  {
+    "faiss_id": 54,
+    "chunk_id": "module_1_guidance_notebook_p1_c0",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 1,
+    "chunk_index": 0,
+    "chunk_text": "From  Model  Artifacts  to  Production  APIs  \nDomain:  Bioactivity  Prediction  of  Chemical  Compounds  This  document  serves  as  your  technical  roadmap  for  Assignment  1 .  We  assume  you  already  \nhave\n \na\n \ntrained\n \nmodel\n \nartifact\n \n(e.g.,\n \nbioactivity_model.joblib)\n \nthat\n \ntakes\n \nmolecular\n \ndescriptors\n \nor\n \nSMILES\n \nstrings\n \nas\n \ninput.\n \n🛠  Step  0:  Engineering  Environment  Setup  \nBefore  writing  code,  ensure  your  environment  is  configured.  #  Core  serving  and  validation  stack  \npip\n \ninstall\n \nflask\n \nfastapi\n \nuvicorn\n \njoblib\n \nscikit-learn\n \nhttpx\n \nstreamlit\n \n \n \n🏺  Step  2:  The  Legacy  Approach  (Flask)  \nFlask  uses  the  WSGI  (Web  Server  Gateway  Interface) .  It  follows  a  synchronous,  blocking  \npattern.\n \nIn\n \nthis\n \nimplementation,\n \nyou\n \nare\n \nthe\n \n\"Human\n \nFirewall\"—you\n \nmust\n \nmanually\n \nvalidate\n \neverything\n \nbefore\n \nit\n \ntouches\n \nyour\n \nmodel.\n \n📝  Flask  Implementation  Guidance  \n●  Manual  Validation:  You  canno"
+  },
+  {
+    "faiss_id": 55,
+    "chunk_id": "module_1_guidance_notebook_p1_c1",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 1,
+    "chunk_index": 1,
+    "chunk_text": ",\n \nyou\n \nare\n \nthe\n \n\"Human\n \nFirewall\"—you\n \nmust\n \nmanually\n \nvalidate\n \neverything\n \nbefore\n \nit\n \ntouches\n \nyour\n \nmodel.\n \n📝  Flask  Implementation  Guidance  \n●  Manual  Validation:  You  cannot  trust  the  user  input.  You  must  write  if/else  logic  to  check  \nrequest.get_json().\n ●  The  Global  Load:  In  Flask,  we  load  the  model  once  at  the  top  of  the  script  so  it  persists  \nin\n \nmemory.\n Code  Structure  for  flask_app.py:  import  os  \nimport\n \njoblib\n \nfrom\n \nflask\n \nimport\n \nFlask,\n \nrequest,\n \njsonify\n \n \napp\n \n=\n \nFlask(__name__)\n \n \n#\n \n1.\n \nVerification\n \n&\n \nGlobal\n \nLoading\n \nMODEL_PATH\n \n=\n \n'bioactivity_model.joblib'\n \nif\n \nnot\n \nos.path.exists(MODEL_PATH):\n \n    \nraise\n \nFileNotFoundError(f\"Missing\n \nmodel\n \nartifact\n \nat\n \n{MODEL_PATH}\")\n \n \n#\n \nLoading\n \nglobally\n \n(Legacy\n \nPattern)\n \nmodel\n \n=\n \njoblib.load(MODEL_PATH)\n \n \n@app.route('/predict',\n \nmethods=['POST'])\n \ndef\n \npredict():"
+  },
+  {
+    "faiss_id": 56,
+    "chunk_id": "module_1_guidance_notebook_p2_c0",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 2,
+    "chunk_index": 0,
+    "chunk_text": "#  2.  Manual  Defensive  Layer  (The  Firewall)  \n    \ndata\n \n=\n \nrequest.get_json()\n \n    \nif\n \nnot\n \ndata\n \nor\n \n'smiles'\n \nnot\n \nin\n \ndata:\n \n        \nreturn\n \njsonify({\"error\":\n \n\"Bad\n \nRequest:\n \n'smiles'\n \nfield\n \nis\n \nrequired\"}),\n \n400\n \n    \n \n    \nsmiles_string\n \n=\n \ndata['smiles']\n \n    \n \n    \n#\n \n3.\n \nManual\n \nType\n \n&\n \nContent\n \nValidation\n \n    \nif\n \nnot\n \nisinstance(smiles_string,\n \nstr)\n \nor\n \nlen(smiles_string.strip())\n \n<\n \n3:\n \n        \nreturn\n \njsonify({\"error\":\n \n\"Validation\n \nError:\n \n'smiles'\n \nmust\n \nbe\n \na\n \nvalid\n \nstring\"}),\n \n400\n \n \n    \n#\n \n4.\n \nSynchronous\n \nInference\n \n(Blocks\n \nthis\n \nworker\n \nthread)\n \n    \n#\n \nThe\n \nmodel\n \nexpects\n \na\n \nlist/array\n \nof\n \nSMILES\n \nstrings\n \n    \nprediction\n \n=\n \nmodel.predict([smiles_string])[0]\n \n    \nresult\n \n=\n \n\"Active\"\n \nif\n \nprediction\n \n==\n \n1\n \nelse\n \n\"Inactive\"\n \n    \n \n    \nreturn\n \njsonify({\n \n        \n\"smiles\":\n \nsmiles_string,\n \n        \n\"activity\":\n \nresult,\n \n        \n\"engine\":\n \n\"Flask/WSGI\""
+  },
+  {
+    "faiss_id": 57,
+    "chunk_id": "module_1_guidance_notebook_p2_c1",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 2,
+    "chunk_index": 1,
+    "chunk_text": "tive\"\n \nif\n \nprediction\n \n==\n \n1\n \nelse\n \n\"Inactive\"\n \n    \n \n    \nreturn\n \njsonify({\n \n        \n\"smiles\":\n \nsmiles_string,\n \n        \n\"activity\":\n \nresult,\n \n        \n\"engine\":\n \n\"Flask/WSGI\"\n \n    \n})\n \n \nif\n \n__name__\n \n==\n \n'__main__':\n \n    \napp.run(host='0.0.0.0',\n \nport=5000)\n \n \n \n⚡  Step  3:  The  Modern  Approach  (FastAPI)  \nFastAPI  uses  ASGI  (Asynchronous  Server  Gateway  Interface) .  It  automates  the  \"Firewall\"  \nlogic\n \nusing\n \nPydantic\n \nand\n \nmanages\n \nthe\n \nmodel\n \nlifecycle\n \nusing\n \nthe\n \nLifespan\n \npattern.\n \n📝  FastAPI  Implementation  Guidance  \n●  The  Contract:  You  define  a  BaseModel.  FastAPI  automatically  returns  a  422  \nUnprocessable\n \nEntity\n \nerror\n \nif\n \nthe\n \nSMILES\n \nstring\n \nis\n \nmalformed\n \nor\n \nmissing.\n ●  Lifespan  Pattern:  This  is  the  professional  way  to  load  heavy  assets.  The  model  is  \nloaded\n \nonce\n \non\n \nstartup\n \nand\n \nstored\n \nin\n \napp.state.\n ●  Background  Tasks:  You  can  trigger  side-effects  (like  logging)"
+  },
+  {
+    "faiss_id": 58,
+    "chunk_id": "module_1_guidance_notebook_p2_c2",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 2,
+    "chunk_index": 2,
+    "chunk_text": "e  professional  way  to  load  heavy  assets.  The  model  is  \nloaded\n \nonce\n \non\n \nstartup\n \nand\n \nstored\n \nin\n \napp.state.\n ●  Background  Tasks:  You  can  trigger  side-effects  (like  logging)  without  making  the  user  \nwait\n \nfor\n \nthem\n \nto\n \nfinish.\n Code  Structure  for  fastapi_app.py:  import  joblib  \nimport\n \ntime\n \nfrom\n \nfastapi\n \nimport\n \nFastAPI,\n \nRequest,\n \nHTTPException,\n \nBackgroundTasks"
+  },
+  {
+    "faiss_id": 59,
+    "chunk_id": "module_1_guidance_notebook_p3_c0",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 3,
+    "chunk_index": 0,
+    "chunk_text": "from  pydantic  import  BaseModel,  Field  \nfrom\n \ncontextlib\n \nimport\n \nasynccontextmanager\n \n \n#\n \n1.\n \nDefine\n \nthe\n \nData\n \nContract\n \n(SMILES\n \nInput)\n \nclass\n \nBioactivityRequest(BaseModel):\n \n    \n#\n \nField\n \nconstraints\n \nhandle\n \nvalidation\n \nautomatically\n \n    \nsmiles:\n \nstr\n \n=\n \nField(...,\n \nmin_length=3,\n \nmax_length=1000,\n \nexample=\"CN1C=NC2=C1C(=O)N(C(=O)N2C)C\")\n \n \n#\n \n2.\n \nManage\n \nResource\n \nLifecycle\n \n(Lifespan)\n \n@asynccontextmanager\n \nasync\n \ndef\n \nlifespan(app:\n \nFastAPI):\n \n    \n#\n \nStartup:\n \nLoad\n \nmodel\n \ninto\n \napp\n \nstate\n \nonce\n \n    \ntry:\n \n        \napp.state.model\n \n=\n \njoblib.load('bioactivity_model.joblib')\n \n        \nprint(\"\n✅\n \nBioactivity\n \nmodel\n \nloaded\n \ninto\n \nmemory.\")\n \n    \nexcept\n \nException\n \nas\n \ne:\n \n        \nprint(f\"\n❌\n \nLoad\n \nError:\n \n{e}\")\n \n        \nraise\n \n    \nyield\n \n    \n#\n \nShutdown:\n \nCleanup\n \n    \napp.state.model\n \n=\n \nNone\n \n \napp\n \n=\n \nFastAPI(title=\"Compound\n \nBioactivity\n \nAPI\",\n \nlifespan=lifespan)\n \n \ndef\n \nlog_predict"
+  },
+  {
+    "faiss_id": 60,
+    "chunk_id": "module_1_guidance_notebook_p3_c1",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 3,
+    "chunk_index": 1,
+    "chunk_text": "\")\n \n        \nraise\n \n    \nyield\n \n    \n#\n \nShutdown:\n \nCleanup\n \n    \napp.state.model\n \n=\n \nNone\n \n \napp\n \n=\n \nFastAPI(title=\"Compound\n \nBioactivity\n \nAPI\",\n \nlifespan=lifespan)\n \n \ndef\n \nlog_prediction(smiles:\n \nstr,\n \nresult:\n \nstr):\n \n    \n\"\"\"Simulates\n \na\n \nbackground\n \ntask\n \nlike\n \nlogging\n \nto\n \na\n \ndatabase.\"\"\"\n \n    \nwith\n \nopen(\"prediction_log.txt\",\n \n\"a\")\n \nas\n \nf:\n \n        \nf.write(f\"Compound:\n \n{smiles}\n \n|\n \nResult:\n \n{result}\\n\")\n \n \n@app.post(\"/predict\")\n \nasync\n \ndef\n \npredict(request:\n \nRequest,\n \nbody:\n \nBioactivityRequest,\n \nbg_tasks:\n \nBackgroundTasks):\n \n    \nmodel\n \n=\n \nrequest.app.state.model\n \n    \n \n    \n#\n \n3.\n \nAsynchronous\n \nInference\n \nWorkflow\n \n    \n#\n \nPrediction\n \nlogic\n \n    \nprediction\n \n=\n \nmodel.predict([body.smiles])[0]\n \n    \nactivity\n \n=\n \n\"Active\"\n \nif\n \nprediction\n \n==\n \n1\n \nelse\n \n\"Inactive\"\n \n    \n \n    \n#\n \n4.\n \nTrigger\n \nBackground\n \nTask\n \n(User\n \ndoesn't\n \nwait\n \nfor\n \nthis)\n \n    \nbg_tasks.add_task(log_prediction,\n \nbody.smiles,\n \nact"
+  },
+  {
+    "faiss_id": 61,
+    "chunk_id": "module_1_guidance_notebook_p3_c2",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 3,
+    "chunk_index": 2,
+    "chunk_text": "\"\n \nif\n \nprediction\n \n==\n \n1\n \nelse\n \n\"Inactive\"\n \n    \n \n    \n#\n \n4.\n \nTrigger\n \nBackground\n \nTask\n \n(User\n \ndoesn't\n \nwait\n \nfor\n \nthis)\n \n    \nbg_tasks.add_task(log_prediction,\n \nbody.smiles,\n \nactivity)\n \n    \n \n    \nreturn\n \n{"
+  },
+  {
+    "faiss_id": 62,
+    "chunk_id": "module_1_guidance_notebook_p4_c0",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 4,
+    "chunk_index": 0,
+    "chunk_text": "\"smiles\":  body.smiles,  \n        \n\"activity\":\n \nactivity,\n \n        \n\"engine\":\n \n\"FastAPI/ASGI\"\n \n    \n}\n \n \n \n🎨  Step  4:  Re-integrating  with  Streamlit  (The  \nFrontend)\n \nNow  that  your  model  is  a  standalone  service,  your  Streamlit  app  no  longer  needs  to  load  the  \nheavy\n \n.joblib\n \nfile\n \nitself.\n \nInstead,\n \nit\n \nacts\n \nas\n \na\n \n\"Client\"\n \nthat\n \ntalks\n \nto\n \nyour\n \nAPI.\n \n📝  Integration  Guidance  \n●  Decoupling:  Your  Streamlit  app  stays  lightweight.  If  you  update  the  model  weights  in  \nthe\n \nAPI,\n \nthe\n \nStreamlit\n \napp\n \ndoesn't\n \neven\n \nneed\n \nto\n \nbe\n \nrestarted.\n ●  Request  Handling:  Use  the  requests  library  to  send  the  SMILES  string  to  \nhttp://localhost:8000/predict.\n 💡  Pro-Tip:  Localhost  vs.  Remote  Servers  When  working  locally,  localhost  refers  to  your  \nown\n \ncomputer.\n \nYou\n \nmust\n \nhave\n \ntwo\n \nterminal\n \nwindows\n \nopen:\n 1.  One  running  your  API  (uvicorn  fastapi_app:app  ...).  2.  One  running  your  Streamlit"
+  },
+  {
+    "faiss_id": 63,
+    "chunk_id": "module_1_guidance_notebook_p4_c1",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 4,
+    "chunk_index": 1,
+    "chunk_text": "localhost  refers  to  your  \nown\n \ncomputer.\n \nYou\n \nmust\n \nhave\n \ntwo\n \nterminal\n \nwindows\n \nopen:\n 1.  One  running  your  API  (uvicorn  fastapi_app:app  ...).  2.  One  running  your  Streamlit  app  (streamlit  run  streamlit_app.py).  In  a  real  production  environment,  you  would  replace  localhost  with  the  public  IP  or  domain  of  \nyour\n \nAPI\n \nserver\n \n(e.g.,\n \nhttps://api.biotech-firm.com/predict).\n Streamlit  Client  Code  (streamlit_app.py):  import  streamlit  as  st  \nimport\n \nrequests\n \n \nst.title(\"Bioactivity\n \nPredictor\")\n \nsmiles\n \n=\n \nst.text_input(\"Enter\n \nSMILES\n \nString\",\n \n\"CN1C=NC2=C1C(=O)N(C(=O)N2C)C\")\n \n \nif\n \nst.button(\"Predict\"):\n \n    \n#\n \nSend\n \nrequest\n \nto\n \nour\n \nFastAPI\n \nserver\n \n    \npayload\n \n=\n \n{\"smiles\":\n \nsmiles}\n \n    \ntry:\n \n        \nresponse\n \n=\n \nrequests.post(\"http://localhost:8000/predict\",\n \njson=payload)\n \n        \n \n        \nif\n \nresponse.status_code\n \n==\n \n200:\n \n            \nres\n \n=\n \nresponse.json()\n \n            \nst.suc"
+  },
+  {
+    "faiss_id": 64,
+    "chunk_id": "module_1_guidance_notebook_p4_c2",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 4,
+    "chunk_index": 2,
+    "chunk_text": "response\n \n=\n \nrequests.post(\"http://localhost:8000/predict\",\n \njson=payload)\n \n        \n \n        \nif\n \nresponse.status_code\n \n==\n \n200:\n \n            \nres\n \n=\n \nresponse.json()\n \n            \nst.success(f\"Prediction:\n \n{res['activity']}\")\n \n            \nst.info(f\"Backend\n \nEngine:\n \n{res['engine']}\")\n \n        \nelse:\n \n            \nst.error(f\"API\n \nError:\n \n{response.text}\")"
+  },
+  {
+    "faiss_id": 65,
+    "chunk_id": "module_1_guidance_notebook_p5_c0",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 5,
+    "chunk_index": 0,
+    "chunk_text": "except  Exception  as  e:  \n        \nst.error(f\"Could\n \nnot\n \nconnect\n \nto\n \nAPI:\n \n{e}\")\n \n \n \n📈  Step  5:  Comparative  Stress  Testing  \nTo  truly  understand  why  the  industry  is  moving  toward  FastAPI,  observe  the  \"Waiter  Problem\"  \ndiscussed\n \nin\n \nthe\n \nslides.\n \nWe\n \nwill\n \nsimulate\n \n50\n \nconcurrent\n \nchemical\n \nsubmissions.\n Benchmark  script  (stress_test.py):  import  asyncio  \nimport\n \nhttpx\n \nimport\n \ntime\n \n \nasync\n \ndef\n \nbenchmark(name,\n \nurl,\n \nconcurrency=50):\n \n    \nasync\n \nwith\n \nhttpx.AsyncClient()\n \nas\n \nclient:\n \n        \nstart\n \n=\n \ntime.time()\n \n        \n#\n \nSimulate\n \n50\n \nconcurrent\n \nresearchers\n \nsubmitting\n \ncompounds\n \n        \ntasks\n \n=\n \n[client.post(url,\n \njson={\"smiles\":\n \n\"CC(=O)OC1=CC=CC=C1C(=O)O\"},\n \ntimeout=15)\n \nfor\n \n_\n \nin\n \nrange(concurrency)]\n \n        \nresults\n \n=\n \nawait\n \nasyncio.gather(*tasks,\n \nreturn_exceptions=True)\n \n        \n \n        \nsuccess\n \n=\n \n[r\n \nfor\n \nr\n \nin\n \nresults\n \nif\n \nnot\n \nisinstance(r,\n \nException)\n \nand"
+  },
+  {
+    "faiss_id": 66,
+    "chunk_id": "module_1_guidance_notebook_p5_c1",
+    "doc_id": "module_1_guidance_notebook",
+    "source": "Module 1 Guidance Notebook.pdf",
+    "page": 5,
+    "chunk_index": 1,
+    "chunk_text": "ency)]\n \n        \nresults\n \n=\n \nawait\n \nasyncio.gather(*tasks,\n \nreturn_exceptions=True)\n \n        \n \n        \nsuccess\n \n=\n \n[r\n \nfor\n \nr\n \nin\n \nresults\n \nif\n \nnot\n \nisinstance(r,\n \nException)\n \nand\n \nr.status_code\n \n==\n \n200]\n \n        \nprint(f\"---\n \n{name}\n \nBenchmark\n \n---\")\n \n        \nprint(f\"Total\n \ntime\n \nfor\n \n{concurrency}\n \nrequests:\n \n{time.time()\n \n-\n \nstart:.2f}s\")\n \n        \nprint(f\"Successes:\n \n{len(success)}/50\\n\")\n \n \n#\n \nRun\n \nlocally:\n \n#\n \nasyncio.run(benchmark(\"Flask\",\n \n\"http://localhost:5000/predict\"))\n \n#\n \nasyncio.run(benchmark(\"FastAPI\",\n \n\"http://localhost:8000/predict\"))"
+  },
+  {
+    "faiss_id": 67,
+    "chunk_id": "multimodal_ml_p1_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 1,
+    "chunk_index": 0,
+    "chunk_text": "VN-UK\n®) Institute for Research\n& Executive Education\n\nMultimodal\nMachine Learning"
+  },
+  {
+    "faiss_id": 68,
+    "chunk_id": "multimodal_ml_p2_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 2,
+    "chunk_index": 0,
+    "chunk_text": "VN:UK\n\nInstitute for Research\n& Executive Education\n\nUnimodal vs Multimodal\n\nas me Bi eisp\nVision: Steam & Grid Audio: Spoon Clinking\nAl Models Al Models\nAudio:\nLimited Output Wider Range ean ee pean\nof Results\n\nUnimodal Multimodal"
+  },
+  {
+    "faiss_id": 69,
+    "chunk_id": "multimodal_ml_p3_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 3,
+    "chunk_index": 0,
+    "chunk_text": "Unimodal vs Multimodal\n\n©\n\nUnimodal\n\nLimited to a single data type.\n\nVulnerable to noise or missing\n\ninformation within that specific\n\nchannel.\n\nVN:UK\n\nInstitute for Research\n& Executive Education\n\nMultimodal\n\nCaptures richer context. More\nrobust; can leverage\nsecondary modalities when the\n\nprimary is compromised."
+  },
+  {
+    "faiss_id": 70,
+    "chunk_id": "multimodal_ml_p4_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 4,
+    "chunk_index": 0,
+    "chunk_text": "What is a Modality?\nModality: the way information is expressed or perceived, e.g., language, vision, sound, touch.\nFrom a sensor: raw modality is closest to the physical signal, abstract modality is derived.\nThe same phenomenon can appear across multiple modalities (e.g., emotion in voice and \nface)."
+  },
+  {
+    "faiss_id": 71,
+    "chunk_id": "multimodal_ml_p5_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 5,
+    "chunk_index": 0,
+    "chunk_text": "Institute for Research\n& Executive Education\n\n5 VN-UK\nMultimodal Data\n\nOo\n\nVideo lecture\n\na m\n\nPatient record Navigation\n\n& MRI images ZV street images\n‘~ ECG time series © GPS traces\n& lab tests > f% map graphs\n\nBA frames (image)\n\n@) audio (speech)\n\n+ B transcript (text)\n\nB® doctor narrative ?Q: IMU sensors\nnotes\n\nGB slides (graphics)"
+  },
+  {
+    "faiss_id": 72,
+    "chunk_id": "multimodal_ml_p6_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 6,
+    "chunk_index": 0,
+    "chunk_text": "Heterogeneous Modalities\nInformation present in different modalities will often show diverse qualities, structures \nand representations."
+  },
+  {
+    "faiss_id": 73,
+    "chunk_id": "multimodal_ml_p7_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 7,
+    "chunk_index": 0,
+    "chunk_text": "Dimensions of Heterogeneity\n\n1. Structure\n\nStatic, temporal, spatial, or\n\nhierarchical.\n\n4. Granularity\n\nMismatched sampling rates and\n\nresolutions.\n\n2.Repr. Space\n\nDiscrete tokens vs. Continuous\n\nembeddings.\n\n5. Noise\n\nUncertainty and modality-\n\nspecific noise.\n\nVN:UK\n\nInstitute for Research\n& Executive Education\n\n3. Information\n\nEntropy, density, and\n\ninformation overlap.\n\n6. Relevance\n\nTask-specific importance of\n\neach mode."
+  },
+  {
+    "faiss_id": 74,
+    "chunk_id": "multimodal_ml_p8_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 8,
+    "chunk_index": 0,
+    "chunk_text": "Structure\nStatic: single images, fixed embeddings.\nTemporal: speech, videos, sequential sensor data.\nSpatial: 2D images, 3D point clouds, spatial grids.\nHierarchical: document → sentence → word, scene → object → part."
+  },
+  {
+    "faiss_id": 75,
+    "chunk_id": "multimodal_ml_p9_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 9,
+    "chunk_index": 0,
+    "chunk_text": "Representation Space\nDiscrete: tokens, symbolic labels, graph nodes.\nContinuous: embedding vectors, feature maps, latent states.\nInterpretable vs. latent features (explicit scores vs. black-box features)."
+  },
+  {
+    "faiss_id": 76,
+    "chunk_id": "multimodal_ml_p10_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 10,
+    "chunk_index": 0,
+    "chunk_text": "Information\nEntropy: how uncertain or variable a modality is.\nDensity: information per unit (per frame, per second, per token).\nOverlap and range: shared vs. unique information, and what each modality can \nrepresent."
+  },
+  {
+    "faiss_id": 77,
+    "chunk_id": "multimodal_ml_p11_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 11,
+    "chunk_index": 0,
+    "chunk_text": "Granularity\nDifferent sampling rates: audio (kHz), video (fps), text (tokens/s).\nResolution: high-res images vs. coarse sensors; precision levels.\nGranularity mismatch complicates temporal/spatial alignment and fusion."
+  },
+  {
+    "faiss_id": 78,
+    "chunk_id": "multimodal_ml_p12_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 12,
+    "chunk_index": 0,
+    "chunk_text": "Noise\nEach modality has its own noise distribution and SNR."
+  },
+  {
+    "faiss_id": 79,
+    "chunk_id": "multimodal_ml_p13_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 13,
+    "chunk_index": 0,
+    "chunk_text": "Relevance\nNot all modalities are equally useful for every task → The importance of a \nmodality is context-dependent.\nEmotion Detection: Prosody and facial expressions dominate.\nNight Driving: Lidar/Radar are more relevant than RGB cameras.\n→ Dynamic Weighting: Modern models use gating or attention mechanisms to \nfocus on the most relevant modality at any given moment."
+  },
+  {
+    "faiss_id": 80,
+    "chunk_id": "multimodal_ml_p14_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 14,
+    "chunk_index": 0,
+    "chunk_text": "Cross-Modal Interactions\nRedundancy: multiple modalities carry the same signal (speech + gesture).\nDominance: one modality overrides another when they conflict.\nModulation and emergence: interpretation or new meaning depends on \ncombining modalities."
+  },
+  {
+    "faiss_id": 81,
+    "chunk_id": "multimodal_ml_p15_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 15,
+    "chunk_index": 0,
+    "chunk_text": "Multimodal Pipeline\n\nEncoding\n\nUnimodal\nModel! 1\n\nUnimodal\nModel 2\n\nUnimodal\n\nInput 3\nModel 3\n\n2\n3\n8\ne\n=\nRS\na\n3\nic\n\nClassification\n\nClassification\nnetwork\n\n>\n\nPrediction\n\nVN:UK\n\nInstitute for Research\n& Executive Education"
+  },
+  {
+    "faiss_id": 82,
+    "chunk_id": "multimodal_ml_p16_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 16,
+    "chunk_index": 0,
+    "chunk_text": "Multimodal Pipeline\nPreprocess each modality separately (normalization, tokenization, feature \nextraction).\nEncode each modality into latent representations.\nFuse or interact representations, then apply task-specific heads for prediction or \ngeneration."
+  },
+  {
+    "faiss_id": 83,
+    "chunk_id": "multimodal_ml_p17_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 17,
+    "chunk_index": 0,
+    "chunk_text": "Input Module\nModality-Specific Encoders\nText: tokenization → embeddings → transformer encoder.\nImage: CNN or Vision Transformer extracting spatial features.\nAudio/sensors: temporal models over spectrograms or numerical features."
+  },
+  {
+    "faiss_id": 84,
+    "chunk_id": "multimodal_ml_p18_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 18,
+    "chunk_index": 0,
+    "chunk_text": "Fusion Module\nThe \"Heart\" of the system where individual data streams are merged."
+  },
+  {
+    "faiss_id": 85,
+    "chunk_id": "multimodal_ml_p19_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 19,
+    "chunk_index": 0,
+    "chunk_text": "Early Fusion (Feature-level)\nMechanism: Raw features are combined at the \nbeginning of the network.\nPros: Captures high-level interactions between \nmodalities early on, simple and parameter-efficient\nCons: Can struggle with strong heterogeneity and \nmisalignment (e.g. 60fps videos and 44kHz audio), \ndimensionality explosion, problem with dimensionality \nimbalance.\nExample: Concatenating text embeddings with image \npixels to describe a scene."
+  },
+  {
+    "faiss_id": 86,
+    "chunk_id": "multimodal_ml_p20_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 20,
+    "chunk_index": 0,
+    "chunk_text": "Late Fusion (Decision-level)\nMechanism: Each modality is processed by an \nindependent model. Only the final \nscores/predictions are combined (e.g., via \naveraging or voting or using a meta-learner).\nPros: Robust; if one modality is noisy (e.g., a blurry \nimage), the other (e.g., clear audio) can still carry \nthe prediction.\nCons: Loss of correlation, cannot capture cross-\nmodal interactions."
+  },
+  {
+    "faiss_id": 87,
+    "chunk_id": "multimodal_ml_p21_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 21,
+    "chunk_index": 0,
+    "chunk_text": "Intermediate Fusion (Feature-Level)\nIntermediate fusion encodes modalities separately but merges their internal \"hidden\" \nrepresentations (feature vectors) before the final decision-making layer. \nSeparate encoders; interaction via cross-attention or shared transformer blocks.\nSupports fine-grained alignment (tokens ↔ image patches, frames ↔ sentences).\nCommon in modern vision–language models.\n- Gated Multimodal Units \n- Cross-Attention"
+  },
+  {
+    "faiss_id": 88,
+    "chunk_id": "multimodal_ml_p22_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 22,
+    "chunk_index": 0,
+    "chunk_text": "Gated Multimodal Fusion\nUses a \"gate\" (similar to an LSTM or GRU) to decide how much influence each modality should \nhave on the final feature representation based on the input context.\nPros:\n- Dynamic Weighting: The model can decide to \"listen\" more to the audio if the image is blurry, \nor \"look\" more at the video if the audio is noisy.\n- Semantic Alignment: Fusing at higher layers allows the model to connect abstract concepts \nrather than just raw pixels.\nCons:\n- Architectural Complexity: Requires designing sophisticated interfaces between different types \nof neural networks.\n- Parameter Heavy: Often leads to significantly larger models that require careful \nhyperparameter tuning and large-scale training."
+  },
+  {
+    "faiss_id": 89,
+    "chunk_id": "multimodal_ml_p23_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 23,
+    "chunk_index": 0,
+    "chunk_text": "Gated Multimodal Fusion\n\nAnimation\n\nAction\n\nIn this film, Cobra is at it\nagain. This time, they\nhave a device called the\nweather dominator\nwhich can control the\nworld's weather and ...\n\nVN:UK\n\nInstitute for Research\n& Executive Education"
+  },
+  {
+    "faiss_id": 90,
+    "chunk_id": "multimodal_ml_p24_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 24,
+    "chunk_index": 0,
+    "chunk_text": "Cross-Attention\nInstead of a model only looking at its own tokens (Self-Attention), one modality \"queries\" the \nother.\nPros:\n- Dynamic Weighting: The model can decide to \"listen\" more to the audio if the image is blurry, \nor \"look\" more at the video if the audio is noisy.\n- Semantic Alignment: Fusing at higher layers allows the model to connect abstract concepts \nrather than just raw pixels.\nCons:\n- Architectural Complexity: Requires designing sophisticated interfaces between different types \nof neural networks.\n- Parameter Heavy: Often leads to significantly larger models that require careful \nhyperparameter tuning and large-scale training."
+  },
+  {
+    "faiss_id": 91,
+    "chunk_id": "multimodal_ml_p25_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 25,
+    "chunk_index": 0,
+    "chunk_text": "Institute for Research\n& Executive Education\n\n) VN-UK\nCross-Attention\n\nInput 1: IMAGE\nMULTIMODAL\n\nCROSS-ATTENTION FUSION\n\nVisual\n\nIMAGE Features\nBOC era acer) attends te Kitmeoe) and\n=> rs ext) attends to K(Image) an\n(e.g., Vision Mico ae CLASSIFICATION —_ CLASSIFICATION\nTransformer) HEAD RESULT\nGerman Shepherd Attention weights Po Fully Class Labels\n‘ie Connected (e.g., Dog Breed)\n\nFeatures\n(FC) Layer 1. German Shepherd (92%)\n\n2. Belgian Malinois (5%)\n3. Other (3%)\n\nt Visual Region\n\nT\nAttention(Q, K, V) = Softmax (2 y\n\nVa\n\nText\nFeatures\n\nInput 2: TEXT TEXT (Q)\nThis large, agile ENCODER\ndog has a black (e.g., BERT)\n\nand tan coat..."
+  },
+  {
+    "faiss_id": 92,
+    "chunk_id": "multimodal_ml_p26_c0",
+    "doc_id": "multimodal_ml",
+    "source": "Multimodal ML.pdf",
+    "page": 26,
+    "chunk_index": 0,
+    "chunk_text": "Cross-Attention\n\nInstitute for Research\n& Executive Education\n\nVN:UK\n\nQuery (a)\n\nye Attention Weights | Weighted Contextual\nProjecti Matrix A Features\ndeetion Matrix C\n(€.9., Qoroj) Fused\n: . Multimodal\nVisual Features\nFeatures Scaled —_\n{V, K} Linear Dot-Product oa\nProjection QK’ y\nor (ee) (Gee >\n| Fused\nMultimodal\n- Weighted Features\nText Linear Contextual\nFeatures (eg. Qhroj_ Features C= VG j * Vj)\n{Q} Linear Attention Weights Matrix C\nProjection Matrix A"
+  },
+  {
+    "faiss_id": 93,
+    "chunk_id": "rag_p1_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 1,
+    "chunk_index": 0,
+    "chunk_text": "ADVANCED DATA CHALLENGE \nIntroduction to RAG and Its Application\nStudent name: Le Trung Tuyen\nStudent ID: 2204008\nLecturer: Tran Thanh Hoa"
+  },
+  {
+    "faiss_id": 94,
+    "chunk_id": "rag_p2_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 2,
+    "chunk_index": 0,
+    "chunk_text": "Agenda\nLLM And It’s Limitation\nIntroduction\nRAG Architecture\nHow Does Rag Work\nRAG vs Fine-Tuning\nBenefits Of RAG\nApplications"
+  },
+  {
+    "faiss_id": 95,
+    "chunk_id": "rag_p3_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 3,
+    "chunk_index": 0,
+    "chunk_text": "VN-UK\nInstitute for Research\n& Executive Education\n\n1. INTRODUCTION"
+  },
+  {
+    "faiss_id": 96,
+    "chunk_id": "rag_p4_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 4,
+    "chunk_index": 0,
+    "chunk_text": "0 1\n0 2\n0 3\n0 4\nW h a t  i s  L L M ?\nA large language model (LLM) is a type of artificial intelligence\nprogram that can recognize and generate text, among other\ntasks.\nLLM are very large models that are pre-trained on vast amounts\nof data.\nBuilt on transformer architecture is a set of neural network that\nconsist of an encoder and a decoder with self-attention\ncapabilities.\nIt can perform completely different tasks such as answering\nquestions, summarizing documents, translating languages and\ncompleting sentences\nModern models like GPT-4o, Gemini 1.5, or Claude 3.5 feature\ntrillions of parameters and context windows up to 1M - 2M tokens."
+  },
+  {
+    "faiss_id": 97,
+    "chunk_id": "rag_p5_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 5,
+    "chunk_index": 0,
+    "chunk_text": "LLM’s And Its Limitations\n--> No\naffect by\nmoderator \nKnowledge Cut-off: Confined to historical training data; struggles with real-time updates.\nHallucinations: Generates factually incorrect but highly convincing and coherent outputs.\nLack of Domain Specificity: Outputs generalized answers; blind to private or internal\norganizational data.\nZero Traceability: Incapable of providing accurate source citations for verification.\nProhibitive Retraining Costs: Updating knowledge via Fine-Tuning requires massive\ncomputational resources and time.\nContext Window Constraints: Shoving large documents into prompts causes high API costs, high\nlatency, and the \"Lost in the middle\" phenomenon."
+  },
+  {
+    "faiss_id": 98,
+    "chunk_id": "rag_p6_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 6,
+    "chunk_index": 0,
+    "chunk_text": "RAG stands for Retrieval-Augmented Generation\nW H A T  I S  R A G ?\nIt's an advanced technique used in Large Language Models (LLMS)\nRAG combines retrieval and generation processes to enhance the\ncapabilities of LLMs\nIn RAG, the model retrieves relevant information from a knowledge\nbase or external sources\nThis retrieved information is then used in conjunction with the model's internal\nknowledge to generate coherent and contextually relevant responses\nRAG enables LLMs to produce higher-quality and more context-aware\noutputs compared to traditional generation methods\nEssentially, RAG empowers LLMs to leverage external knowledge for\nimproved performance in various natural language processing tasks"
+  },
+  {
+    "faiss_id": 99,
+    "chunk_id": "rag_p7_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 7,
+    "chunk_index": 0,
+    "chunk_text": "T h i s  \" c o n f i d e n t  b u t  w r o n g \"  b e h a v i o r  d a m a g e s  u s e r  t r u s t  i n\nA I  c h a t b o t s .\nT h e  T r u s t  R i s k :  \nO r g a n i z a t i o n s  g a i n  b e t t e r  c o n t r o l  o v e r  t h e  A I ' s  o u t p u t ,  a n d\nu s e r s  g e t  t r a n s p a r e n t ,  t r u s t w o r t h y  r e s p o n s e s .\nT h e  K e y  B e n e f i t s :\nR A G  f i x e s  t h i s  b y  g r o u n d i n g  t h e  L L M ,  f o r c i n g  i t  t o  p u l l\nf a c t s  f r o m  s p e c i f i c ,  r e l i a b l e  k n o w l e d g e  s o u r c e s  b e f o r e\na n s w e r i n g .\nT h e  R A G  S o l u t i o n :\nL L M s  o f t e n  c o n f i d e n t l y  p r o v i d e  i n c o r r e c t  o r  o u t d a t e d\ni n f o r m a t i o n  ( l i k e  a  c o n f i d e n t  b u t  u n i n f o r m e d\ne m p l o y e e ) .\nT h e  L L M  L i m i t a t i o n :  \nWhy is Retrieval-Augmented Generation important"
+  },
+  {
+    "faiss_id": 100,
+    "chunk_id": "rag_p8_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 8,
+    "chunk_index": 0,
+    "chunk_text": "=<\n>\nZz\n>\n\nInstitute for Research\n& Executive Education\n\nHOW DOES RAG WORK?"
+  },
+  {
+    "faiss_id": 101,
+    "chunk_id": "rag_p9_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 9,
+    "chunk_index": 0,
+    "chunk_text": "RAG: The Detective & The Storyteller\n\nClues & Evidence\n\nRetriever = Generator =\nThe Detective The Storyteller"
+  },
+  {
+    "faiss_id": 102,
+    "chunk_id": "rag_p10_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 10,
+    "chunk_index": 0,
+    "chunk_text": "Let’s delve into RAG’s framework to understand how it mitigates these challenges \nG e n e r a l i z e d  R A G  A p p r o a c h"
+  },
+  {
+    "faiss_id": 103,
+    "chunk_id": "rag_p11_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 11,
+    "chunk_index": 0,
+    "chunk_text": "VN-UK\nInstitute for Research\n& Executive Education\n\nRAG ARCHITECTURE"
+  },
+  {
+    "faiss_id": 104,
+    "chunk_id": "rag_p12_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 12,
+    "chunk_index": 0,
+    "chunk_text": "RAG can be implemented in multiple ways, depending on your system’s needs. We\noutline each type in the sections below.\nR A G  a r c h i t e c t u r e s"
+  },
+  {
+    "faiss_id": 105,
+    "chunk_id": "rag_p13_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 13,
+    "chunk_index": 0,
+    "chunk_text": "RAG Components\nAn AI framework that allows generative models to access external information beyond their training data.\nCombines the strengths of both retrieval-based and generative methods.\nUses a retriever to fetch relevant documents from a large knowledge corpus.\nAugments the generative model's understanding to improve the quality of its responses.\nCore RAG components:\nRetriever\nRanker\nGenerator\nExternal Data\nWhat is the prompt:\nThe input provided by the user (such as a question, statement, or text).\nServes as the starting point for the model to generate a relevant and coherent continuation."
+  },
+  {
+    "faiss_id": 106,
+    "chunk_id": "rag_p14_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 14,
+    "chunk_index": 0,
+    "chunk_text": "Core Concept: Stores data as high-dimensional vectors (Embeddings) to capture semantic\nmeaning.\nSearch Mechanism: Approximate Nearest Neighbor (ANN) for fast similarity search, unlike\ntraditional exact-match SQL databases.\nCrucial Pre-step - Data Chunking: Raw documents must be strategically split into smaller \"chunks\"\nbefore embedding to preserve context quality.\nArchitecture Trend: Hybrid Search (Combining Vector Search & Keyword/BM25) for maximum\nretrieval accuracy.\nPopular Engines: Pinecone, Qdrant, Milvus, pgvector.\nRAG Components\nVector DataBases"
+  },
+  {
+    "faiss_id": 107,
+    "chunk_id": "rag_p15_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 15,
+    "chunk_index": 0,
+    "chunk_text": "Core Function: The retriever efficiently identifies and extracts relevant information from vast amounts\nof data.\nHow It Works (Relevancy Search): It converts the user's query into a vector representation and\nmatches it against vector databases using mathematical calculations to find the most relevant context.\nReal-World Example: If an employee asks an HR chatbot, \"How much annual leave do I have?\", the\nretriever calculates vector relevancy to fetch both general company policy documents and the\nspecific employee's past leave records.\nRAG Components\nRAG Retriever"
+  },
+  {
+    "faiss_id": 108,
+    "chunk_id": "rag_p16_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 16,
+    "chunk_index": 0,
+    "chunk_text": "RAG Components\nRAG Generator:\nFunctions as the core Large Language Model, such as GPT-4, Gemini, or open-weight models like Llama-3.\nGenerates the final output by synthesizing the user's original query with the retrieved and ranked information.\nEnsures the response directly answers the query while accurately incorporating factual, external knowledge.\nUpdate external data:\nContinually updates documents and their vector embeddings to keep the retrieval information current.\nReal-time Updates: Automatically processes new information instantly to ensure the system reflects the\nabsolute latest data.\nPeriodic Batch Processing: Updates data at scheduled intervals (e.g., daily or weekly), providing an efficient\nsolution for large datasets where instant updates aren't strictly necessary."
+  },
+  {
+    "faiss_id": 109,
+    "chunk_id": "rag_p17_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 17,
+    "chunk_index": 0,
+    "chunk_text": "RAG BASED CHAT APPLICATION\nSEQUENCE FLOW: HOW A USER QUERY TRAVELS THROUGH THE RAG PIPELINE \nAND RETURNS A RESPONSE"
+  },
+  {
+    "faiss_id": 110,
+    "chunk_id": "rag_p18_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 18,
+    "chunk_index": 0,
+    "chunk_text": "1\nUser Sends Query\nThe user types a message or question into the Chat App.\nThis is the trigger that initiates the entire RAG pipeline.\n2\nChat App Forwards Query\nThe Chat App receives the user's query and forwards it to\nthe RAG system for processing.\n3\nRAG Retrieves + Generates Response\nThe RAG model first retrieves semantically relevant\ndocuments from the knowledge base, then passes the\nquery + retrieved context to the LLM to generate a\ngrounded, coherent response.\n4\nLLM Returns Response\nOnce generation is complete, the LLM returns the final\nresponse back to the Chat App through the RAG layer.\n5\nChat App Displays Response\nThe Chat App presents the generated answer to the user, completing the interaction cycle.\nUNDERSTANDING RAG ARCHITECTURE\nSTEP-BY-STEP WALKTHROUGH"
+  },
+  {
+    "faiss_id": 111,
+    "chunk_id": "rag_p19_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 19,
+    "chunk_index": 0,
+    "chunk_text": "Dimension 🎓 Fine-Tuning 🔍 RAG\n🎯 Objective Adapt a pre-trained LLM to a specific task or domain\nby updating its weights with labeled examples.\nImprove response quality and factual accuracy by\ninjecting retrieved external knowledge at generation\ntime.\n📦 Training Data Requires curated, task-specific labeled datasets —\nhigh data preparation, time, and compute cost.\nUses a pre-trained LLM as-is, paired with an external\nknowledge base that can be updated\nindependently.\n🔄 Adaptability Highly specialized for one domain; adding new\nknowledge requires retraining.\nRemains general-purpose; knowledge base can be\nswapped or updated without touching the model.\n🏗 Architecture Modifies model parameters; architecture stays\nunchanged.\nAdds a retrieval component (vector DB + embedder)\non top of a frozen LLM.\n💰 Cost High upfront cost (GPU compute, data labeling). Low\ninference overhead.\nLow upfront cost. Retrieval adds modest latency at\ninference time.\nRAG VS FINE-TUNING\nTWO DISTINCT STRATEGIES TO ENHANCE"
+  },
+  {
+    "faiss_id": 112,
+    "chunk_id": "rag_p19_c1",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 19,
+    "chunk_index": 1,
+    "chunk_text": "💰 Cost High upfront cost (GPU compute, data labeling). Low\ninference overhead.\nLow upfront cost. Retrieval adds modest latency at\ninference time.\nRAG VS FINE-TUNING\nTWO DISTINCT STRATEGIES TO ENHANCE LLM PERFORMANCE — \nUNDERSTANDING WHEN TO USE EACH IS KEY"
+  },
+  {
+    "faiss_id": 113,
+    "chunk_id": "rag_p20_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 20,
+    "chunk_index": 0,
+    "chunk_text": "🎯\nEnhanced Relevance\nRetrieved external\nknowledge ensures\ncontextually accurate and\non-topic responses.\n✅\nImproved Quality\nGrounding generation in real\ndocuments reduces\nhallucination and factual\nerrors.\n🔄\nVersatility\nAdapts to diverse tasks and\ndomains without task-\nspecific fine-tuning.\n⚡\nEfficient Retrieval\nLeverages existing\nknowledge bases; eliminates\nthe need for large labeled\ndatasets.\n🔁\nDynamic Updates\nKnowledge base can be\nupdated in real-time without\nretraining the model.\n🛡\nTrust & Transparency\nResponses cite authoritative\nsources, improving\nauditability and user trust.\n🎛\nCustomization\nOrganizations fully control\nwhich knowledge sources\nare included or excluded.\n💰\nCost Effective\nAvoids expensive full\nretraining cycles; compute\ncost stays low after initial\nsetup.\nWHY RAG? – KEY ADVANTAGES\nEIGHT CORE BENEFITS THAT MAKE RAG A PREFERRED APPROACH FOR PRODUCTION AI APPLICATIONS"
+  },
+  {
+    "faiss_id": 114,
+    "chunk_id": "rag_p21_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 21,
+    "chunk_index": 0,
+    "chunk_text": "💬\nConversational AI / Chatbots\nRAG enables chatbots to pull real-time\ninformation from product docs, FAQs, and\nknowledge bases — delivering accurate,\ncontextual replies beyond static training data.\n❓\nAdvanced Question Answering\nRetrieves the most relevant passages from large\ndocument corpora (legal texts, research papers,\nmanuals) to construct precise, evidence-backed\nanswers.\n✍\nContent Generation\nAugments article writing, summarization, and\ncontent recommendation with retrieved facts,\nstatistics, and examples from verified external\nsources.\n🏥\nHealthcare & Research\nAssists clinicians and researchers in accessing\nthe latest medical literature, clinical guidelines,\nand trial data — keeping them informed with\ncurrent evidence.\nREAL-WORLD USE CASES\nINDUSTRIES AND SCENARIOS WHERE RAG DELIVERS MEASURABLE, PRODUCTION-READY VALUE"
+  },
+  {
+    "faiss_id": 115,
+    "chunk_id": "rag_p22_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 22,
+    "chunk_index": 0,
+    "chunk_text": "VN-UK\nInstitute for Research\n& Executive Education\n\nB)\n\nDEMO"
+  },
+  {
+    "faiss_id": 116,
+    "chunk_id": "rag_p23_c0",
+    "doc_id": "rag",
+    "source": "RAG.pdf",
+    "page": 23,
+    "chunk_index": 0,
+    "chunk_text": "Thank you for\nyour  attention!"
+  },
+  {
+    "faiss_id": 117,
+    "chunk_id": "scalable_mlops_architecture_pptx_p1_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 1,
+    "chunk_index": 0,
+    "chunk_text": "DATA\nINGESTION\n\nMODEL\nDEPLOYMENT\n(KUBERNETES)\n\nCONTINUOUS\nMONITORING\n| & FEEDBACK |\n\nFEATURE\nENGINEERING\n\nMODEL\nEVALUATION\n& VALIDATION\n\nMODEL\nTRAINING\n(GCP VERTEX Al)\n\nProduction-Grade\nMLOps & System\nArchitecture\n\nEngineering Al for Scale,\nStability, and Continuous\nAdaptation\n\nFrom Theoretical Concepts to\nGoogle Cloud Implementation"
+  },
+  {
+    "faiss_id": 118,
+    "chunk_id": "scalable_mlops_architecture_pptx_p2_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 2,
+    "chunk_index": 0,
+    "chunk_text": "The Lab to Factory Gap: Failure Modes in Production\n\nTraditional ML fails due to system instability, not algorithmic inaccuracy.\nDeploying an Al system exposes three core failure modes:\n\nDeterministic\n\nCode\n\nData & Concept Drift\n\ne The world changes. Covariate\nShift alters input distributions\nP(X), while Concept Drift alters\nthe statistical relationship\n\nbetween inputs and targets P(Y|X).\n\nSilent System Failures\n\nSilent Training-Serving Skew\n\ne Divergence between batch training\npipelines and real-time serving\nAPIs. Inconsistent feature\ncalculation logic destroys input\nintegrity.\n\nPa tal’\n\nThe Reproducibility Crisis\n\ne Disconnected scripts, hidden\nconfigurations, and unversioned\ndata make it impossible to\nrecreate exact model outputs,\ncrippling rollback and debugging."
+  },
+  {
+    "faiss_id": 119,
+    "chunk_id": "scalable_mlops_architecture_pptx_p3_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 3,
+    "chunk_index": 0,
+    "chunk_text": "The MLOps Evolution: Level 0 to 3.0\n\nMLOps is an engineering discipline integrating ML,\nDevOps, and Data Engineering.\n\nLevel O Level 1.0 Level 2.0 Level 3.0\n\nManual / Component End-to-End Smart &\nPre-MLOps Automation Cloud-Native Decentralized\n\nResearch-driven. Standardized Fully automated Closed-loop systems\n\nManual EDA, experiment tracking CI/CD/CT pipelines. (AutoMLOps) .\n\ntraining, and and model Containerized Automated\n\nevaluation. registries orchestration retraining\n\nNo CI/CD. (e.g., MLflow, TFX). (Kubernetes) , triggers.\n\nModels are static Disconnected Infrastructure-as- Edge/Federated\n\nartifacts handed pipelines lacking Code. learning and\n\nover the wall. lacking end-to-end Features, models, LLMOps\n\nHigh technical debt. integration. and code strictly (Foundation Models).\nversioned."
+  },
+  {
+    "faiss_id": 120,
+    "chunk_id": "scalable_mlops_architecture_pptx_p4_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 4,
+    "chunk_index": 0,
+    "chunk_text": "System-Level Synthesis: The 3 Academic Pillars\nIn production-grade MLOps, architectural decisions are foundational\n\nprinciples, not mere technical choices.\npee FS et a\n|\nA single source of\ntruth guaranteeing A model is not a\n\nthe exact same .pkl file. It is\nPillar 2: re ed offline Pillar 3: an immutable\nraining and Model as a software unit.\nFeature online serving. :\nVersioned\n\nStore\nSolves Object\nTraining-Serving\nSkew and ensures\nPoint-in-Time\nCorrectness.\n\nMoving from linear\nscripts to\nmacro-orchestrated\nnodes.\n\nPillar 1:\nPipeline\n\nas a DAG\n\nEnsures dependency\nmanagement, fault\nisolation, and\ndeterministic\nexecution boundaries.\n\n[Data Hash + Git\nCommit +\nHyperparameters\n+ Weights]\n\nSt Se eee | aa Sree an\n———— oo\nAutomation Foundation"
+  },
+  {
+    "faiss_id": 121,
+    "chunk_id": "scalable_mlops_architecture_pptx_p5_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 5,
+    "chunk_index": 0,
+    "chunk_text": "The End-to-End MLOps Pipeline\n\nThe core of enterprise Al is deploying an automated training pipeline capable of continuously structuring,\ntesting, and generating new models. Code dictates the pipeline; the pipeline dictates the model.\n\nPhase 2: Training\n\nDistributed\nTraining\nML\nMetadata\n\nPhase 3: Deployment\n\nModel Deployment\nRegistry (Endpoint)\n\nPhase 1: Data\n\nData Validation\nExtraction ia imi Gate a\n\nCT Trigger Loop\n\nOffline\nEvaluation\nGate\n\nFeature\nStore\n\nPhase 4: Feedback\n\np Continuous Monitoring"
+  },
+  {
+    "faiss_id": 122,
+    "chunk_id": "scalable_mlops_architecture_pptx_p6_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 6,
+    "chunk_index": 0,
+    "chunk_text": "Data Engineering: The First Line of Defense\n\ne Containerized Extraction & EDA:\nExtraction logic is isolated in Contdinerized\nreproducible ‘Docker containers to Extraction\nensure exact parity between\ndevelopment and production\nenvironments.\nAutomated Validation Pipelines (e.g., Schema Skew: AT Data Value\n\nMissing features, SEREREREREE Skew: Shifts in\n\n“TFX): Analyzes streaming data and wrong data types. statistical\n\n. Data Validation\ncross-checks against formal schemas. Gate\n\nPoint-in-Time Correctness: Feature\n. ° : : Pipeline. Retraining.\nstores’ provide historical feature values\n\nexactly as they existed at a specific\ntimestamp, mathematically eliminating\ndata leakage.\n\nproperties."
+  },
+  {
+    "faiss_id": 123,
+    "chunk_id": "scalable_mlops_architecture_pptx_p7_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 7,
+    "chunk_index": 0,
+    "chunk_text": "Model Training, Metadata, and Evaluation\n\nThe Reproducibility Equation: Model = Code + Data + Hyperparams + Random Seeds.\nEvery variable must be logged in the ML Metadata Store.\n\nOffline Validation\n(The ML Test Score Gates)\n\nAbsolute Isolation: Independent test\nsets to prevent leakage.\n\nDistributed\n\nProxy vs. Business Impact: Correlating\nmetrics (RMSE) with business\noutcomes via degraded A/B testing.\n\nTraining Node\nAlgorithmic Correctness: Unit testing\n\n(Kubernetes/Ray)\nHyperparams\nmodel code for loss reduction.\nwi’ MePedaka Numerical Stability: Catching ‘@\nStore numerical instability (NaNs/Infinities)."
+  },
+  {
+    "faiss_id": 124,
+    "chunk_id": "scalable_mlops_architecture_pptx_p8_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 8,
+    "chunk_index": 0,
+    "chunk_text": "The 3D Automation Framework: Cl / CD / CT\n\nMLOps requires a fundamental shift in traditional software automation:\n\nContinuous Integration | Continuous Delivery Continuous Training\n(Cl) (CD) (CT)\n\nTests code AND data. Deploys the training The AI-specific\nFeature logic unit pipeline, not just the vector.\n\ntests. service. Automatically retrains\n\nAlgorithmic Infrastructure models to repay\nconvergence checks. compatibility checks. technical debt.\nNumerical stability API load testing Triggered by\n\ntests. (QPS/Latency). statistical thresholds,\nIntegration testing of Multi-environment not blind schedules.\npipeline artifacts. deployment rollouts."
+  },
+  {
+    "faiss_id": 125,
+    "chunk_id": "scalable_mlops_architecture_pptx_p9_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 9,
+    "chunk_index": 0,
+    "chunk_text": "Monitoring & Observability:\n\nThe Closed Feedback Loop\n\n1. Data Monitoring\n(Input)\n\n2. Model Monitoring\n(Behavior)\n\n3. System Monitoring\n(Infrastructure)\n\nData Monitoring (Input Gatekeeper): Population Stability\n\nDetects Covariate Shift and unnatural ETL\ndegradation. Quantifies distributional drift. | KL Divergence (D_KL)\n\nIndex (PST)\n\nModel Monitoring (Behavior):\n\nTracks Accuracy Decay (via ground truth) and\nCalibration/Confidence entropy for delayed-feedback\nenvironments. Detects Concept Drift P(Y|X).\n\nSystem Monitoring (Infrastructure):\n\nTraditional DevOps SLA metrics: Tail Latency\n(p95/p99), Throughput, and HTTP Error Rates.\n\nT Triggers: Drift-driven (proactive),\nPacformaance. driven (reactive), or Event-driven\n(real-time data drops)."
+  },
+  {
+    "faiss_id": 126,
+    "chunk_id": "scalable_mlops_architecture_pptx_p10_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 10,
+    "chunk_index": 0,
+    "chunk_text": "Deployment Strategies & Guardrails\n\nDeployment is a distributed systems problem optimizing latency, throughput, and operational risk.\n\nInference Modes Risk Mitigation Guardrails\n\n100% Traffic Shadow Deployment:\n\nv Production Shadow Model\nEphemeral compute, scale-to-zero, Model (100%) (Mirrored)\n\nI/O consistency. Zero-risk. Traffic mirrors to new model;\noutputs logged but not returned.\n\nReal-Time (Online): Canary Release:\n\n90%\nAlways-on, sub-second latency, 10% moe oa gabe\n\nrequires Feature Store sync. Routes 5-10% of traffic to new model.\nAutomated rollback if latency/errors breach.\n\nAsynchronous: Blue-Green:\n\nBlue Pr: Green\nLarge payloads (<1GB), queue-based, Environment “| Environment\n\ndecoupled via Object Storage. Immediate 100% traffic switch with zero\ndowntime and instant rollback capability."
+  },
+  {
+    "faiss_id": 127,
+    "chunk_id": "scalable_mlops_architecture_pptx_p11_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 11,
+    "chunk_index": 0,
+    "chunk_text": "The Architecture Trilemma:\nProduction Trade-offs\n\nOptimizing a single metric leads to systemic failure.\nMLOps is multi-objective optimization.\n\nAccuracy vs. Latency Freshness vs. Stability\n\nIncreasing model complexity (FP32) boosts Blind, constant retraining creates short-term\noffline accuracy but breaks latency budgets. noise and instability.\n\ne Solution: Quantization (INT8), Mixed e Solution: Accuracy-aware retraining\nPrecision, and streamlined feature lookup. triggers (CT) and warm-starting weights.\n\nComplexity vs. Maintainability\nTangled code and microservice bloat create crushing technical debt.\n\ne Solution: Clean architecture separating data, feature, and model\npipelines. Scale to Kubernetes only when necessary.\n\nEX Alntohanal"
+  },
+  {
+    "faiss_id": 128,
+    "chunk_id": "scalable_mlops_architecture_pptx_p12_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 12,
+    "chunk_index": 0,
+    "chunk_text": "The LLMOps Frontier: Managing Foundation Models\n\nGenerative AI demands radically altered architecture due to parameter scale,\ninference cost, and non-determinism.\n\nArchitectural Patterns Inference Optimization\n\nQuantization\n(GPTQ/AWQ)\nSpeculative Decoding\n(draft vs. target)\n\nPrompt\nOrchestration\n(Versioned Code)\n(vLLM)\n\nRAG (Retrieval-Augmented Generation) pipelines to Combating VRAM bottlenecks to\nground models and reduce hallucination. resolve KV Cache fragmentation.\n\nObservability & Guardrails: Tracking Latency P95, Token Cost, and Hallucination rates.\n\nImplementing API Gateways and Policy-as-code for real-time Toxicity/PIl scanning and Prompt\nInjection defense."
+  },
+  {
+    "faiss_id": 129,
+    "chunk_id": "scalable_mlops_architecture_pptx_p13_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 13,
+    "chunk_index": 0,
+    "chunk_text": "[GCP Blueprint]\n\nEnvironment Setup & IaC\n\nBuilding MLOps Level 2+ on\nGoogle Cloud Platform.\n\nDev (Sandbox)\n\nVertex Al Workbench,\nad-hoc experimentation.\n\nStaging (Pre-prod)\n\nCI/CD validation on real\ndata. No manual edits\nallowed.\n\nHighly stable serving,\n24/7 Monitoring.\n\ne Infrastructure as Code (Terraform): GCS buckets, BigQuery datasets, Artifact Registry,\nand Endpoints are managed via parameterized modules (prod.tfvars).\n\ne Zero-Trust IAM: Least privilege Service Accounts (SA). Isolated SAs for Data Scientists,\nAutomation (CI/CD), and Inference.\n\nNetworking: VPC Peering and Private Service Connect ensure data never traverses the\npublic internet."
+  },
+  {
+    "faiss_id": 130,
+    "chunk_id": "scalable_mlops_architecture_pptx_p14_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 14,
+    "chunk_index": 0,
+    "chunk_text": "[GCP Blueprint] Code Structure & Containerization\n\nL— configs/ (.yam1)\nL— src/\n\n/— features/\n\n/— training/\n\nL— pipeline_ds1/\n\nL_ integration/\n\nStandardized Directory: Strict\nseparation of environment\nconfigs, source logic, and\ntesting suites.\n\nDocker Artifact\ncontainer Registry\n\nComponent Containerization (KFP SDK v2):\nLightweight tasks use @component decorators.\nHeavy tasks utilize custom Dockerfile images stored\ninArtifact Registry for dependency control and\nfast initialization.\n\nCompile vs. Run Time: Python DSL code is compiled\ninto a static pipeline. json (the immutable\nblueprint artifact) before being triggered by Cloud\nBuild or Eventarc for execution on Vertex Al."
+  },
+  {
+    "faiss_id": 131,
+    "chunk_id": "scalable_mlops_architecture_pptx_p15_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 15,
+    "chunk_index": 0,
+    "chunk_text": "[GCP Blueprint] Feature Management (BigQuery & Bigtable)\n\nPreventing Training-Serving Skew using GCP’s native data stack.\n\nModel Training\n\nBigQuery\n(Offline)\n\nPrediction\nEndpoint\n\nBigtable\n(Online)\n\nStreaming Sync\n\nThe Single Source of Truth: BigQuery acts as the core Offline Store. Feature engineering utilizes\nparallelized BigQuery SQL.\n\nStandardized Schema: Tables strictly enforce entity_id, feature_values, and feature_timestamp\nto enable point-in-time lookup and definitively eliminate data leakage.\n\nFeature Registry Governance: Groups features, monitors statistics, and triggers alerts on Feature Drift.\n\nOnline Serving (Bigtable): Vertex Al syncs features from BigQuery to Bigtable for <10ms serving latency.\nSupports Batch Sync and Continuous Queries for streaming updates (vital for GenAl Vector Search)."
+  },
+  {
+    "faiss_id": 132,
+    "chunk_id": "scalable_mlops_architecture_pptx_p16_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 16,
+    "chunk_index": 0,
+    "chunk_text": "[GCP Blueprint] Pipeline Orchestration (Vertex Al)\n\nServerless pipeline execution using Kubeflow Pipelines (KFP).\n\ne Google Cloud Pipeline Components (GCPC):\n\nPre-built modules for standard GCP actions\nminimizing custom code overhead.\n\nConditional Execution (ds1.Condition): The\nproduction gatekeeper. Ensures deployment nodes\n\nonly trigger if\n\nevaluation_metrics.accuracy > threshold.\n\ne Vertex ML Metadata: Automatic lineage tracking.\nVisually maps exactly which BigQuery dataset and\n\nGit commit produced the current production\n\nendpoint\ndsI.Condition Step Caching: Auto-reuses cached outputs for\nDeploy_Endpoint unchanged components, drastically reducing\n\ncompute costs and iteration time."
+  },
+  {
+    "faiss_id": 133,
+    "chunk_id": "scalable_mlops_architecture_pptx_p17_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 17,
+    "chunk_index": 0,
+    "chunk_text": "[GCP Blueprint] Serving, Registry & Canary Deployments\n\nVertex AI Endpoint\n\nVertex AI 100% Traffic\nModel Registry Router\n\ne Vertex Al Model Registry: The central hub e Cold-Start Mitigation: Configures ‘dummy\ndecoupling physical files from logical models. requests’ for Model Warm-up, ensuring replicas\nUses Aliases (@default, @champion) so are only marked ‘Healthy’ after loading into\ndownstream apps don't require code updates. RAM/VRAM is complete.\n\ne Endpoint Autoscaling: Mixes CPU nodes for e Canary Deployments: Built-in traffic splitting.\nstandard models and GPU (NVIDIA T4) for Deep Route 10% to v2. Monitor Golden Signals\nLearning. Scales to zero or max replicas based (Latency, Traffic, Errors). Scale linearly to 100%\n\non QPS. or utilize instant 1-click Rollback."
+  },
+  {
+    "faiss_id": 134,
+    "chunk_id": "scalable_mlops_architecture_pptx_p18_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 18,
+    "chunk_index": 0,
+    "chunk_text": "[GCP Blueprint] Continuous Training & Alerting\n\nEvent-driven architecture to autonomously combat Model Decay.\n\nDetects Drift Validation Gate\nKFP\nVertex Model Cloud = ;\nMonitoring pun ee Functions \"Pineling. x Saleh Toki\n\ne Vertex Al Model Monitoring: Scans prediction streams using TFDV algorithms\n\n(Jensen-Shannon for numerical, L-infinity for categorical). Also tracks Feature Attribution (SHAP)\ndrift.\n\ne Granular Thresholds: Tight thresholds (0.1) for critical financial features, loose thresholds\n(0.5) for noisy/seasonal features.\n\ne Event-Driven CT Flow: 1. Drift breaches threshold. 2. Cloud Monitoring fires alert to Pub/Sub.\n3. Cloud Function evaluates severity and triggers KFP Retraining Pipeline.\n\ne Validation Gate: The new model automatically replaces the old only if metric improvements\nexceed a strict margin."
+  },
+  {
+    "faiss_id": 135,
+    "chunk_id": "scalable_mlops_architecture_pptx_p19_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 19,
+    "chunk_index": 0,
+    "chunk_text": "[GCP Blueprint] Security, Compliance & Governance\n\nApplying Zero-Trust architecture to the ML Lifecycle.\n\nIAM / Workload\nIdentity\n\nCloud KMS\n/ DLP\n\nVPC Service Controls (VPC-SC): Isolates Vertex\nAI, BigQuery, and GCS from the public internet.\nPrevents data exfiltration and model theft.\n\nCloud DLP (Data Loss Prevention): Automatically\nintercepts data streams, scanning and\nmasking/redacting Pll before it enters the training\npipeline.\n\nWorkload Identity Federation: Cl/CD pipelines\nassume short-lived SA tokens. No static .json keys\nexist in code.\n\nCustomer-Managed Encryption Keys (CMEK):\nIntegrated with Cloud KMS. Revoking the key\ninstantly cryptographically shreds access to the\nmodel and data.\n\nIdentity-Aware Proxy (IAP) & Rate Limiting:\nSecures endpoints from DDoS and unauthorized\ninference attacks."
+  },
+  {
+    "faiss_id": 136,
+    "chunk_id": "scalable_mlops_architecture_pptx_p20_c0",
+    "doc_id": "scalable_mlops_architecture_pptx",
+    "source": "Scalable_MLOps_Architecture.pptx.pdf",
+    "page": 20,
+    "chunk_index": 0,
+    "chunk_text": "synthesis: The Al Software Factory\n\n“Machine Learning Operations is not about making models run faster;\nit is about making systems fail safely and recover automatically.”\n\nDirected Acyclic\nGraph (DAG) Vertex Pipelines\n\nFeature Store\nStrict Software Artifact / Model\nVersioning Registry\n\nBy marrying academic design principles with cloud-native infrastructure, organizations transform Al from a\nfragile laboratory experiment into a deterministic, secure, and continuously adapting software factory."
+  }
+]

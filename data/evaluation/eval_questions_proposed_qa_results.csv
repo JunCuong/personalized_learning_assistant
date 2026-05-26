@@ -1,0 +1,9 @@
+question,expected_keywords,matched_keywords,keyword_score,status,answer_preview
+"What information is provided about knowledge, cost, time on page 19 of RAG.pdf?",knowledge|cost|time|data|fine|tuning,,0.0,ok,I cannot find this information in the uploaded documents.
+"What information is provided about retrieval, augmented, generation on page 7 of RAG.pdf?",retrieval|augmented|generation|important,,0.0,ok,I cannot find this information in the uploaded documents.
+"What information is provided about knowledge, responses, real on page 20 of RAG.pdf?",knowledge|responses|real|without|retraining|trust,knowledge|responses|real|without|retraining|trust,1.0,ok,"On page 20 of RAG.pdf, the following information is provided:
+*   Retrieved external knowledge ensures contextually accurate and on-topic responses.
+*   Grounding generation in real documents reduces hallucination and factual errors.
+*   Knowledge base can be updated in real-time without retraining "
+"What information is provided about chatbots, real, data on page 21 of RAG.pdf?",chatbots|real|data|research|evidence|content,chatbots|real|data,0.5,ok,"RAG enables chatbots to pull real-time information from product documentation, FAQs, and knowledge bases. This allows them to deliver accurate, contextual replies that go beyond static training data. (RAG.pdf, Page: 21)"
+"What information is provided about data, learning, federated on page 5 of Federated Learning AI.pdf?",data|learning|federated|central|server|leaves,learning|federated,0.3333333333333333,ok,"Page 5 of ""Federated Learning AI.pdf"" defines Federated Learning (FL). It explains"

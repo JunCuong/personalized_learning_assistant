@@ -1,0 +1,9 @@
+{
+  "num_questions": 15,
+  "source_hit_at_3_count": 14,
+  "source_page_hit_at_3_count": 10,
+  "ok_suggestions": 10,
+  "needs_review": 5,
+  "note": "eval_questions.csv was not modified",
+  "eval_file": "data\\evaluation\\eval_questions_revised.csv"
+}

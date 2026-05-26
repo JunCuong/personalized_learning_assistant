@@ -1,0 +1,16 @@
+question,expected_source,expected_page,suggestion
+"What information is provided about knowledge, cost, time on page 19 of RAG.pdf?",RAG.pdf,19,expected page may be wrong
+"What information is provided about retrieval, augmented, generation on page 7 of RAG.pdf?",RAG.pdf,7,expected page may be wrong
+"What information is provided about knowledge, responses, real on page 20 of RAG.pdf?",RAG.pdf,20,OK
+"What information is provided about chatbots, real, data on page 21 of RAG.pdf?",RAG.pdf,21,OK
+"What information is provided about data, learning, federated on page 5 of Federated Learning AI.pdf?",Federated Learning AI.pdf,5,OK
+"What information is provided about data, privacy, sensitive on page 2 of Federated Learning AI.pdf?",Federated Learning AI.pdf,2,OK
+"What information is provided about device, model, clients on page 14 of Federated Learning AI.pdf?",Federated Learning AI.pdf,14,expected page may be wrong
+"What information is provided about hospitals, train, federated on page 9 of Federated Learning AI.pdf?",Federated Learning AI.pdf,9,OK
+"What information is provided about decide, model, more on page 22 of Multimodal ML.pdf?",Multimodal ML.pdf,22,expected source may be wrong
+"What information is provided about model, attention, more on page 24 of Multimodal ML.pdf?",Multimodal ML.pdf,24,expected page may be wrong
+"What information is provided about early, level, dimensionality on page 19 of Multimodal ML.pdf?",Multimodal ML.pdf,19,expected page may be wrong
+"What information is provided about intermediate, fusion, feature on page 21 of Multimodal ML.pdf?",Multimodal ML.pdf,21,OK
+"What information is provided about flask, model, your on page 1 of Module 1 Guidance Notebook.pdf?",Module 1 Guidance Notebook.pdf,1,OK
+"What information is provided about lifespan, model, field on page 3 of Module 1 Guidance Notebook.pdf?",Module 1 Guidance Notebook.pdf,3,OK
+"What information is provided about model, smiles, result on page 3 of Module 1 Guidance Notebook.pdf?",Module 1 Guidance Notebook.pdf,3,OK

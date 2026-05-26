@@ -1,0 +1,10 @@
+{
+  "total_chunks": 137,
+  "total_sources": 6,
+  "avg_chunk_length": 470.1,
+  "min_chunk_length": 30,
+  "max_chunk_length": 1000,
+  "chunks_under_100_chars": 12,
+  "chunks_under_200_chars": 22,
+  "recommendation": "Chunk statistics look reasonable."
+}

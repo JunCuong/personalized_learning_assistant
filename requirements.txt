@@ -1,0 +1,17 @@
+streamlit
+fastapi
+uvicorn
+pypdf
+python-dotenv
+sentence-transformers
+faiss-cpu
+transformers
+torch
+pandas
+numpy
+scikit-learn
+google-genai
+requests
+pytesseract
+pdf2image
+Pillow

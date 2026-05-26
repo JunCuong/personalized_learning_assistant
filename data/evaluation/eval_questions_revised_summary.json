@@ -1,0 +1,17 @@
+{
+  "eval_file": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\evaluation\\eval_questions_revised.csv",
+  "mode": "retrieval",
+  "use_reranking": false,
+  "candidate_k": null,
+  "retrieval": {
+    "num_questions": 15,
+    "hit_rate_at_3": 0.6666666666666666,
+    "hit_rate_at_5": 0.8,
+    "mean_reciprocal_rank": 0.5744444444444444
+  },
+  "retrieval_results_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\evaluation\\eval_questions_revised_results.csv",
+  "qa_keyword": {
+    "status": "skipped",
+    "reason": "mode=retrieval"
+  }
+}

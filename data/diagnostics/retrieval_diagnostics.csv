@@ -1,0 +1,232 @@
+query,rank,score,source,page,chunk_id,chunk_text_preview
+What is retrieval augmented generation?,1,0.4996,RAG.pdf,13,rag_p13_c0,"RAG Components
+An AI framework that allows generative models to access external information beyond their training data.
+Combines the strengths of both retrieval-based and generative methods.
+Uses a retriever to fetch relevant documents from a large knowledge corpus.
+Augments the generative model's u"
+What is retrieval augmented generation?,2,0.4024,RAG.pdf,6,rag_p6_c0,"RAG stands for Retrieval-Augmented Generation
+W H A T  I S  R A G ?
+It's an advanced technique used in Large Language Models (LLMS)
+RAG combines retrieval and generation processes to enhance the
+capabilities of LLMs
+In RAG, the model retrieves relevant information from a knowledge
+base or external s"
+What is retrieval augmented generation?,3,0.4,Multimodal ML.pdf,25,multimodal_ml_p25_c0,"Institute for Research
+& Executive Education
+
+) VN-UK
+Cross-Attention
+
+Input 1: IMAGE
+MULTIMODAL
+
+CROSS-ATTENTION FUSION
+
+Visual
+
+IMAGE Features
+BOC era acer) attends te Kitmeoe) and
+=> rs ext) attends to K(Image) an
+(e.g., Vision Mico ae CLASSIFICATION —_ CLASSIFICATION
+Transformer) HEAD RESULT
+Ger"
+What is retrieval augmented generation?,4,0.3914,Scalable_MLOps_Architecture.pptx.pdf,8,scalable_mlops_architecture_pptx_p8_c0,"The 3D Automation Framework: Cl / CD / CT
+
+MLOps requires a fundamental shift in traditional software automation:
+
+Continuous Integration | Continuous Delivery Continuous Training
+(Cl) (CD) (CT)
+
+Tests code AND data. Deploys the training The AI-specific
+Feature logic unit pipeline, not just the vect"
+What is retrieval augmented generation?,5,0.3889,RAG.pdf,14,rag_p14_c0,"Core Concept: Stores data as high-dimensional vectors (Embeddings) to capture semantic
+meaning.
+Search Mechanism: Approximate Nearest Neighbor (ANN) for fast similarity search, unlike
+traditional exact-match SQL databases.
+Crucial Pre-step - Data Chunking: Raw documents must be strategically split i"
+What are the main components of RAG?,1,0.6679,RAG.pdf,2,rag_p2_c0,"Agenda
+LLM And It’s Limitation
+Introduction
+RAG Architecture
+How Does Rag Work
+RAG vs Fine-Tuning
+Benefits Of RAG
+Applications"
+What are the main components of RAG?,2,0.6497,RAG.pdf,16,rag_p16_c0,"RAG Components
+RAG Generator:
+Functions as the core Large Language Model, such as GPT-4, Gemini, or open-weight models like Llama-3.
+Generates the final output by synthesizing the user's original query with the retrieved and ranked information.
+Ensures the response directly answers the query while a"
+What are the main components of RAG?,3,0.647,RAG.pdf,6,rag_p6_c0,"RAG stands for Retrieval-Augmented Generation
+W H A T  I S  R A G ?
+It's an advanced technique used in Large Language Models (LLMS)
+RAG combines retrieval and generation processes to enhance the
+capabilities of LLMs
+In RAG, the model retrieves relevant information from a knowledge
+base or external s"
+What are the main components of RAG?,4,0.6414,RAG.pdf,12,rag_p12_c0,"RAG can be implemented in multiple ways, depending on your system’s needs. We
+outline each type in the sections below.
+R A G  a r c h i t e c t u r e s"
+What are the main components of RAG?,5,0.6348,RAG.pdf,13,rag_p13_c0,"RAG Components
+An AI framework that allows generative models to access external information beyond their training data.
+Combines the strengths of both retrieval-based and generative methods.
+Uses a retriever to fetch relevant documents from a large knowledge corpus.
+Augments the generative model's u"
+What is multimodal machine learning?,1,0.7782,Multimodal ML.pdf,1,multimodal_ml_p1_c0,"VN-UK
+®) Institute for Research
+& Executive Education
+
+Multimodal
+Machine Learning"
+What is multimodal machine learning?,2,0.5072,Federated Learning AI.pdf,8,federated_learning_ai_p8_c0,"TYPES OF FEDERATED LEARNING 
+ BY DEPLOYMENT ARCHITECTURE
+Involves thousands to millions of highly constrained
+edge devices interacting over unreliable networks.
+Mobile keyboards train next-word prediction models
+locally based on user typing habits, without
+uploading private text messages.
+Personaliz"
+What is multimodal machine learning?,3,0.4632,Federated Learning AI.pdf,5,federated_learning_ai_p5_c0,"WHAT IS FEDERATED LEARNING?
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+Traditional deep learning requires copying all data to a central server (like an AWS cluster). Federated
+Learning (FL) reverses this: it leaves the data securely locked at its origin and sends the algorithm to the data"
+What is multimodal machine learning?,4,0.4626,Kolmogorov–Arnold Networks (KAN).pdf.pdf,1,kolmogorov_arnold_networks_kan_pdf_p1_c0,"Kolmogorov-Arnold Networks
+(KAN)
+
+A New Paradigm for Neural Function Learning
+
+The Shift: Moving from learnable linear weights to learnable nonlinear activation functions
+
+The Goal: Achieving superior accuracy and interpretability in scientific machine learning (AI + Science)
+
+Presenters: Department"
+What is multimodal machine learning?,5,0.4607,Federated Learning AI.pdf,12,federated_learning_ai_p12_c0,"TYPES OF FEDERATED LEARNING 
+ BY DATA DISTRIBUTION
+Vertical  
+Federated Learning
+Training process"
+What is federated learning?,1,0.7185,Federated Learning AI.pdf,6,federated_learning_ai_p6_c0,"WHAT IS FEDERATED LEARNING?
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION"
+What is federated learning?,2,0.7185,Federated Learning AI.pdf,4,federated_learning_ai_p4_c0,"WHAT IS FEDERATED LEARNING?
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION"
+What is federated learning?,3,0.7054,Federated Learning AI.pdf,5,federated_learning_ai_p5_c0,"WHAT IS FEDERATED LEARNING?
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+Traditional deep learning requires copying all data to a central server (like an AWS cluster). Federated
+Learning (FL) reverses this: it leaves the data securely locked at its origin and sends the algorithm to the data"
+What is federated learning?,4,0.6815,Federated Learning AI.pdf,12,federated_learning_ai_p12_c0,"TYPES OF FEDERATED LEARNING 
+ BY DATA DISTRIBUTION
+Vertical  
+Federated Learning
+Training process"
+What is federated learning?,5,0.6287,Federated Learning AI.pdf,11,federated_learning_ai_p11_c0,"TYPES OF FEDERATED LEARNING 
+ BY DATA DISTRIBUTION
+Horizontal
+Federated Learning
+Training process 
+Local training"
+What is MLOps?,1,0.5035,Scalable_MLOps_Architecture.pptx.pdf,3,scalable_mlops_architecture_pptx_p3_c0,"The MLOps Evolution: Level 0 to 3.0
+
+MLOps is an engineering discipline integrating ML,
+DevOps, and Data Engineering.
+
+Level O Level 1.0 Level 2.0 Level 3.0
+
+Manual / Component End-to-End Smart &
+Pre-MLOps Automation Cloud-Native Decentralized
+
+Research-driven. Standardized Fully automated Closed-lo"
+What is MLOps?,2,0.4558,RAG.pdf,6,rag_p6_c0,"RAG stands for Retrieval-Augmented Generation
+W H A T  I S  R A G ?
+It's an advanced technique used in Large Language Models (LLMS)
+RAG combines retrieval and generation processes to enhance the
+capabilities of LLMs
+In RAG, the model retrieves relevant information from a knowledge
+base or external s"
+What is MLOps?,3,0.4308,RAG.pdf,4,rag_p4_c0,"0 1
+0 2
+0 3
+0 4
+W h a t  i s  L L M ?
+A large language model (LLM) is a type of artificial intelligence
+program that can recognize and generate text, among other
+tasks.
+LLM are very large models that are pre-trained on vast amounts
+of data.
+Built on transformer architecture is a set of neural networ"
+What is MLOps?,4,0.4059,Kolmogorov–Arnold Networks (KAN).pdf.pdf,3,kolmogorov_arnold_networks_kan_pdf_p3_c0,"The Problem —- The ""Black Box"" of MLPs
+
+»= Dominance: MLPs are the foundational blocks
+
+of everything from Classifiers to Transformers.
+
+= The Interpretability Gap: In architectures like
+Transformers, MLPs consume most parameters
+but remain uninterpretable without heavy post-hoc
+
+analysis.
+
+= Scient"
+What is MLOps?,5,0.379,RAG.pdf,8,rag_p8_c0,"=<
+>
+Zz
+>
+
+Institute for Research
+& Executive Education
+
+HOW DOES RAG WORK?"
+What is Kolmogorov-Arnold Network?,1,0.5347,Kolmogorov–Arnold Networks (KAN).pdf.pdf,1,kolmogorov_arnold_networks_kan_pdf_p1_c0,"Kolmogorov-Arnold Networks
+(KAN)
+
+A New Paradigm for Neural Function Learning
+
+The Shift: Moving from learnable linear weights to learnable nonlinear activation functions
+
+The Goal: Achieving superior accuracy and interpretability in scientific machine learning (AI + Science)
+
+Presenters: Department"
+What is Kolmogorov-Arnold Network?,2,0.4472,Kolmogorov–Arnold Networks (KAN).pdf.pdf,37,kolmogorov_arnold_networks_kan_pdf_p37_c0,"References
+
+« Liu, Ziming, et al. ""KAN: Kolmogorov-Amold Networks."" arXiv preprint (2024).
+
+= Kolmogorov, Andrei N. ""On the representation of continuous functions of many variables by superposition of
+
+continuous functions of one variable and addition."" (1957).
+
+» Arnold, Vladimir I. ""On functions o"
+What is Kolmogorov-Arnold Network?,3,0.4026,Kolmogorov–Arnold Networks (KAN).pdf.pdf,31,kolmogorov_arnold_networks_kan_pdf_p31_c0,"Applications — Al + Science
+
+Vx
+
+Mathematics
+
+Rediscoving knot theory
+invariants and identifying
+
+important variables.
+
+Speaker Note: KAN is essentially a ""Symbolic Regression"" tool that actually works on complex data.
+
+:°:
+
+Physics
+
+Solving the Anderson
+Localization phase transition
+
+and extracting"
+What is Kolmogorov-Arnold Network?,4,0.3667,Federated Learning AI.pdf,14,federated_learning_ai_p14_c0,"DISADVANTAGES
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+Device heterogeneity: each device has different computing power which makes it
+hard to train model on each device
+Network: Dropped clients, slow wide-area networks
+Data is Non-IID:(Not Independently and Identically Distributed): Som"
+What is Kolmogorov-Arnold Network?,5,0.3643,Kolmogorov–Arnold Networks (KAN).pdf.pdf,8,kolmogorov_arnold_networks_kan_pdf_p8_c0,"Core Idea — Summarized
+
+MLP(x) KAN(x)
+W o o(x) (x)
+(Linear Weight — Fixed Activation) (Learnable Nonlinear Activation Function)
+
+=» So What?: This allows the model to learn the ""shape"" of the data distribution directly on the edges.
+
+Speaker Note: By making activations learnable, the network can ada"

@@ -1,0 +1,4 @@
+question,expected_source,expected_page,expected_keywords,hit_at_3,hit_at_5,reciprocal_rank,top_retrieved
+What is retrieval-augmented generation?,RAG.pdf,1,retrieval|augmented|generation,False,False,0.0,RAG.pdf p6 (score=0.536); RAG.pdf p13 (score=0.532); RAG.pdf p19 (score=0.487)
+What is federated learning?,Federated Learning AI.pdf,1,federated|learning,False,False,0.0,Federated Learning AI.pdf p6 (score=0.718); Federated Learning AI.pdf p4 (score=0.718); Federated Learning AI.pdf p5 (score=0.705)
+How does multimodal machine learning combine data types?,Multimodal ML.pdf,1,multimodal,True,True,1.0,Multimodal ML.pdf p1 (score=0.801); Multimodal ML.pdf p5 (score=0.657); Federated Learning AI.pdf p8 (score=0.529)

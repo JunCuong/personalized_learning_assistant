@@ -1,0 +1,558 @@
+{
+  "started_at": "2026-05-24T14:44:40.846428+00:00",
+  "steps": [
+    {
+      "step": "inspect_dataset",
+      "status": "ok",
+      "detail": [
+        [
+          {
+            "filename": "Federated Learning AI.pdf",
+            "path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\dataset\\Federated Learning AI.pdf",
+            "page_count": 16,
+            "extracted_char_count_pypdf": 4880,
+            "extracted_char_count_ocr": 52,
+            "total_extracted_char_count": 4915,
+            "pages_with_pypdf_text": 15,
+            "pages_with_ocr_text": 1,
+            "pages_without_text": 0,
+            "ocr_used": true,
+            "status": "OK",
+            "warning_reason": "",
+            "pages": 16,
+            "char_count": 4915,
+            "pages_with_text": 16,
+            "message": ""
+          },
+          {
+            "filename": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+            "path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\dataset\\Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+            "page_count": 38,
+            "extracted_char_count_pypdf": 0,
+            "extracted_char_count_ocr": 16672,
+            "total_extracted_char_count": 16672,
+            "pages_with_pypdf_text": 0,
+            "pages_with_ocr_text": 38,
+            "pages_without_text": 0,
+            "ocr_used": true,
+            "status": "OK",
+            "warning_reason": "",
+            "pages": 38,
+            "char_count": 16672,
+            "pages_with_text": 38,
+            "message": ""
+          },
+          {
+            "filename": "Module 1 Guidance Notebook.pdf",
+            "path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\dataset\\Module 1 Guidance Notebook.pdf",
+            "page_count": 5,
+            "extracted_char_count_pypdf": 8974,
+            "extracted_char_count_ocr": 0,
+            "total_extracted_char_count": 8974,
+            "pages_with_pypdf_text": 5,
+            "pages_with_ocr_text": 0,
+            "pages_without_text": 0,
+            "ocr_used": false,
+            "status": "OK",
+            "warning_reason": "",
+            "pages": 5,
+            "char_count": 8974,
+            "pages_with_text": 5,
+            "message": ""
+          },
+          {
+            "filename": "Multimodal ML.pdf",
+            "path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\dataset\\Multimodal ML.pdf",
+            "page_count": 26,
+            "extracted_char_count_pypdf": 5362,
+            "extracted_char_count_ocr": 2956,
+            "total_extracted_char_count": 8133,
+            "pages_with_pypdf_text": 17,
+            "pages_with_ocr_text": 9,
+            "pages_without_text": 0,
+            "ocr_used": true,
+            "status": "OK",
+            "warning_reason": "",
+            "pages": 26,
+            "char_count": 8133,
+            "pages_with_text": 26,
+            "message": ""
+          },
+          {
+            "filename": "RAG.pdf",
+            "path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\dataset\\RAG.pdf",
+            "page_count": 23,
+            "extracted_char_count_pypdf": 9772,
+            "extracted_char_count_ocr": 379,
+            "total_extracted_char_count": 10098,
+            "pages_with_pypdf_text": 18,
+            "pages_with_ocr_text": 5,
+            "pages_without_text": 0,
+            "ocr_used": true,
+            "status": "OK",
+            "warning_reason": "",
+            "pages": 23,
+            "char_count": 10098,
+            "pages_with_text": 23,
+            "message": ""
+          },
+          {
+            "filename": "Scalable_MLOps_Architecture.pptx.pdf",
+            "path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\dataset\\Scalable_MLOps_Architecture.pptx.pdf",
+            "page_count": 20,
+            "extracted_char_count_pypdf": 0,
+            "extracted_char_count_ocr": 13821,
+            "total_extracted_char_count": 13821,
+            "pages_with_pypdf_text": 0,
+            "pages_with_ocr_text": 20,
+            "pages_without_text": 0,
+            "ocr_used": true,
+            "status": "OK",
+            "warning_reason": "",
+            "pages": 20,
+            "char_count": 13821,
+            "pages_with_text": 20,
+            "message": ""
+          }
+        ],
+        {
+          "total_pdfs": 6,
+          "ok_pdfs": 6,
+          "warning_pdfs": 0,
+          "error_pdfs": 0,
+          "total_pages": 128,
+          "pages_with_pypdf_text": 55,
+          "pages_with_ocr_text": 73,
+          "pages_without_text": 0,
+          "total_pypdf_chars": 28988,
+          "total_ocr_chars": 33880,
+          "total_extracted_chars": 62613,
+          "ocr_enabled": true,
+          "tesseract_path": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+          "ocr_dependency_status": {
+            "tesseract": {
+              "status": "ok",
+              "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+              "message": "Tesseract configured"
+            },
+            "pytesseract": {
+              "import_ok": true
+            },
+            "pdf2image": {
+              "import_ok": true
+            },
+            "poppler": {
+              "available": true,
+              "path": "C:\\Users\\ADMIN\\Downloads\\poppler-26.02.0\\Library\\bin",
+              "path_used": "C:\\Users\\ADMIN\\Downloads\\poppler-26.02.0\\Library\\bin"
+            },
+            "ready": true,
+            "message": "OCR dependencies ready"
+          },
+          "conclusion": "All PDFs passed extraction checks (pypdf and/or OCR)."
+        }
+      ]
+    },
+    {
+      "step": "inspect_ocr",
+      "status": "ok",
+      "detail": {
+        "ocr_dependencies": {
+          "tesseract": {
+            "status": "ok",
+            "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+            "message": "Tesseract configured"
+          },
+          "pytesseract": {
+            "import_ok": true
+          },
+          "pdf2image": {
+            "import_ok": true
+          },
+          "poppler": {
+            "available": true,
+            "path": "C:\\Users\\ADMIN\\Downloads\\poppler-26.02.0\\Library\\bin",
+            "path_used": "C:\\Users\\ADMIN\\Downloads\\poppler-26.02.0\\Library\\bin"
+          },
+          "ready": true,
+          "message": "OCR dependencies ready"
+        },
+        "mode": "quick",
+        "poor_pypdf_pdfs": [
+          "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+          "Scalable_MLOps_Architecture.pptx.pdf"
+        ],
+        "ocr_test_results": [
+          {
+            "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+            "pages_tested": 2,
+            "full_scan": false,
+            "total_ocr_chars_sample": 837,
+            "ocr_usable": true
+          },
+          {
+            "source": "Scalable_MLOps_Architecture.pptx.pdf",
+            "pages_tested": 2,
+            "full_scan": false,
+            "total_ocr_chars_sample": 1112,
+            "ocr_usable": true
+          }
+        ],
+        "preview_rows": 4
+      }
+    },
+    {
+      "step": "build_knowledge_base",
+      "status": "ok",
+      "detail": {
+        "status": "ok",
+        "pdf_summary": {
+          "total_pages": 128,
+          "pages_with_text": 128,
+          "pages_ocr": 73,
+          "pages_pypdf": 55,
+          "unique_sources": 6,
+          "saved_to": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\processed\\documents.json"
+        },
+        "chunk_summary": {
+          "chunk_count": 137,
+          "chunks_under_100": 12,
+          "chunks_under_200": 22,
+          "saved_to": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\processed\\chunks.json"
+        },
+        "index_summary": {
+          "num_vectors": 137,
+          "dimension": 384,
+          "index_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\vector_store\\faiss_index\\index.faiss",
+          "metadata_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\vector_store\\faiss_index\\metadata.json"
+        }
+      }
+    },
+    {
+      "step": "inspect_chunks",
+      "status": "ok",
+      "detail": {
+        "total_chunks": 137,
+        "total_sources": 6,
+        "avg_chunk_length": 470.1,
+        "min_chunk_length": 30,
+        "max_chunk_length": 1000,
+        "chunks_under_100_chars": 12,
+        "chunks_under_200_chars": 22,
+        "recommendation": "Chunk statistics look reasonable."
+      }
+    },
+    {
+      "step": "inspect_retrieval",
+      "status": "ok",
+      "detail": {
+        "overall": {
+          "num_queries": 6,
+          "top_k": 5,
+          "queries_with_results": 6,
+          "queries_without_results": 0
+        },
+        "per_query": {
+          "What is retrieval augmented generation?": {
+            "top_1_source": "RAG.pdf",
+            "top_1_page": 13,
+            "top_3_sources": [
+              "RAG.pdf p13",
+              "RAG.pdf p6",
+              "Multimodal ML.pdf p25"
+            ],
+            "whether_results_exist": true,
+            "comment": "Retrieved 5 chunk(s); top source: RAG.pdf page 13"
+          },
+          "What are the main components of RAG?": {
+            "top_1_source": "RAG.pdf",
+            "top_1_page": 2,
+            "top_3_sources": [
+              "RAG.pdf p2",
+              "RAG.pdf p16",
+              "RAG.pdf p6"
+            ],
+            "whether_results_exist": true,
+            "comment": "Retrieved 5 chunk(s); top source: RAG.pdf page 2"
+          },
+          "What is multimodal machine learning?": {
+            "top_1_source": "Multimodal ML.pdf",
+            "top_1_page": 1,
+            "top_3_sources": [
+              "Multimodal ML.pdf p1",
+              "Federated Learning AI.pdf p8",
+              "Federated Learning AI.pdf p5"
+            ],
+            "whether_results_exist": true,
+            "comment": "Retrieved 5 chunk(s); top source: Multimodal ML.pdf page 1"
+          },
+          "What is federated learning?": {
+            "top_1_source": "Federated Learning AI.pdf",
+            "top_1_page": 6,
+            "top_3_sources": [
+              "Federated Learning AI.pdf p6",
+              "Federated Learning AI.pdf p4",
+              "Federated Learning AI.pdf p5"
+            ],
+            "whether_results_exist": true,
+            "comment": "Retrieved 5 chunk(s); top source: Federated Learning AI.pdf page 6"
+          },
+          "What is MLOps?": {
+            "top_1_source": "Scalable_MLOps_Architecture.pptx.pdf",
+            "top_1_page": 3,
+            "top_3_sources": [
+              "Scalable_MLOps_Architecture.pptx.pdf p3",
+              "RAG.pdf p6",
+              "RAG.pdf p4"
+            ],
+            "whether_results_exist": true,
+            "comment": "Retrieved 5 chunk(s); top source: Scalable_MLOps_Architecture.pptx.pdf page 3"
+          },
+          "What is Kolmogorov-Arnold Network?": {
+            "top_1_source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+            "top_1_page": 1,
+            "top_3_sources": [
+              "Kolmogorov–Arnold Networks (KAN).pdf.pdf p1",
+              "Kolmogorov–Arnold Networks (KAN).pdf.pdf p37",
+              "Kolmogorov–Arnold Networks (KAN).pdf.pdf p31"
+            ],
+            "whether_results_exist": true,
+            "comment": "Retrieved 5 chunk(s); top source: Kolmogorov–Arnold Networks (KAN).pdf.pdf page 1"
+          }
+        }
+      }
+    },
+    {
+      "step": "inspect_evaluation",
+      "status": "ok",
+      "detail": {
+        "num_questions": 3,
+        "source_hit_at_3_count": 3,
+        "source_page_hit_at_3_count": 1,
+        "ok_suggestions": 1,
+        "needs_review": 2,
+        "note": "eval_questions.csv was not modified",
+        "eval_file": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\evaluation\\eval_questions.csv"
+      }
+    },
+    {
+      "step": "inspect_evaluation_proposed",
+      "status": "ok",
+      "detail": {
+        "num_questions": 15,
+        "source_hit_at_3_count": 14,
+        "source_page_hit_at_3_count": 9,
+        "ok_suggestions": 9,
+        "needs_review": 6,
+        "note": "eval_questions.csv was not modified",
+        "eval_file": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\evaluation\\eval_questions_proposed.csv"
+      }
+    },
+    {
+      "step": "inspect_llm",
+      "status": "ok",
+      "detail": {
+        "warnings": [],
+        "env_file_exists": true,
+        "env_file_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\.env",
+        "GEMINI_API_KEY_set": true,
+        "GEMINI_API_KEY_masked": "AIza...pC70",
+        "GOOGLE_API_KEY_set": false,
+        "GOOGLE_API_KEY_masked": "(not set)",
+        "effective_key_source": "GEMINI_API_KEY",
+        "gemini_model_configured": "gemini-2.5-flash",
+        "local_fallback_model": "google/flan-t5-base",
+        "status": "GEMINI_OK",
+        "recommendation": "Gemini API responded successfully",
+        "gemini_test": {
+          "ran": true,
+          "status": "SUCCESS",
+          "response_preview": "OK"
+        },
+        "provider_selected_by_llm_client": "gemini",
+        "local_fallback": {
+          "model": "google/flan-t5-base",
+          "tokenizer_load": "OK",
+          "model_load_skipped": "Heavy weights not loaded in diagnostics; tokenizer OK"
+        },
+        "local_fallback_enabled": false
+      }
+    }
+  ],
+  "dataset_status": {
+    "total_pdfs": 6,
+    "ok_pdfs": 6,
+    "warning_pdfs": 0,
+    "error_pdfs": 0,
+    "total_pages": 128,
+    "pages_with_pypdf_text": 55,
+    "pages_with_ocr_text": 73,
+    "pages_without_text": 0,
+    "total_pypdf_chars": 28988,
+    "total_ocr_chars": 33880,
+    "total_extracted_chars": 62613,
+    "ocr_enabled": true,
+    "tesseract_path": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+    "ocr_dependency_status": {
+      "tesseract": {
+        "status": "ok",
+        "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+        "message": "Tesseract configured"
+      },
+      "pytesseract": {
+        "import_ok": true
+      },
+      "pdf2image": {
+        "import_ok": true
+      },
+      "poppler": {
+        "available": true,
+        "path": "C:\\Users\\ADMIN\\Downloads\\poppler-26.02.0\\Library\\bin",
+        "path_used": "C:\\Users\\ADMIN\\Downloads\\poppler-26.02.0\\Library\\bin"
+      },
+      "ready": true,
+      "message": "OCR dependencies ready"
+    },
+    "conclusion": "All PDFs passed extraction checks (pypdf and/or OCR)."
+  },
+  "ocr_status": {
+    "ocr_dependencies": {
+      "tesseract": {
+        "status": "ok",
+        "tesseract_cmd": "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+        "message": "Tesseract configured"
+      },
+      "pytesseract": {
+        "import_ok": true
+      },
+      "pdf2image": {
+        "import_ok": true
+      },
+      "poppler": {
+        "available": true,
+        "path": "C:\\Users\\ADMIN\\Downloads\\poppler-26.02.0\\Library\\bin",
+        "path_used": "C:\\Users\\ADMIN\\Downloads\\poppler-26.02.0\\Library\\bin"
+      },
+      "ready": true,
+      "message": "OCR dependencies ready"
+    },
+    "mode": "quick",
+    "poor_pypdf_pdfs": [
+      "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+      "Scalable_MLOps_Architecture.pptx.pdf"
+    ],
+    "ocr_test_results": [
+      {
+        "source": "Kolmogorov–Arnold Networks (KAN).pdf.pdf",
+        "pages_tested": 2,
+        "full_scan": false,
+        "total_ocr_chars_sample": 837,
+        "ocr_usable": true
+      },
+      {
+        "source": "Scalable_MLOps_Architecture.pptx.pdf",
+        "pages_tested": 2,
+        "full_scan": false,
+        "total_ocr_chars_sample": 1112,
+        "ocr_usable": true
+      }
+    ],
+    "preview_rows": 4
+  },
+  "build_status": {
+    "status": "ok",
+    "pdf_summary": {
+      "total_pages": 128,
+      "pages_with_text": 128,
+      "pages_ocr": 73,
+      "pages_pypdf": 55,
+      "unique_sources": 6,
+      "saved_to": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\processed\\documents.json"
+    },
+    "chunk_summary": {
+      "chunk_count": 137,
+      "chunks_under_100": 12,
+      "chunks_under_200": 22,
+      "saved_to": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\processed\\chunks.json"
+    },
+    "index_summary": {
+      "num_vectors": 137,
+      "dimension": 384,
+      "index_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\vector_store\\faiss_index\\index.faiss",
+      "metadata_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\vector_store\\faiss_index\\metadata.json"
+    }
+  },
+  "chunks_status": {
+    "total_chunks": 137,
+    "total_sources": 6,
+    "avg_chunk_length": 470.1,
+    "min_chunk_length": 30,
+    "max_chunk_length": 1000,
+    "chunks_under_100_chars": 12,
+    "chunks_under_200_chars": 22,
+    "recommendation": "Chunk statistics look reasonable."
+  },
+  "retrieval_status": {
+    "num_queries": 6,
+    "top_k": 5,
+    "queries_with_results": 6,
+    "queries_without_results": 0
+  },
+  "evaluation_status": {
+    "num_questions": 3,
+    "source_hit_at_3_count": 3,
+    "source_page_hit_at_3_count": 1,
+    "ok_suggestions": 1,
+    "needs_review": 2,
+    "note": "eval_questions.csv was not modified",
+    "eval_file": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\evaluation\\eval_questions.csv"
+  },
+  "llm_status": {
+    "warnings": [],
+    "env_file_exists": true,
+    "env_file_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\.env",
+    "GEMINI_API_KEY_set": true,
+    "GEMINI_API_KEY_masked": "AIza...pC70",
+    "GOOGLE_API_KEY_set": false,
+    "GOOGLE_API_KEY_masked": "(not set)",
+    "effective_key_source": "GEMINI_API_KEY",
+    "gemini_model_configured": "gemini-2.5-flash",
+    "local_fallback_model": "google/flan-t5-base",
+    "status": "GEMINI_OK",
+    "recommendation": "Gemini API responded successfully",
+    "gemini_test": {
+      "ran": true,
+      "status": "SUCCESS",
+      "response_preview": "OK"
+    },
+    "provider_selected_by_llm_client": "gemini",
+    "local_fallback": {
+      "model": "google/flan-t5-base",
+      "tokenizer_load": "OK",
+      "model_load_skipped": "Heavy weights not loaded in diagnostics; tokenizer OK"
+    },
+    "local_fallback_enabled": false
+  },
+  "files_generated": [
+    "data/diagnostics/chunk_preview.csv",
+    "data/diagnostics/chunk_statistics.csv",
+    "data/diagnostics/chunk_statistics_summary.json",
+    "data/diagnostics/dataset_inspection.csv",
+    "data/diagnostics/dataset_inspection_summary.json",
+    "data/diagnostics/diagnostics_run_summary.json",
+    "data/diagnostics/eval_candidate_chunks.csv",
+    "data/diagnostics/eval_questions_inspection.csv",
+    "data/diagnostics/eval_questions_inspection_summary.json",
+    "data/diagnostics/eval_questions_proposed_inspection.csv",
+    "data/diagnostics/eval_questions_proposed_inspection_summary.json",
+    "data/diagnostics/eval_questions_proposed_suggestions.csv",
+    "data/diagnostics/eval_questions_suggestions.csv",
+    "data/diagnostics/llm_diagnostics.json",
+    "data/diagnostics/manual_test_checklist.md",
+    "data/diagnostics/ocr_diagnostics.json",
+    "data/diagnostics/ocr_page_preview.csv",
+    "data/diagnostics/retrieval_diagnostics.csv",
+    "data/diagnostics/retrieval_diagnostics_summary.json"
+  ],
+  "finished_at": "2026-05-24T15:38:32.434823+00:00"
+}

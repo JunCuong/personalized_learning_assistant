@@ -1,0 +1,1780 @@
+chunk_id,source,page,chunk_index,chunk_length,chunk_text_preview
+federated_learning_ai_p1_c0,Federated Learning AI.pdf,1,0,152,"F E D E R A T E D
+L E A R N I N G
+Advanced Data Challenge
+DANG CONG KHAI
+FEDERATED LEARNING FOR LARGE-SCALE AND PRIVACY-PRESERVING AI
+HOANG MAI DUC KIEN"
+federated_learning_ai_p2_c0,Federated Learning AI.pdf,2,0,570,"MOTIVATION FOR FEDERATED LEARNING
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+Data Transfer Bottleneck: Centralizing massive amounts of edge data
+(e.g., continuous video feeds, billions of interactions) is computationally
+expensive and strain network bandwidth.
+Privacy & Security Imperativ"
+federated_learning_ai_p3_c0,Federated Learning AI.pdf,3,0,149,"MOTIVATION FOR FEDERATED LEARNING
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+Centralized leads to a reliance on static tiny biased dataset"
+federated_learning_ai_p4_c0,Federated Learning AI.pdf,4,0,81,"WHAT IS FEDERATED LEARNING?
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION"
+federated_learning_ai_p5_c0,Federated Learning AI.pdf,5,0,794,"WHAT IS FEDERATED LEARNING?
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+Traditional deep learning requires copying all data to a central server (like an AWS cluster). Federated
+Learning (FL) reverses this: it leaves the data securely locked at its origin and sends the algorithm to the data"
+federated_learning_ai_p6_c0,Federated Learning AI.pdf,6,0,81,"WHAT IS FEDERATED LEARNING?
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION"
+federated_learning_ai_p7_c0,Federated Learning AI.pdf,7,0,405,"WHY USE FEDERATED LEARNING
+User privacy
+Train models without sharing data
+Data sharing agreements are comple
+Richer set of potential system configurations
+Data, compute and algorithms can be distributed and decentralized
+Cooperation between insitutions and entities (even those that compete)
+Lower tr"
+federated_learning_ai_p8_c0,Federated Learning AI.pdf,8,0,340,"TYPES OF FEDERATED LEARNING 
+ BY DEPLOYMENT ARCHITECTURE
+Involves thousands to millions of highly constrained
+edge devices interacting over unreliable networks.
+Mobile keyboards train next-word prediction models
+locally based on user typing habits, without
+uploading private text messages.
+Personaliz"
+federated_learning_ai_p9_c0,Federated Learning AI.pdf,9,0,512,"TYPES OF FEDERATED LEARNING 
+ BY DEPLOYMENT ARCHITECTURE
+Involves a smaller number of highly resourced, reliable
+nodes separated by institutional firewalls.
+Several hospitals collaborate to train a model that decodes fMRI brain
+signals to generate images. The hospitals jointly train the architecture"
+federated_learning_ai_p10_c0,Federated Learning AI.pdf,10,0,358,"Horizontal  Federated Learning Vertical  Federated Learning
+Same features, different users
+Examples: 
+Smartphone keyboards
+prediction
+Cancer prediction across
+hospitals
+Same users, different features
+Examples: 
+Predict cancer risk based on hospital data +
+genetic lab data
+Credit scoring: banks + e-c"
+federated_learning_ai_p11_c0,Federated Learning AI.pdf,11,0,113,"TYPES OF FEDERATED LEARNING 
+ BY DATA DISTRIBUTION
+Horizontal
+Federated Learning
+Training process 
+Local training"
+federated_learning_ai_p12_c0,Federated Learning AI.pdf,12,0,97,"TYPES OF FEDERATED LEARNING 
+ BY DATA DISTRIBUTION
+Vertical  
+Federated Learning
+Training process"
+federated_learning_ai_p13_c0,Federated Learning AI.pdf,13,0,239,"TRAINING ON LOW COMPUTATIONAL-RESOURCE DEVICE
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+LORA
+LoRA(Low-Rank Adaption) from https://viblo.asia/p/llm-101-thao-luan-ve-finetune-model-llm-su-dung-lora-low-rank-adaptation-Yym40YQWJ91"
+federated_learning_ai_p14_c0,Federated Learning AI.pdf,14,0,543,"DISADVANTAGES
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+Device heterogeneity: each device has different computing power which makes it
+hard to train model on each device
+Network: Dropped clients, slow wide-area networks
+Data is Non-IID:(Not Independently and Identically Distributed): Som"
+federated_learning_ai_p15_c0,Federated Learning AI.pdf,15,0,429,"MITIGATION APPROACHES
+VNUK - INSTITUTE FOR RESEARCH AND EXECUTIVE EDUCATION
+Synthetic data generation: rebalance class distributions via oversampling or under-
+sampling, SMOTE (non-IID data distributions)
+Weight adjustment during model aggregation: instead of weighting only on dataset
+size, we also "
+federated_learning_ai_p16_c0,Federated Learning AI.pdf,16,0,52,"VN-UK
+@ Institute for Research
+& Executive Education"
+kolmogorov_arnold_networks_kan_pdf_p1_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,1,0,495,"Kolmogorov-Arnold Networks
+(KAN)
+
+A New Paradigm for Neural Function Learning
+
+The Shift: Moving from learnable linear weights to learnable nonlinear activation functions
+
+The Goal: Achieving superior accuracy and interpretability in scientific machine learning (AI + Science)
+
+Presenters: Department"
+kolmogorov_arnold_networks_kan_pdf_p2_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,2,0,342,"Presentation Outline
+
+@ @ EF
+
+1. Problem & 2. Key Insights & 3. Theory & Math
+Motivation Core Idea The Kolmogorov-Arnold
+The ""Black Box"" of MLPs Learnable edges and moving Representation Theorem &
+and the limitations of existing activations from nodes to architecture formulation.
+architectures. conn"
+kolmogorov_arnold_networks_kan_pdf_p3_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,3,0,583,"The Problem —- The ""Black Box"" of MLPs
+
+»= Dominance: MLPs are the foundational blocks
+
+of everything from Classifiers to Transformers.
+
+= The Interpretability Gap: In architectures like
+Transformers, MLPs consume most parameters
+but remain uninterpretable without heavy post-hoc
+
+analysis.
+
+= Scient"
+kolmogorov_arnold_networks_kan_pdf_p4_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,4,0,485,"Motivation — Why KAN?
+
+» Why now?: Scientists need models that ""speak"" the language of functions, not just weight matrices.
+
+= The Accuracy Ceiling: MLPs suffer from slow neural scaling laws (N~* or worse), making high-precision
+
+science computationally expensive.
+
+= The Goal: A model that is intrin"
+kolmogorov_arnold_networks_kan_pdf_p5_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,5,0,562,"Limitation of Existing Methods (MLPs)
+
+= Fixed Activations: MLPs use fixed non-linearities (ReLU, GeLU) on nodes; all learning happens in linear
+
+weights.
+
+= Univariate Inefficiency: MLPs are inefficient at approximating simple univariate functions (e.g., exp or sin)
+
+compared to splines.
+
+= Global "
+kolmogorov_arnold_networks_kan_pdf_p6_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,6,0,554,"Key Insight — External vs. Internal DOF
+
+External Degrees of Freedom Internal Degrees of Freedom
+
+The computational graph and node connectivity. The shape of the activation functions
+
+This is what standard MLPs possess via their themselves. This is what mathematical Splines
+weight matrices. possess."
+kolmogorov_arnold_networks_kan_pdf_p7_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,7,0,404,"Core Idea — Learnable Edges
+
+=» The Paradigm Shift: Replace every linear
+
+weight w with a learnable univariate function @.
+= Mechanism: Nodes no longer ""activate""; they
+
+simply sum incoming signals.
+
+s Intuition: Instead of a matrix of numbers, the
+
+network is a matrix of trainable curves. vA
+
+Speak"
+kolmogorov_arnold_networks_kan_pdf_p8_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,8,0,365,"Core Idea — Summarized
+
+MLP(x) KAN(x)
+W o o(x) (x)
+(Linear Weight — Fixed Activation) (Learnable Nonlinear Activation Function)
+
+=» So What?: This allows the model to learn the ""shape"" of the data distribution directly on the edges.
+
+Speaker Note: By making activations learnable, the network can ada"
+kolmogorov_arnold_networks_kan_pdf_p9_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,9,0,480,"Theory -— Kolmogorov-Arnold Representation Theorem
+
+= The Theorem: Any multivariate continuous function can be represented as a finite composition of univariate
+functions and addition.
+
+» Mathematical Breakthrough: It proves that the ""only true multivariate function is addition"".
+
+= Original Form (D"
+kolmogorov_arnold_networks_kan_pdf_p10_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,10,0,506,"Theory — Breaking the Curse of Dimensionality
+
+= Compositional Sparsity: If a function has a smooth KA representation, KANs can fit it with an error rate
+
+independent of the dimension.
+
+= Scaling Laws: KANSs achieve a scaling exponent of « = k+1 (where k is spline order), outperforming the
+standard "
+kolmogorov_arnold_networks_kan_pdf_p11_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,11,0,351,"Theory — Why This Works
+
+© Hidden Assumption
+
+Most functions in science have smooth, sparse compositional structures.
+8 Physics-Inspired
+
+KANSs care about ""typical"" cases in the physical world rather than mathematical worst-case
+
+scenarios.
+
+Speaker Note: We are betting that the universe is ""smooth"""
+kolmogorov_arnold_networks_kan_pdf_p12_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,12,0,444,"Intuition — The Housing Price Analogy
+
+ft “Lr
+
+1. Multivariate Input 2. KAN Approach
+Bedrooms, Square Footage, One learnable curve for
+Age of the house. ""Bedroom Impact,"" one for
+
+“Area Impact,"" etc.
+
+Speaker Note: Instead of a messy multi-variable equation, KAN breaks the problem into single-variab"
+kolmogorov_arnold_networks_kan_pdf_p13_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,13,0,403,"Intuition — Analogy of ""Flexible Tools""
+
+MLP Factory
+
+A factory where the machines (nodes) are fixed,
+but you can change how much material (weight)
+
+flows between them.
+
+Speaker Note: KAN gives the network the ability to ""evolve"" its processing units.
+
+I
+
+KAN Factory
+
+A factory where the machines th"
+kolmogorov_arnold_networks_kan_pdf_p14_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,14,0,400,"Key Insight —- Why KAN Its Interpretable
+
+= Visual Transparency: We can literally plot the
+curves on the edges to see what the network has
+learned (e.g., it learned a sine wave or a log
+
+function).
+
+= Symbolic Snapping: We can ""snap"" these
+
+numerical curves into symbolic formulas like
+
+exp(X).
+
+Spea"
+kolmogorov_arnold_networks_kan_pdf_p15_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,15,0,351,"Mathematical Formulation —- The KAN Layer
+
+= Definition: A KAN layer is a matrix of 1D functions ® = {qq p}.
+» Input/Output: For n,, inputs and n,,, outputs, we have n,, < No, Univariate functions.
+
+= Node Activation:
+
+3
+
+Ny
+
+Speaker Note: Notice there is no weight matrix W and no bias b. The ""weigh"
+kolmogorov_arnold_networks_kan_pdf_p16_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,16,0,421,"Mathematical Formulation — Deep KAN
+
+= Composition: A general KAN is L layers deep:
+
+KAN (x) = (®,.; ° ®p_2 © +"" oD )x
+
+= Differentiability: Every component is differentiable, enabling standard backpropagation.
+
+= Comparison: While MLPs stack W and o separately, KANs stack functional matrices ®,.
+
+S"
+kolmogorov_arnold_networks_kan_pdf_p17_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,17,0,432,"Mathematical Formulation — The Activation (x)
+
+= Residual Structure: The core function combines a basis with a spline.
+
+oO(x) =w,b( x) +w, spline (x )
+
+=» Basis Function: b(x) = SiLU(x) (used for global structure)
+
+» Spline Function: Linear combination of B-splines: > c; B;(x)
+
+Speaker Note: We keep"
+kolmogorov_arnold_networks_kan_pdf_p18_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,18,0,388,"Architecture — Flow Model
+
+= Grid Points: Splines are defined on a grid of G intervals.
+
+=» Local Control: B-splines only change locally, meaning adjusting one part of the curve doesn't affect distant
+parts.
+
+» Shape Notation: [no, nj, ..., ny] (represents the number of nodes per layer).
+
+Speaker No"
+kolmogorov_arnold_networks_kan_pdf_p19_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,19,0,459,"Architecture — B-Splines as Activations
+
+» Parameterization: B,(x) are basis functions; c;
+
+are the learnable coefficients.
+
+= Continuity: Splines are smooth and
+
+differentiable, crucial for gradient descent.
+
+= Grid Extension: We can increase the number of
+
+grid points G during training to increase"
+kolmogorov_arnold_networks_kan_pdf_p20_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,20,0,412,"Architecture — Sparsification Mechanism
+
+L1 Regularization
+
+Applied to the average
+magnitude of the activation
+
+functions.
+
+Speaker Note: This is how KAN identifies which variables actually matter in a 100-dimensional dataset.
+
+HK
+
+Entropy
+Regularization
+
+Used to prune unnecessary
+
+functional paths."
+kolmogorov_arnold_networks_kan_pdf_p21_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,21,0,392,"Architecture — Symbolic Snapping Interface
+
+=» The ""Surgery"": Users can manually set a learned spline to a symbolic function (e.g.,
+
+fix_symbolic(1,i,j, Sin’ )).
+
+= Human-in-the-loop: The model suggests symbolic candidates, and the human decides which ones make
+
+scientific sense.
+
+ems
+
+Speaker Note:"
+kolmogorov_arnold_networks_kan_pdf_p22_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,22,0,365,"Training — Loss and Optimization
+= Total Loss:
+
+Liotal = Lprea + A CH, » |D|, TH, ~S(@) )
+
+=» Optimizer: LBFGS is often used for high-precision scientific tasks.
+
+« Initialize: Weights w, * 1, splines * 0 (starting near a standard MLP-like state).
+
+Speaker Note: We balance prediction accuracy with t"
+kolmogorov_arnold_networks_kan_pdf_p23_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,23,0,613,"Training — Grid Extension Strategy
+
+=» Step-wise refinement: Start with a coarse grid
+
+ox«KKKKKKK
+PLRRRLK
+SKS
+oxSKK
+oxKS
+
+x
+x
+eres
+
+(e.g., G=3) for speed, then expand to G=10, 20,
+
+O
+
+5
+exXS
+
+&dots; 1000 for precision.
+
+SS
+xs
+SS
+
+» Least Squares: New grid coefficients are
+
+x
+xs
+SS
+
+“
+
+%
+‘
+
+es
+
+initi"
+kolmogorov_arnold_networks_kan_pdf_p24_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,24,0,342,"Training — Learnable Components
+
+= What is trained?:
+
+= B-spline coefficients (c;)
+=» Spline scales (w,)
+= Basis scales (Wy)
+
+= Batching Issue: Currently, different edges having different functions makes GPU batching difficult.
+
+Speaker Note: While the math is elegant, the implementation requires ca"
+kolmogorov_arnold_networks_kan_pdf_p25_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,25,0,667,"Key Property — Expressiveness
+
+= Pareto Frontier: KANs consistently achieve
+
+lower loss with fewer parameters than MLPs
+
+across special functions and physics datasets. aA 8 co, & | FG H
+1 Month Advertising Items sold
+—— $45 1% Scatter chart
+i . - : : : 3 Feb $55 25 oO
+= High Dimension: A KAN can fit"
+kolmogorov_arnold_networks_kan_pdf_p26_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,26,0,367,"Key Property — Stability and Continual Learning
+
+= Local Plasticity: Because splines are local, new data only affects nearby control points.
+
+= No Forgetting: In sequential training, KANs preserve old knowledge while learning new tasks, unlike MLPs
+
+which ""overwrite"" globally.
+
+Speaker Note: This so"
+kolmogorov_arnold_networks_kan_pdf_p27_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,27,0,360,"Key Property -— Generalization
+
+= Small Models: Smaller KANs often generalize better than larger ones because they capture the ""minimal""
+
+symbolic structure.
+
+= Symbolic Alignment: KANs naturally align with the symbolic functions governing the natural world.
+
+Speaker Note: KAN finds the ""simplest"" e"
+kolmogorov_arnold_networks_kan_pdf_p28_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,28,0,361,"Comparison — KAN vs. MLP (Architecture)
+
+Activations Fixed, on Nodes Learnable, on Edges
+
+Linear Weights Learnable Matrix None (absorbed in functions)
+Complexity O(N?L) parameters O(N7LG) parameters
+Activation Basis Global (ReLU, SiLU) Local (Splines)
+
+Speaker Note: KAN has more parameters per edge "
+kolmogorov_arnold_networks_kan_pdf_p29_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,29,0,332,"Comparison — Performance Trade-offs
+
+@ Q
+
+Accuracy Speed Interpretability
+KAN > MLP (especially for MLP >> KAN (10x faster to KAN >> MLP (intrinsic vs.
+science and mathematics) train due to GPU post-analysis)
+
+optimization)
+
+Speaker Note: Choose KAN for accuracy and insight; choose MLP for raw train"
+kolmogorov_arnold_networks_kan_pdf_p30_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,30,0,432,"Critical Thinking - Trade-off Reality
+
+= The ""Slow"" Penalty: Different functions on different edges prevent vectorized batch computation.
+= The ""Grid"" Penalty: High grid resolution G can lead to bad loss landscapes and optimization stalls.
+
+= Insight: KAN is currently a Specialist, not yet a General"
+kolmogorov_arnold_networks_kan_pdf_p31_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,31,0,431,"Applications — Al + Science
+
+Vx
+
+Mathematics
+
+Rediscoving knot theory
+invariants and identifying
+
+important variables.
+
+Speaker Note: KAN is essentially a ""Symbolic Regression"" tool that actually works on complex data.
+
+:°:
+
+Physics
+
+Solving the Anderson
+Localization phase transition
+
+and extracting"
+kolmogorov_arnold_networks_kan_pdf_p32_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,32,0,344,"Applications —- Scientific Discovery
+
+» Case Study: Relativistic velocity addition:
+
+f(u,v) = Tw
+
+=» Result: KAN auto-discovered the ""Rapidity"" concept (arctanh) without being told.
+
+= So What?: The model can ""teach"" the scientist new mathematical representations.
+
+Speaker Note: This is the ""AI Scie"
+kolmogorov_arnold_networks_kan_pdf_p33_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,33,0,379,"Limitations — The Efficiency Wall
+
+» GPU Batching: Current hardware is optimized for W - x, not for heterogeneous functional evaluations.
+
+= Hyperparameter Sensitivity: Regularization A and grid size G significantly impact the ""interpretability"" of
+
+the result.
+
+Speaker Note: Engineering is the bigg"
+kolmogorov_arnold_networks_kan_pdf_p34_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,34,0,386,"Limitations -— Theoretical Gaps
+
+= Depth-2 vs. Deep: The original theorem only covers depth-2; the math for ""Deep KANs'"" is still being
+developed.
+
+= Complexity: For high-dimensional non-compositional data, splines may still suffer from the curse of
+
+dimensionality.
+
+Speaker Note: We have empirical "
+kolmogorov_arnold_networks_kan_pdf_p35_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,35,0,409,"Open Questions & Research Directions
+
+ST ad C)-
+
+Kansformers Hybrid Models GPU Kernels
+
+Can we replace MLPs in Combining KAN layers with Developing specialized
+Transformers to make MLP layers to balance speed hardware acceleration for
+attention layers more and accuracy. spline-based networks.
+interp"
+kolmogorov_arnold_networks_kan_pdf_p36_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,36,0,445,"Conclusion
+
+» 1. Interpretability: KAN turns the ""Black Box"" into a ""Language of Functions"".
+» 2. AcCCuracy: Superior Pareto frontiers for scientific and mathematical tasks.
+
+» 3. Collaboration: KAN is a ""tool for scientists,"" not just a ""model for data"".
+
+Final Thought: If you care about why the mo"
+kolmogorov_arnold_networks_kan_pdf_p37_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,37,0,331,"References
+
+« Liu, Ziming, et al. ""KAN: Kolmogorov-Amold Networks."" arXiv preprint (2024).
+
+= Kolmogorov, Andrei N. ""On the representation of continuous functions of many variables by superposition of
+
+continuous functions of one variable and addition."" (1957).
+
+» Arnold, Vladimir I. ""On functions o"
+kolmogorov_arnold_networks_kan_pdf_p38_c0,Kolmogorov–Arnold Networks (KAN).pdf.pdf,38,0,879,"Image Sources
+
+https://images.presentationgo.com/2025/04/abstract-neural-network-background.png
+
+Source: www.presentationgo.com
+
+https://catlikecoding.com/unity/tutorials/curves-and-splines/tutorial-image.jpg
+
+Source: catlikecoding.com
+
+nn ¥ < https://wp-assets. highcharts.com/www-highcharts-com/blo"
+module_1_guidance_notebook_p1_c0,Module 1 Guidance Notebook.pdf,1,0,1000,"From  Model  Artifacts  to  Production  APIs  
+Domain:  Bioactivity  Prediction  of  Chemical  Compounds  This  document  serves  as  your  technical  roadmap  for  Assignment  1 .  We  assume  you  already  
+have
+ 
+a
+ 
+trained
+ 
+model
+ 
+artifact
+ 
+(e.g.,
+ 
+bioactivity_model.joblib)
+ 
+that
+ 
+takes
+ "
+module_1_guidance_notebook_p1_c1,Module 1 Guidance Notebook.pdf,1,1,944,",
+ 
+you
+ 
+are
+ 
+the
+ 
+""Human
+ 
+Firewall""—you
+ 
+must
+ 
+manually
+ 
+validate
+ 
+everything
+ 
+before
+ 
+it
+ 
+touches
+ 
+your
+ 
+model.
+ 
+📝  Flask  Implementation  Guidance  
+●  Manual  Validation:  You  cannot  trust  the  user  input.  You  must  write  if/else  logic  to  check  
+request.get_json().
+ ●  T"
+module_1_guidance_notebook_p2_c0,Module 1 Guidance Notebook.pdf,2,0,992,"#  2.  Manual  Defensive  Layer  (The  Firewall)  
+    
+data
+ 
+=
+ 
+request.get_json()
+ 
+    
+if
+ 
+not
+ 
+data
+ 
+or
+ 
+'smiles'
+ 
+not
+ 
+in
+ 
+data:
+ 
+        
+return
+ 
+jsonify({""error"":
+ 
+""Bad
+ 
+Request:
+ 
+'smiles'
+ 
+field
+ 
+is
+ 
+required""}),
+ 
+400
+ 
+    
+ 
+    
+smiles_string
+ 
+=
+ 
+data['smiles']
+ 
+    "
+module_1_guidance_notebook_p2_c1,Module 1 Guidance Notebook.pdf,2,1,999,"tive""
+ 
+if
+ 
+prediction
+ 
+==
+ 
+1
+ 
+else
+ 
+""Inactive""
+ 
+    
+ 
+    
+return
+ 
+jsonify({
+ 
+        
+""smiles"":
+ 
+smiles_string,
+ 
+        
+""activity"":
+ 
+result,
+ 
+        
+""engine"":
+ 
+""Flask/WSGI""
+ 
+    
+})
+ 
+ 
+if
+ 
+__name__
+ 
+==
+ 
+'__main__':
+ 
+    
+app.run(host='0.0.0.0',
+ 
+port=5000)
+ 
+ 
+ 
+⚡  Step  3"
+module_1_guidance_notebook_p2_c2,Module 1 Guidance Notebook.pdf,2,2,416,"e  professional  way  to  load  heavy  assets.  The  model  is  
+loaded
+ 
+once
+ 
+on
+ 
+startup
+ 
+and
+ 
+stored
+ 
+in
+ 
+app.state.
+ ●  Background  Tasks:  You  can  trigger  side-effects  (like  logging)  without  making  the  user  
+wait
+ 
+for
+ 
+them
+ 
+to
+ 
+finish.
+ Code  Structure  for  fastapi_app.py"
+module_1_guidance_notebook_p3_c0,Module 1 Guidance Notebook.pdf,3,0,1000,"from  pydantic  import  BaseModel,  Field  
+from
+ 
+contextlib
+ 
+import
+ 
+asynccontextmanager
+ 
+ 
+#
+ 
+1.
+ 
+Define
+ 
+the
+ 
+Data
+ 
+Contract
+ 
+(SMILES
+ 
+Input)
+ 
+class
+ 
+BioactivityRequest(BaseModel):
+ 
+    
+#
+ 
+Field
+ 
+constraints
+ 
+handle
+ 
+validation
+ 
+automatically
+ 
+    
+smiles:
+ 
+str
+ 
+=
+ 
+Field(."
+module_1_guidance_notebook_p3_c1,Module 1 Guidance Notebook.pdf,3,1,1000,""")
+ 
+        
+raise
+ 
+    
+yield
+ 
+    
+#
+ 
+Shutdown:
+ 
+Cleanup
+ 
+    
+app.state.model
+ 
+=
+ 
+None
+ 
+ 
+app
+ 
+=
+ 
+FastAPI(title=""Compound
+ 
+Bioactivity
+ 
+API"",
+ 
+lifespan=lifespan)
+ 
+ 
+def
+ 
+log_prediction(smiles:
+ 
+str,
+ 
+result:
+ 
+str):
+ 
+    
+""""""Simulates
+ 
+a
+ 
+background
+ 
+task
+ 
+like
+ 
+logging
+ 
+"
+module_1_guidance_notebook_p3_c2,Module 1 Guidance Notebook.pdf,3,2,231,"""
+ 
+if
+ 
+prediction
+ 
+==
+ 
+1
+ 
+else
+ 
+""Inactive""
+ 
+    
+ 
+    
+#
+ 
+4.
+ 
+Trigger
+ 
+Background
+ 
+Task
+ 
+(User
+ 
+doesn't
+ 
+wait
+ 
+for
+ 
+this)
+ 
+    
+bg_tasks.add_task(log_prediction,
+ 
+body.smiles,
+ 
+activity)
+ 
+    
+ 
+    
+return
+ 
+{"
+module_1_guidance_notebook_p4_c0,Module 1 Guidance Notebook.pdf,4,0,1000,"""smiles"":  body.smiles,  
+        
+""activity"":
+ 
+activity,
+ 
+        
+""engine"":
+ 
+""FastAPI/ASGI""
+ 
+    
+}
+ 
+ 
+ 
+🎨  Step  4:  Re-integrating  with  Streamlit  (The  
+Frontend)
+ 
+Now  that  your  model  is  a  standalone  service,  your  Streamlit  app  no  longer  needs  to  load  the  
+heavy
+ 
+.jobl"
+module_1_guidance_notebook_p4_c1,Module 1 Guidance Notebook.pdf,4,1,998,"localhost  refers  to  your  
+own
+ 
+computer.
+ 
+You
+ 
+must
+ 
+have
+ 
+two
+ 
+terminal
+ 
+windows
+ 
+open:
+ 1.  One  running  your  API  (uvicorn  fastapi_app:app  ...).  2.  One  running  your  Streamlit  app  (streamlit  run  streamlit_app.py).  In  a  real  production  environment,  you  would  replace"
+module_1_guidance_notebook_p4_c2,Module 1 Guidance Notebook.pdf,4,2,379,"response
+ 
+=
+ 
+requests.post(""http://localhost:8000/predict"",
+ 
+json=payload)
+ 
+        
+ 
+        
+if
+ 
+response.status_code
+ 
+==
+ 
+200:
+ 
+            
+res
+ 
+=
+ 
+response.json()
+ 
+            
+st.success(f""Prediction:
+ 
+{res['activity']}"")
+ 
+            
+st.info(f""Backend
+ 
+Engine:
+ 
+{res['engine']"
+module_1_guidance_notebook_p5_c0,Module 1 Guidance Notebook.pdf,5,0,998,"except  Exception  as  e:  
+        
+st.error(f""Could
+ 
+not
+ 
+connect
+ 
+to
+ 
+API:
+ 
+{e}"")
+ 
+ 
+ 
+📈  Step  5:  Comparative  Stress  Testing  
+To  truly  understand  why  the  industry  is  moving  toward  FastAPI,  observe  the  ""Waiter  Problem""  
+discussed
+ 
+in
+ 
+the
+ 
+slides.
+ 
+We
+ 
+will
+ 
+simulate"
+module_1_guidance_notebook_p5_c1,Module 1 Guidance Notebook.pdf,5,1,604,"ency)]
+ 
+        
+results
+ 
+=
+ 
+await
+ 
+asyncio.gather(*tasks,
+ 
+return_exceptions=True)
+ 
+        
+ 
+        
+success
+ 
+=
+ 
+[r
+ 
+for
+ 
+r
+ 
+in
+ 
+results
+ 
+if
+ 
+not
+ 
+isinstance(r,
+ 
+Exception)
+ 
+and
+ 
+r.status_code
+ 
+==
+ 
+200]
+ 
+        
+print(f""---
+ 
+{name}
+ 
+Benchmark
+ 
+---"")
+ 
+        
+print(f""To"
+multimodal_ml_p1_c0,Multimodal ML.pdf,1,0,82,"VN-UK
+®) Institute for Research
+& Executive Education
+
+Multimodal
+Machine Learning"
+multimodal_ml_p2_c0,Multimodal ML.pdf,2,0,231,"VN:UK
+
+Institute for Research
+& Executive Education
+
+Unimodal vs Multimodal
+
+as me Bi eisp
+Vision: Steam & Grid Audio: Spoon Clinking
+Al Models Al Models
+Audio:
+Limited Output Wider Range ean ee pean
+of Results
+
+Unimodal Multimodal"
+multimodal_ml_p3_c0,Multimodal ML.pdf,3,0,315,"Unimodal vs Multimodal
+
+©
+
+Unimodal
+
+Limited to a single data type.
+
+Vulnerable to noise or missing
+
+information within that specific
+
+channel.
+
+VN:UK
+
+Institute for Research
+& Executive Education
+
+Multimodal
+
+Captures richer context. More
+robust; can leverage
+secondary modalities when the
+
+primary "
+multimodal_ml_p4_c0,Multimodal ML.pdf,4,0,301,"What is a Modality?
+Modality: the way information is expressed or perceived, e.g., language, vision, sound, touch.
+From a sensor: raw modality is closest to the physical signal, abstract modality is derived.
+The same phenomenon can appear across multiple modalities (e.g., emotion in voice and 
+face)"
+multimodal_ml_p5_c0,Multimodal ML.pdf,5,0,337,"Institute for Research
+& Executive Education
+
+5 VN-UK
+Multimodal Data
+
+Oo
+
+Video lecture
+
+a m
+
+Patient record Navigation
+
+& MRI images ZV street images
+‘~ ECG time series © GPS traces
+& lab tests > f% map graphs
+
+BA frames (image)
+
+@) audio (speech)
+
++ B transcript (text)
+
+B® doctor narrative ?Q: IM"
+multimodal_ml_p6_c0,Multimodal ML.pdf,6,0,136,"Heterogeneous Modalities
+Information present in different modalities will often show diverse qualities, structures 
+and representations."
+multimodal_ml_p7_c0,Multimodal ML.pdf,7,0,431,"Dimensions of Heterogeneity
+
+1. Structure
+
+Static, temporal, spatial, or
+
+hierarchical.
+
+4. Granularity
+
+Mismatched sampling rates and
+
+resolutions.
+
+2.Repr. Space
+
+Discrete tokens vs. Continuous
+
+embeddings.
+
+5. Noise
+
+Uncertainty and modality-
+
+specific noise.
+
+VN:UK
+
+Institute for Research
+& Exec"
+multimodal_ml_p8_c0,Multimodal ML.pdf,8,0,217,"Structure
+Static: single images, fixed embeddings.
+Temporal: speech, videos, sequential sensor data.
+Spatial: 2D images, 3D point clouds, spatial grids.
+Hierarchical: document → sentence → word, scene → object → part."
+multimodal_ml_p9_c0,Multimodal ML.pdf,9,0,204,"Representation Space
+Discrete: tokens, symbolic labels, graph nodes.
+Continuous: embedding vectors, feature maps, latent states.
+Interpretable vs. latent features (explicit scores vs. black-box features)."
+multimodal_ml_p10_c0,Multimodal ML.pdf,10,0,216,"Information
+Entropy: how uncertain or variable a modality is.
+Density: information per unit (per frame, per second, per token).
+Overlap and range: shared vs. unique information, and what each modality can 
+represent."
+multimodal_ml_p11_c0,Multimodal ML.pdf,11,0,218,"Granularity
+Different sampling rates: audio (kHz), video (fps), text (tokens/s).
+Resolution: high-res images vs. coarse sensors; precision levels.
+Granularity mismatch complicates temporal/spatial alignment and fusion."
+multimodal_ml_p12_c0,Multimodal ML.pdf,12,0,59,"Noise
+Each modality has its own noise distribution and SNR."
+multimodal_ml_p13_c0,Multimodal ML.pdf,13,0,370,"Relevance
+Not all modalities are equally useful for every task → The importance of a 
+modality is context-dependent.
+Emotion Detection: Prosody and facial expressions dominate.
+Night Driving: Lidar/Radar are more relevant than RGB cameras.
+→ Dynamic Weighting: Modern models use gating or attention m"
+multimodal_ml_p14_c0,Multimodal ML.pdf,14,0,250,"Cross-Modal Interactions
+Redundancy: multiple modalities carry the same signal (speech + gesture).
+Dominance: one modality overrides another when they conflict.
+Modulation and emergence: interpretation or new meaning depends on 
+combining modalities."
+multimodal_ml_p15_c0,Multimodal ML.pdf,15,0,222,"Multimodal Pipeline
+
+Encoding
+
+Unimodal
+Model! 1
+
+Unimodal
+Model 2
+
+Unimodal
+
+Input 3
+Model 3
+
+2
+3
+8
+e
+=
+RS
+a
+3
+ic
+
+Classification
+
+Classification
+network
+
+>
+
+Prediction
+
+VN:UK
+
+Institute for Research
+& Executive Education"
+multimodal_ml_p16_c0,Multimodal ML.pdf,16,0,253,"Multimodal Pipeline
+Preprocess each modality separately (normalization, tokenization, feature 
+extraction).
+Encode each modality into latent representations.
+Fuse or interact representations, then apply task-specific heads for prediction or 
+generation."
+multimodal_ml_p17_c0,Multimodal ML.pdf,17,0,228,"Input Module
+Modality-Specific Encoders
+Text: tokenization → embeddings → transformer encoder.
+Image: CNN or Vision Transformer extracting spatial features.
+Audio/sensors: temporal models over spectrograms or numerical features."
+multimodal_ml_p18_c0,Multimodal ML.pdf,18,0,81,"Fusion Module
+The ""Heart"" of the system where individual data streams are merged."
+multimodal_ml_p19_c0,Multimodal ML.pdf,19,0,445,"Early Fusion (Feature-level)
+Mechanism: Raw features are combined at the 
+beginning of the network.
+Pros: Captures high-level interactions between 
+modalities early on, simple and parameter-efficient
+Cons: Can struggle with strong heterogeneity and 
+misalignment (e.g. 60fps videos and 44kHz audio), "
+multimodal_ml_p20_c0,Multimodal ML.pdf,20,0,394,"Late Fusion (Decision-level)
+Mechanism: Each modality is processed by an 
+independent model. Only the final 
+scores/predictions are combined (e.g., via 
+averaging or voting or using a meta-learner).
+Pros: Robust; if one modality is noisy (e.g., a blurry 
+image), the other (e.g., clear audio) can sti"
+multimodal_ml_p21_c0,Multimodal ML.pdf,21,0,440,"Intermediate Fusion (Feature-Level)
+Intermediate fusion encodes modalities separately but merges their internal ""hidden"" 
+representations (feature vectors) before the final decision-making layer. 
+Separate encoders; interaction via cross-attention or shared transformer blocks.
+Supports fine-grained "
+multimodal_ml_p22_c0,Multimodal ML.pdf,22,0,716,"Gated Multimodal Fusion
+Uses a ""gate"" (similar to an LSTM or GRU) to decide how much influence each modality should 
+have on the final feature representation based on the input context.
+Pros:
+- Dynamic Weighting: The model can decide to ""listen"" more to the audio if the image is blurry, 
+or ""look"" m"
+multimodal_ml_p23_c0,Multimodal ML.pdf,23,0,237,"Gated Multimodal Fusion
+
+Animation
+
+Action
+
+In this film, Cobra is at it
+again. This time, they
+have a device called the
+weather dominator
+which can control the
+world's weather and ...
+
+VN:UK
+
+Institute for Research
+& Executive Education"
+multimodal_ml_p24_c0,Multimodal ML.pdf,24,0,649,"Cross-Attention
+Instead of a model only looking at its own tokens (Self-Attention), one modality ""queries"" the 
+other.
+Pros:
+- Dynamic Weighting: The model can decide to ""listen"" more to the audio if the image is blurry, 
+or ""look"" more at the video if the audio is noisy.
+- Semantic Alignment: Fusin"
+multimodal_ml_p25_c0,Multimodal ML.pdf,25,0,639,"Institute for Research
+& Executive Education
+
+) VN-UK
+Cross-Attention
+
+Input 1: IMAGE
+MULTIMODAL
+
+CROSS-ATTENTION FUSION
+
+Visual
+
+IMAGE Features
+BOC era acer) attends te Kitmeoe) and
+=> rs ext) attends to K(Image) an
+(e.g., Vision Mico ae CLASSIFICATION —_ CLASSIFICATION
+Transformer) HEAD RESULT
+Ger"
+multimodal_ml_p26_c0,Multimodal ML.pdf,26,0,462,"Cross-Attention
+
+Institute for Research
+& Executive Education
+
+VN:UK
+
+Query (a)
+
+ye Attention Weights | Weighted Contextual
+Projecti Matrix A Features
+deetion Matrix C
+(€.9., Qoroj) Fused
+: . Multimodal
+Visual Features
+Features Scaled —_
+{V, K} Linear Dot-Product oa
+Projection QK’ y
+or (ee) (Gee >
+|"
+rag_p1_c0,RAG.pdf,1,0,138,"ADVANCED DATA CHALLENGE 
+Introduction to RAG and Its Application
+Student name: Le Trung Tuyen
+Student ID: 2204008
+Lecturer: Tran Thanh Hoa"
+rag_p2_c0,RAG.pdf,2,0,126,"Agenda
+LLM And It’s Limitation
+Introduction
+RAG Architecture
+How Does Rag Work
+RAG vs Fine-Tuning
+Benefits Of RAG
+Applications"
+rag_p3_c0,RAG.pdf,3,0,67,"VN-UK
+Institute for Research
+& Executive Education
+
+1. INTRODUCTION"
+rag_p4_c0,RAG.pdf,4,0,644,"0 1
+0 2
+0 3
+0 4
+W h a t  i s  L L M ?
+A large language model (LLM) is a type of artificial intelligence
+program that can recognize and generate text, among other
+tasks.
+LLM are very large models that are pre-trained on vast amounts
+of data.
+Built on transformer architecture is a set of neural networ"
+rag_p5_c0,RAG.pdf,5,0,686,"LLM’s And Its Limitations
+--> No
+affect by
+moderator 
+Knowledge Cut-off: Confined to historical training data; struggles with real-time updates.
+Hallucinations: Generates factually incorrect but highly convincing and coherent outputs.
+Lack of Domain Specificity: Outputs generalized answers; blind to"
+rag_p6_c0,RAG.pdf,6,0,703,"RAG stands for Retrieval-Augmented Generation
+W H A T  I S  R A G ?
+It's an advanced technique used in Large Language Models (LLMS)
+RAG combines retrieval and generation processes to enhance the
+capabilities of LLMs
+In RAG, the model retrieves relevant information from a knowledge
+base or external s"
+rag_p7_c0,RAG.pdf,7,0,927,"T h i s  "" c o n f i d e n t  b u t  w r o n g ""  b e h a v i o r  d a m a g e s  u s e r  t r u s t  i n
+A I  c h a t b o t s .
+T h e  T r u s t  R i s k :  
+O r g a n i z a t i o n s  g a i n  b e t t e r  c o n t r o l  o v e r  t h e  A I ' s  o u t p u t ,  a n d
+u s e r s  g e t  t r a n s p a"
+rag_p8_c0,RAG.pdf,8,0,75,"=<
+>
+Zz
+>
+
+Institute for Research
+& Executive Education
+
+HOW DOES RAG WORK?"
+rag_p9_c0,RAG.pdf,9,0,109,"RAG: The Detective & The Storyteller
+
+Clues & Evidence
+
+Retriever = Generator =
+The Detective The Storyteller"
+rag_p10_c0,RAG.pdf,10,0,127,"Let’s delve into RAG’s framework to understand how it mitigates these challenges 
+G e n e r a l i z e d  R A G  A p p r o a c h"
+rag_p11_c0,RAG.pdf,11,0,68,"VN-UK
+Institute for Research
+& Executive Education
+
+RAG ARCHITECTURE"
+rag_p12_c0,RAG.pdf,12,0,151,"RAG can be implemented in multiple ways, depending on your system’s needs. We
+outline each type in the sections below.
+R A G  a r c h i t e c t u r e s"
+rag_p13_c0,RAG.pdf,13,0,601,"RAG Components
+An AI framework that allows generative models to access external information beyond their training data.
+Combines the strengths of both retrieval-based and generative methods.
+Uses a retriever to fetch relevant documents from a large knowledge corpus.
+Augments the generative model's u"
+rag_p14_c0,RAG.pdf,14,0,558,"Core Concept: Stores data as high-dimensional vectors (Embeddings) to capture semantic
+meaning.
+Search Mechanism: Approximate Nearest Neighbor (ANN) for fast similarity search, unlike
+traditional exact-match SQL databases.
+Crucial Pre-step - Data Chunking: Raw documents must be strategically split i"
+rag_p15_c0,RAG.pdf,15,0,567,"Core Function: The retriever efficiently identifies and extracts relevant information from vast amounts
+of data.
+How It Works (Relevancy Search): It converts the user's query into a vector representation and
+matches it against vector databases using mathematical calculations to find the most relevan"
+rag_p16_c0,RAG.pdf,16,0,788,"RAG Components
+RAG Generator:
+Functions as the core Large Language Model, such as GPT-4, Gemini, or open-weight models like Llama-3.
+Generates the final output by synthesizing the user's original query with the retrieved and ranked information.
+Ensures the response directly answers the query while a"
+rag_p17_c0,RAG.pdf,17,0,115,"RAG BASED CHAT APPLICATION
+SEQUENCE FLOW: HOW A USER QUERY TRAVELS THROUGH THE RAG PIPELINE 
+AND RETURNS A RESPONSE"
+rag_p18_c0,RAG.pdf,18,0,775,"1
+User Sends Query
+The user types a message or question into the Chat App.
+This is the trigger that initiates the entire RAG pipeline.
+2
+Chat App Forwards Query
+The Chat App receives the user's query and forwards it to
+the RAG system for processing.
+3
+RAG Retrieves + Generates Response
+The RAG model"
+rag_p19_c0,RAG.pdf,19,0,999,"Dimension 🎓 Fine-Tuning 🔍 RAG
+🎯 Objective Adapt a pre-trained LLM to a specific task or domain
+by updating its weights with labeled examples.
+Improve response quality and factual accuracy by
+injecting retrieved external knowledge at generation
+time.
+📦 Training Data Requires curated, task-specific la"
+rag_p19_c1,RAG.pdf,19,1,256,"💰 Cost High upfront cost (GPU compute, data labeling). Low
+inference overhead.
+Low upfront cost. Retrieval adds modest latency at
+inference time.
+RAG VS FINE-TUNING
+TWO DISTINCT STRATEGIES TO ENHANCE LLM PERFORMANCE — 
+UNDERSTANDING WHEN TO USE EACH IS KEY"
+rag_p20_c0,RAG.pdf,20,0,894,"🎯
+Enhanced Relevance
+Retrieved external
+knowledge ensures
+contextually accurate and
+on-topic responses.
+✅
+Improved Quality
+Grounding generation in real
+documents reduces
+hallucination and factual
+errors.
+🔄
+Versatility
+Adapts to diverse tasks and
+domains without task-
+specific fine-tuning.
+⚡
+Efficien"
+rag_p21_c0,RAG.pdf,21,0,833,"💬
+Conversational AI / Chatbots
+RAG enables chatbots to pull real-time
+information from product docs, FAQs, and
+knowledge bases — delivering accurate,
+contextual replies beyond static training data.
+❓
+Advanced Question Answering
+Retrieves the most relevant passages from large
+document corpora (legal "
+rag_p22_c0,RAG.pdf,22,0,60,"VN-UK
+Institute for Research
+& Executive Education
+
+B)
+
+DEMO"
+rag_p23_c0,RAG.pdf,23,0,30,"Thank you for
+your  attention!"
+scalable_mlops_architecture_pptx_p1_c0,Scalable_MLOps_Architecture.pptx.pdf,1,0,335,"DATA
+INGESTION
+
+MODEL
+DEPLOYMENT
+(KUBERNETES)
+
+CONTINUOUS
+MONITORING
+| & FEEDBACK |
+
+FEATURE
+ENGINEERING
+
+MODEL
+EVALUATION
+& VALIDATION
+
+MODEL
+TRAINING
+(GCP VERTEX Al)
+
+Production-Grade
+MLOps & System
+Architecture
+
+Engineering Al for Scale,
+Stability, and Continuous
+Adaptation
+
+From Theoretical Conc"
+scalable_mlops_architecture_pptx_p2_c0,Scalable_MLOps_Architecture.pptx.pdf,2,0,777,"The Lab to Factory Gap: Failure Modes in Production
+
+Traditional ML fails due to system instability, not algorithmic inaccuracy.
+Deploying an Al system exposes three core failure modes:
+
+Deterministic
+
+Code
+
+Data & Concept Drift
+
+e The world changes. Covariate
+Shift alters input distributions
+P(X), "
+scalable_mlops_architecture_pptx_p3_c0,Scalable_MLOps_Architecture.pptx.pdf,3,0,798,"The MLOps Evolution: Level 0 to 3.0
+
+MLOps is an engineering discipline integrating ML,
+DevOps, and Data Engineering.
+
+Level O Level 1.0 Level 2.0 Level 3.0
+
+Manual / Component End-to-End Smart &
+Pre-MLOps Automation Cloud-Native Decentralized
+
+Research-driven. Standardized Fully automated Closed-lo"
+scalable_mlops_architecture_pptx_p4_c0,Scalable_MLOps_Architecture.pptx.pdf,4,0,744,"System-Level Synthesis: The 3 Academic Pillars
+In production-grade MLOps, architectural decisions are foundational
+
+principles, not mere technical choices.
+pee FS et a
+|
+A single source of
+truth guaranteeing A model is not a
+
+the exact same .pkl file. It is
+Pillar 2: re ed offline Pillar 3: an immut"
+scalable_mlops_architecture_pptx_p5_c0,Scalable_MLOps_Architecture.pptx.pdf,5,0,504,"The End-to-End MLOps Pipeline
+
+The core of enterprise Al is deploying an automated training pipeline capable of continuously structuring,
+testing, and generating new models. Code dictates the pipeline; the pipeline dictates the model.
+
+Phase 2: Training
+
+Distributed
+Training
+ML
+Metadata
+
+Phase 3: De"
+scalable_mlops_architecture_pptx_p6_c0,Scalable_MLOps_Architecture.pptx.pdf,6,0,690,"Data Engineering: The First Line of Defense
+
+e Containerized Extraction & EDA:
+Extraction logic is isolated in Contdinerized
+reproducible ‘Docker containers to Extraction
+ensure exact parity between
+development and production
+environments.
+Automated Validation Pipelines (e.g., Schema Skew: AT Data V"
+scalable_mlops_architecture_pptx_p7_c0,Scalable_MLOps_Architecture.pptx.pdf,7,0,610,"Model Training, Metadata, and Evaluation
+
+The Reproducibility Equation: Model = Code + Data + Hyperparams + Random Seeds.
+Every variable must be logged in the ML Metadata Store.
+
+Offline Validation
+(The ML Test Score Gates)
+
+Absolute Isolation: Independent test
+sets to prevent leakage.
+
+Distributed
+"
+scalable_mlops_architecture_pptx_p8_c0,Scalable_MLOps_Architecture.pptx.pdf,8,0,645,"The 3D Automation Framework: Cl / CD / CT
+
+MLOps requires a fundamental shift in traditional software automation:
+
+Continuous Integration | Continuous Delivery Continuous Training
+(Cl) (CD) (CT)
+
+Tests code AND data. Deploys the training The AI-specific
+Feature logic unit pipeline, not just the vect"
+scalable_mlops_architecture_pptx_p9_c0,Scalable_MLOps_Architecture.pptx.pdf,9,0,747,"Monitoring & Observability:
+
+The Closed Feedback Loop
+
+1. Data Monitoring
+(Input)
+
+2. Model Monitoring
+(Behavior)
+
+3. System Monitoring
+(Infrastructure)
+
+Data Monitoring (Input Gatekeeper): Population Stability
+
+Detects Covariate Shift and unnatural ETL
+degradation. Quantifies distributional drift. "
+scalable_mlops_architecture_pptx_p10_c0,Scalable_MLOps_Architecture.pptx.pdf,10,0,808,"Deployment Strategies & Guardrails
+
+Deployment is a distributed systems problem optimizing latency, throughput, and operational risk.
+
+Inference Modes Risk Mitigation Guardrails
+
+100% Traffic Shadow Deployment:
+
+v Production Shadow Model
+Ephemeral compute, scale-to-zero, Model (100%) (Mirrored)
+
+I/O"
+scalable_mlops_architecture_pptx_p11_c0,Scalable_MLOps_Architecture.pptx.pdf,11,0,742,"The Architecture Trilemma:
+Production Trade-offs
+
+Optimizing a single metric leads to systemic failure.
+MLOps is multi-objective optimization.
+
+Accuracy vs. Latency Freshness vs. Stability
+
+Increasing model complexity (FP32) boosts Blind, constant retraining creates short-term
+offline accuracy but b"
+scalable_mlops_architecture_pptx_p12_c0,Scalable_MLOps_Architecture.pptx.pdf,12,0,673,"The LLMOps Frontier: Managing Foundation Models
+
+Generative AI demands radically altered architecture due to parameter scale,
+inference cost, and non-determinism.
+
+Architectural Patterns Inference Optimization
+
+Quantization
+(GPTQ/AWQ)
+Speculative Decoding
+(draft vs. target)
+
+Prompt
+Orchestration
+(Ve"
+scalable_mlops_architecture_pptx_p13_c0,Scalable_MLOps_Architecture.pptx.pdf,13,0,656,"[GCP Blueprint]
+
+Environment Setup & IaC
+
+Building MLOps Level 2+ on
+Google Cloud Platform.
+
+Dev (Sandbox)
+
+Vertex Al Workbench,
+ad-hoc experimentation.
+
+Staging (Pre-prod)
+
+CI/CD validation on real
+data. No manual edits
+allowed.
+
+Highly stable serving,
+24/7 Monitoring.
+
+e Infrastructure as Code (Te"
+scalable_mlops_architecture_pptx_p14_c0,Scalable_MLOps_Architecture.pptx.pdf,14,0,678,"[GCP Blueprint] Code Structure & Containerization
+
+L— configs/ (.yam1)
+L— src/
+
+/— features/
+
+/— training/
+
+L— pipeline_ds1/
+
+L_ integration/
+
+Standardized Directory: Strict
+separation of environment
+configs, source logic, and
+testing suites.
+
+Docker Artifact
+container Registry
+
+Component Containeri"
+scalable_mlops_architecture_pptx_p15_c0,Scalable_MLOps_Architecture.pptx.pdf,15,0,816,"[GCP Blueprint] Feature Management (BigQuery & Bigtable)
+
+Preventing Training-Serving Skew using GCP’s native data stack.
+
+Model Training
+
+BigQuery
+(Offline)
+
+Prediction
+Endpoint
+
+Bigtable
+(Online)
+
+Streaming Sync
+
+The Single Source of Truth: BigQuery acts as the core Offline Store. Feature engineer"
+scalable_mlops_architecture_pptx_p16_c0,Scalable_MLOps_Architecture.pptx.pdf,16,0,692,"[GCP Blueprint] Pipeline Orchestration (Vertex Al)
+
+Serverless pipeline execution using Kubeflow Pipelines (KFP).
+
+e Google Cloud Pipeline Components (GCPC):
+
+Pre-built modules for standard GCP actions
+minimizing custom code overhead.
+
+Conditional Execution (ds1.Condition): The
+production gatekeeper"
+scalable_mlops_architecture_pptx_p17_c0,Scalable_MLOps_Architecture.pptx.pdf,17,0,775,"[GCP Blueprint] Serving, Registry & Canary Deployments
+
+Vertex AI Endpoint
+
+Vertex AI 100% Traffic
+Model Registry Router
+
+e Vertex Al Model Registry: The central hub e Cold-Start Mitigation: Configures ‘dummy
+decoupling physical files from logical models. requests’ for Model Warm-up, ensuring replic"
+scalable_mlops_architecture_pptx_p18_c0,Scalable_MLOps_Architecture.pptx.pdf,18,0,826,"[GCP Blueprint] Continuous Training & Alerting
+
+Event-driven architecture to autonomously combat Model Decay.
+
+Detects Drift Validation Gate
+KFP
+Vertex Model Cloud = ;
+Monitoring pun ee Functions ""Pineling. x Saleh Toki
+
+e Vertex Al Model Monitoring: Scans prediction streams using TFDV algorithms
+
+("
+scalable_mlops_architecture_pptx_p19_c0,Scalable_MLOps_Architecture.pptx.pdf,19,0,808,"[GCP Blueprint] Security, Compliance & Governance
+
+Applying Zero-Trust architecture to the ML Lifecycle.
+
+IAM / Workload
+Identity
+
+Cloud KMS
+/ DLP
+
+VPC Service Controls (VPC-SC): Isolates Vertex
+AI, BigQuery, and GCS from the public internet.
+Prevents data exfiltration and model theft.
+
+Cloud DLP (D"
+scalable_mlops_architecture_pptx_p20_c0,Scalable_MLOps_Architecture.pptx.pdf,20,0,497,"synthesis: The Al Software Factory
+
+“Machine Learning Operations is not about making models run faster;
+it is about making systems fail safely and recover automatically.”
+
+Directed Acyclic
+Graph (DAG) Vertex Pipelines
+
+Feature Store
+Strict Software Artifact / Model
+Versioning Registry
+
+By marrying a"

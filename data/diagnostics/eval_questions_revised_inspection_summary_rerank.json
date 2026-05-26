@@ -1,0 +1,11 @@
+{
+  "num_questions": 15,
+  "source_hit_at_3_count": 15,
+  "source_page_hit_at_3_count": 11,
+  "ok_suggestions": 11,
+  "needs_review": 4,
+  "note": "eval CSV was not modified",
+  "eval_file": "data\\evaluation\\eval_questions_revised.csv",
+  "use_reranking": true,
+  "candidate_k": 10
+}

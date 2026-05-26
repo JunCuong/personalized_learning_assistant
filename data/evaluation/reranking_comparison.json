@@ -1,0 +1,29 @@
+{
+  "eval_file": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\evaluation\\eval_questions_revised.csv",
+  "baseline": {
+    "use_reranking": false,
+    "metrics": {
+      "hit_rate_at_3": 0.6666666666666666,
+      "hit_rate_at_5": 0.8,
+      "mean_reciprocal_rank": 0.5744444444444444,
+      "num_questions": 15
+    },
+    "summary_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\evaluation\\eval_questions_revised_summary.json",
+    "results_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\evaluation\\eval_questions_revised_results.csv"
+  },
+  "rerank": {
+    "use_reranking": true,
+    "candidate_k": 10,
+    "metrics": {
+      "hit_rate_at_3": 0.7333333333333333,
+      "hit_rate_at_5": 0.8666666666666667,
+      "mean_reciprocal_rank": 0.5777777777777777,
+      "num_questions": 15
+    },
+    "summary_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\evaluation\\eval_questions_revised_summary_rerank.json",
+    "results_path": "D:\\Cuong\\01_Programming\\1_1_Learning\\VNUK\\4_2\\advanced_data_challenge\\Final_project\\data\\evaluation\\eval_questions_revised_results_rerank.csv"
+  },
+  "reranking_improved": true,
+  "recommendation": "enable_reranking_optional: Reranking improved metrics without regressions. Keep disabled by default in app; users may opt in via checkbox or --use-reranking.",
+  "errors": []
+}
